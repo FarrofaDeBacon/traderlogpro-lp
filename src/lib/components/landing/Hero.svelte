@@ -10,15 +10,15 @@
         <div class="lg:col-span-6 space-y-8 text-center lg:text-left">
             {#if visible}
                 <div in:fly={{ y: 20, duration: 800 }} class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 rounded-full">
-                    <Sparkles class="w-3.5 h-3.5 text-emerald-600" />
-                    <span class="text-[9px] font-black uppercase tracking-[0.2em] text-emerald-600">Sistema Completo em SvelteKit</span>
+                    <Sparkles class="w-3.5 h-3.5 text-emerald-500" />
+                    <span class="text-[9px] font-black uppercase tracking-[0.2em] text-emerald-400">Sistema Completo em SvelteKit</span>
                 </div>
 
-                <h1 in:fly={{ y: 20, duration: 800, delay: 200 }} class="font-outfit text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight text-slate-900">
-                    PARE DE PERDER DINHEIRO POR <span class="text-emerald-600">FALTA DE CONTROLE</span> NAS SUAS OPERAÇÕES.
+                <h1 in:fly={{ y: 20, duration: 800, delay: 200 }} class="font-outfit text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight text-white">
+                    PARE DE PERDER DINHEIRO POR <span class="text-emerald-500">FALTA DE CONTROLE</span> NAS SUAS OPERAÇÕES.
                 </h1>
 
-                <p in:fly={{ y: 20, duration: 800, delay: 400 }} class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                <p in:fly={{ y: 20, duration: 800, delay: 400 }} class="text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
                     Transforme seus trades em dados e evolua com consistência através do diário de trade do TraderLogPro.
                 </p>
 
@@ -31,12 +31,12 @@
             {/if}
         </div>
 
-        <!-- Real Screenshot of Dashboard -->
+        <!-- Real Screenshot of Dashboard (Dark mode) -->
         <div class="lg:col-span-6 relative group">
             <div class="absolute inset-0 bg-emerald-500/15 blur-[100px] rounded-full"></div>
-            <div class="relative bg-white rounded-[2.5rem] border border-slate-200/80 shadow-2xl overflow-hidden aspect-video group">
+            <div class="relative bg-slate-900 rounded-[2.5rem] border border-white/10 shadow-2xl overflow-hidden aspect-video group">
                 <img src="/images/dashboard.png" alt="TraderLogPro Dashboard" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-all duration-700" />
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-100/50 via-transparent to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
             </div>
         </div>
     </div>
