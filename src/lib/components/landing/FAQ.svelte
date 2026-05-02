@@ -32,22 +32,22 @@
     ];
 </script>
 
-<section id="faq" class="py-24 px-6 bg-slate-900/30 border-y border-white/5">
+<section id="faq" class="py-24 px-6 bg-slate-50 border-y border-slate-200/60 z-10 relative">
     <div class="max-w-3xl mx-auto space-y-16">
         <div class="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-500">FAQ</h2>
-            <h3 class="font-outfit text-4xl font-black tracking-tight">DÚVIDAS FREQUENTES</h3>
+            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-600">FAQ</h2>
+            <h3 class="font-outfit text-4xl font-black tracking-tight text-slate-900 uppercase">DÚVIDAS FREQUENTES</h3>
         </div>
 
         <div class="space-y-4">
             {#each faqs as faq, i}
-                <div class="bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden hover:border-white/10 transition-colors">
-                    <button class="w-full text-left px-6 py-4 flex items-center justify-between font-outfit font-black text-white uppercase tracking-tight text-sm select-none cursor-pointer" onclick={() => toggleFaq(i)}>
+                <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-300">
+                    <button class="w-full text-left px-6 py-4 flex items-center justify-between font-outfit font-black text-slate-900 hover:text-emerald-600 uppercase tracking-tight text-sm select-none cursor-pointer" onclick={() => toggleFaq(i)}>
                         <span>{faq.q}</span>
-                        <ChevronDown class="w-4 h-4 text-slate-400 transition-transform duration-300 {openFaq === i ? 'rotate-180 text-emerald-400' : ''}" />
+                        <ChevronDown class="w-4 h-4 text-slate-400 transition-transform duration-300 {openFaq === i ? 'rotate-180 text-emerald-600' : ''}" />
                     </button>
                     {#if openFaq === i}
-                        <div class="px-6 pb-5 pt-1 text-slate-400 text-sm leading-relaxed" in:fade={{ duration: 250 }}>
+                        <div class="px-6 pb-5 pt-1 text-slate-600 font-medium text-sm leading-relaxed" in:fade={{ duration: 250 }}>
                             {faq.a}
                         </div>
                     {/if}

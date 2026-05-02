@@ -28,7 +28,7 @@
     <meta name="description" content="Pare de perder dinheiro por falta de controle nas suas operações. O diário de trade que transforma seus erros em consistência." />
 </svelte:head>
 
-<div class="relative min-h-screen bg-slate-950 text-slate-50 font-inter selection:bg-emerald-500/30 selection:text-emerald-400">
+<div class="relative min-h-screen bg-slate-50 text-slate-800 font-inter selection:bg-emerald-500/20 selection:text-emerald-700">
 
     <!-- Ambient Background Gradients -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">

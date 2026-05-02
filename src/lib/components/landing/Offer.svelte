@@ -33,17 +33,17 @@
     ];
 </script>
 
-<section id="pricing" class="py-24 px-6 bg-slate-950/40">
+<section id="pricing" class="py-24 px-6 bg-slate-50 border-y border-slate-200/60 z-10 relative">
     <div class="max-w-6xl mx-auto space-y-16">
         <div class="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-500">Investimento</h2>
-            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-white uppercase">COMECE AGORA</h3>
-            <p class="text-slate-400">Escolha o melhor plano de investimento para a sua evolução consistente.</p>
+            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-600">Investimento</h2>
+            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-slate-900 uppercase">COMECE AGORA</h3>
+            <p class="text-slate-600 font-medium">Escolha o melhor plano de investimento para a sua evolução consistente.</p>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-8 items-end max-w-4xl mx-auto">
             {#each plans as plan}
-                <div class="relative group p-10 bg-slate-900/40 border {plan.popular ? 'border-emerald-500 shadow-2xl shadow-emerald-500/10 scale-105 z-10' : 'border-white/5'} rounded-[2.5rem] flex flex-col gap-8 transition-all duration-300">
+                <div class="relative group p-10 bg-white border {plan.popular ? 'border-emerald-500 shadow-2xl shadow-emerald-500/10 scale-105 z-10' : 'border-slate-200/80'} rounded-[2.5rem] flex flex-col gap-8 transition-all duration-300">
                     {#if plan.popular}
                         <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-emerald-500 text-slate-950 px-4 py-1 rounded-full text-[9px] font-black uppercase tracking-widest">Mais Escolhido</div>
                     {/if}
@@ -51,7 +51,7 @@
                     <div class="space-y-2">
                         <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">{plan.name}</h4>
                         <div class="flex items-baseline gap-1">
-                            <span class="text-4xl font-black font-outfit text-white">{plan.price}</span>
+                            <span class="text-4xl font-black font-outfit text-slate-900">{plan.price}</span>
                             <span class="text-slate-500 text-sm font-bold uppercase">{plan.period}</span>
                         </div>
                     </div>
@@ -59,15 +59,15 @@
                     <div class="space-y-4 flex-1">
                         {#each plan.features as f}
                             <div class="flex items-center gap-3 text-sm">
-                                <div class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center">
-                                    <Check class="w-3 h-3 text-emerald-400" />
+                                <div class="w-5 h-5 rounded-full bg-emerald-50/80 flex items-center justify-center">
+                                    <Check class="w-3 h-3 text-emerald-600" />
                                 </div>
-                                <span class="text-slate-400">{f}</span>
+                                <span class="text-slate-600 font-medium">{f}</span>
                             </div>
                         {/each}
                     </div>
 
-                    <a href={plan.link} target="_blank" class="w-full py-5 rounded-2xl text-[10px] font-black uppercase tracking-widest text-center transition-all {plan.popular ? 'bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/20' : 'bg-white/5 text-white hover:bg-white/10'} active:scale-95 cursor-pointer select-none">
+                    <a href={plan.link} target="_blank" class="w-full py-5 rounded-2xl text-[10px] font-black uppercase tracking-widest text-center transition-all {plan.popular ? 'bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/20' : 'bg-slate-100 text-slate-900 hover:bg-slate-200'} active:scale-95 cursor-pointer select-none">
                         {plan.cta}
                     </a>
                 </div>
