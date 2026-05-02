@@ -4,13 +4,13 @@
 
     const prints = [
         {
-            img: "/images/trades.png",
+            img: "/images/trades_light.png",
             title: "Registro de Trades",
             value: "Lista de operações ricas em detalhes (preços, ativos, pontos de saída) com histórico unificado.",
             benefit: "Organização Completa"
         },
         {
-            img: "/images/strategies.png",
+            img: "/images/strategies_light.png",
             title: "Análise de Estratégias",
             value: "Identificação rápida das melhores táticas e setups operacionais para otimização de lucro.",
             benefit: "Validação de Estratégia"
