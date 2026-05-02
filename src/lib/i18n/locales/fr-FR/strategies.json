@@ -1,0 +1,243 @@
+{
+    "strategies": {
+        "empty": "Aucune stratégie enregistrée.",
+        "description": "Documentez vos setups et règles opérationnelles.",
+        "new": "Nouvelle Stratégie",
+        "edit": "Modifier la Stratégie",
+        "searchPlaceholder": "Chercher une stratégie...",
+        "form": {
+            "addImage": "Ajouter",
+            "assetTypes": "Types d'Actif",
+            "cancel": "Annuler",
+            "createFirst": "Enregistrer la Première Stratégie",
+            "description": "Description Résumée",
+            "descriptionPlaceholder": "Ex : Setup de correction...",
+            "entryPlaceholder": "Qu'est-ce qui définit l'entrée ?",
+            "entryTriggers": "1. Déclencheurs d'Entrée",
+            "indicators": "Indicateurs",
+            "linkedMarkets": "Marchés Liés",
+            "management": "3. Conduite / Gestion",
+            "managementPlaceholder": "Trailing stop ? Breakeven ?",
+            "name": "Nom de la Stratégie",
+            "namePlaceholder": "Ex : Pullback MME9",
+            "noMarketSelected": "Aucun marché sélectionné.",
+            "operationalContext": "Contexte Opérationnel",
+            "partials": {
+                "placeholder": "Décrivez la règle de la partielle...",
+                "switch": "Effectuer des Sorties Partielles ?",
+                "hint": "Activer pour détailler les sorties partielles"
+            },
+            "addIndicator": "Ajouter un Indicateur",
+            "addTimeframe": "Ajouter un Temps",
+            "addAssetType": "Ajouter un Instrument",
+            "addAsset": "Ajouter un Actif",
+            "partialDetails": "Détails de la Partielle",
+            "imageCaption": "Légende...",
+            "save": "Enregistrer la Stratégie",
+            "select": "Sélectionner",
+            "specificAssets": "Actifs Spécifiques",
+            "stopExit": "2. Stop / Sortie",
+            "stopPlaceholder": "Où se trouve le stop ?",
+            "timeframes": "Timeframes",
+            "tips": {
+                "noImages": "Pas d'images"
+            },
+            "visualExamples": "Exemples Visuels"
+        },
+        "currency_modes": {
+            "main": "Principal",
+            "original": "Original"
+        },
+        "aiCockpit": {
+            "ctaBtn": "Cockpit de Vision IA",
+            "title": "Cockpit de Vision IA",
+            "health": {
+                "title": "Santé de la Stratégie",
+                "status": "Statut",
+                "currentRisk": "Risque d'Exposition",
+                "stability": "Stabilité Mathématique"
+            },
+            "psychology": {
+                "title": "Stratégie x Psychologie",
+                "infractionRate": "Perte par Indiscipline :",
+                "dominantEmotion": "Émotion Dominante :"
+            },
+            "xray": {
+                "title": "Rayons-X Opérationnel",
+                "bestAsset": "Meilleur Actif",
+                "worstAsset": "Pire Actif",
+                "bestTime": "Meilleure Fenêtre",
+                "worstTime": "Pire Fenêtre",
+                "bestSide": "Côté Prédominant"
+            },
+            "ai": {
+                "title": "Lecture IA",
+                "desc": "Croisement de données et suggestions tactiques.",
+                "insufficientVolume": "Volume insuffisant pour une analyse approfondie.",
+                "actions": {
+                    "reduce": "Action : Réduisez agressivement le fractionnement des lots ou gelez temporairement les opérations.",
+                    "maintain": "Action : Maintenez le plein volume. Laissez les profits déborder selon la loi géométrique des objectifs originaux.",
+                    "bias": "Action : Adoptez la direction prédominante ({direction}) comme biais primaire pour stabiliser les drawdowns courts.",
+                    "continue": "Continuez à exécuter la stratégie selon les paramètres pour permettre à l'algorithme de calibrer la lecture de l'efficacité."
+                },
+                "messages": {
+                    "critical": "Le capital de cette stratégie est exposé à un Drawdown incompatible avec le Payoff.",
+                    "hot": "Le système vibre en harmonie maximale. Le flux opérationnel et émotionnel prouve une consistance directionnelle.",
+                    "maturing": "Consistance en maturation. Les résultats souffrent de frictions croisées (Chaud/Froid) entre les classes d'actifs ou les sessions horaires."
+                },
+                "error": "Erreur lors du traitement IA."
+            },
+            "values": {
+                "HOT": "CHAUD (Edge Actif)",
+                "COLD": "FROID (Edge Inactif)",
+                "LEVEL": "NEUTRE",
+                "LOW": "BAS",
+                "CRITICAL": "CRITIQUE",
+                "MODERATE": "MODÉRÉ",
+                "STABLE": "STABLE",
+                "UNSTABLE": "INSTABLE",
+                "BUY": "ACHAT",
+                "SELL": "VENTE",
+                "Buy": "Achat",
+                "Sell": "Vente",
+                "buy": "achat",
+                "sell": "vente",
+                "winRateShort": "WR"
+            }
+        },
+        "strategyCard": {
+            "totalResult": "Résultat Total",
+            "tradesSuffix": "trades",
+            "viewAnalysis": "Voir l'Analyse Complète"
+        },
+        "strategyDashboard": {
+            "charts": {
+                "drawdown": "Drawdown",
+                "drawdownStrategy": "Drawdown (Stratégie)",
+                "equity": "Capital Net",
+                "equityStrategy": "Capital (Stratégie)"
+            },
+            "heatmap": {
+                "days": {
+                    "fri": "Ven",
+                    "mon": "Lun",
+                    "sat": "Sam",
+                    "sun": "Dim",
+                    "thu": "Jeu",
+                    "tue": "Mar",
+                    "wed": "Mer"
+                },
+                "legend": {
+                    "breakeven": "Breakeven",
+                    "loss": "Perte",
+                    "profit": "Profit",
+                    "strongLoss": "Perte Élevée",
+                    "strongProfit": "Profit Élevé"
+                },
+                "noMarket": "Aucun marché lié",
+                "subtitle": "Performance accumulée par Jour de la Semaine et Heure",
+                "title": "Carte de Chaleur (PnL)",
+                "tooltip": {
+                    "loss": "Perte",
+                    "neutral": "Neutre",
+                    "profit": "Profit",
+                    "status": "Statut"
+                }
+            },
+            "messages": {
+                "noTrades": "Aucun trade sur la période sélectionnée."
+            },
+            "stats": {
+                "averageLoss": "Perte Moyenne",
+                "averageWin": "Gain Moyen",
+                "avgDurationLoss": "Durée Moyenne (Perte)",
+                "avgDurationWin": "Durée Moyenne (Profit)",
+                "avgInterval": "Intervalle Entre Trades",
+                "avgTimeBetweenTrades": "Temps Moyen entre Trades",
+                "bestTrade": "Meilleur Trade",
+                "consecutiveLosses": "Losses Consécutifs",
+                "consecutiveWins": "Wins Consécutifs",
+                "mathExpectation": "Espérance Mathématique",
+                "maxDrawdown": "Max Drawdown",
+                "netResult": "Résultat Net",
+                "operations": "Trades",
+                "payoff": "Payoff",
+                "planAdherence": "Adhérence au Plan",
+                "profitFactor": "Profit Factor",
+                "recoveryFactor": "Facteur de Récupération",
+                "totalTrades": "Total de Trades",
+                "winRate": "Win Rate",
+                "winningTrades": "Trades Gagnants",
+                "worstTrade": "Pire Trade"
+            },
+            "subtitle": "Bienvenue dans votre centre de commandement.",
+            "summary": {
+                "chartPlaceholder": "Graphique de Performance (Bientôt)",
+                "noTrades": "Aucun trade effectué aujourd'hui.",
+                "title": "Résumé du Jour"
+            },
+            "tabs": {
+                "dashboard": "Dashboard",
+                "dossier": "Dossier de la Stratégie",
+                "gann": "Vibrations de Gann"
+            },
+            "title": "Dashboard"
+        },
+        "strategyDossier": {
+            "all": "Tous",
+            "assetTypes": "Types d'Actif",
+            "context": "Contexte Opérationnel",
+            "daysSuffix": "jours",
+            "entryTriggers": "Déclencheurs d'Entrée",
+            "exit": "Stop / Sortie",
+            "indicators": "Indicateurs",
+            "linkedMarkets": "Marchés Liés",
+            "management": "Conduite / Gestion",
+            "multi": "MULTI",
+            "noCriteria": "Aucun critère défini.",
+            "noImages": "Aucune image jointe.",
+            "noLinkedMarket": "Aucun marché lié spécifiquement (Horaire Libre).",
+            "partials": "Sorties Partielles",
+            "specificAssets": "Actifs Spécifiques",
+            "timeframes": "Timeframes",
+            "visualExamples": "Exemples Visuels"
+        },
+        "strategyGann": {
+            "accuracy": "Acurácia",
+            "adherence": "Adhérence",
+            "alignment": "Alignement",
+            "alignmentDesc": "Entrées aux Niveaux SQ9",
+            "analyticalConfluence": "Confluence Analytique",
+            "angleScore": "Score d'Angle",
+            "confluenceDesc": "Comment cette stratégie réagit aux Lois Mathématiques de Gann",
+            "cycleWatch": "Vigilance de Cycle",
+            "cycleWatchDesc": "Win Rate aux Dates Naturelles",
+            "geometricPrecision": "Précision Géométrique",
+            "geometricLaw": "Loi de la Géométrie",
+            "geometryLaw": "Loi de la Géométrie",
+            "geometryLawDesc": "L'Adhérence à l'Angle représente l'équilibre entre Prix et Temps. Les stratégies qui respectent les angles géométriques (comme 45°) sont considérées comme stables et durables tout au long du Cycle Maître.",
+            "mastery": "Gann Mastery",
+            "mathematicalConfluence": "Confluence Mathématique",
+            "success": "Succès",
+            "timeLaw": "Loi du Temps",
+            "timeLawDesc": "Le Taux de Succès du Cycle révèle se cette stratégie est \"saisonnière\". Gann croyait que le temps est le facteur le plus important ; ce score indique si l'edge de la stratégie est amplifié lors des Changements de Saison.",
+            "vibrationLaw": "Loi de la Vibration",
+            "vibrationLawDesc": "L'alignement de la stratégie avec les vibrations du Carré de Neuf mesure la qualité de ses entrées. Un score élevé suggère que la stratégie trouve naturellement des liquidités aux points d'expansion mathématique de Gann."
+        },
+        "strategyList": {
+            "description": "Suivez les performances statistiques de vos setups opérationnels.",
+            "new": "Nouvelle",
+            "notFound": {
+                "action": "Aller aux Paramètres",
+                "description": "Nous n'avons pas trouvé de setups avec les filtres actuels. Pourquoi ne pas en créer un nouveau dans Paramètres ?",
+                "title": "Aucune stratégie trouvée"
+            },
+            "searchPlaceholder": "Chercher une stratégie...",
+            "title": "Stratégies"
+        },
+        "strategyNotFound": "Stratégie non trouvée",
+        "strategy": {
+            "notFound": "Stratégie non trouvée"
+        }
+    }
+}

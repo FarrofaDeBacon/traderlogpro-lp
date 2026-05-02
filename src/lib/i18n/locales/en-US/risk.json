@@ -1,0 +1,760 @@
+{
+    "risk": {
+        "actions": {
+            "cancel": "Cancel",
+            "save": "Save Data",
+            "new": "New Profile",
+            "restart": "Restart Evolution"
+        },
+        "cockpit": {
+            "title": "Risk Control",
+            "subtitle": "Real-time monitoring",
+            "group": "Group",
+            "globalMode": "Global Mode",
+            "assetsInScope": "Assets in Scope",
+            "selectAsset": "Select Asset",
+            "globalView": "Global View",
+            "all": "All Assets",
+            "activeMarket": "Active Market",
+            "noProfile": "No Active Profile",
+            "noProfileDesc": "Activate a risk profile for monitoring",
+            "sections": {
+                "ruinRisk": "Risk of Ruin (Inversion)",
+                "registeredViolations": "Registered Violations",
+                "pendingMissions": "Pending Missions",
+                "emotionalSupervisor": "Emotional Supervisor",
+                "survivalRules": "Survival Rules",
+                "operationalRules": "Operational Rules",
+                "dailyLoss": "Daily Loss",
+                "drawdown": "Drawdown"
+            },
+            "criteria": {
+                "win_rate": "Minimum Win Rate"
+            },
+            "engine": {
+                "days": "Days Traded",
+                "consistency": "Gains Consistency",
+                "winrate": "Win Rate",
+                "consecutive_loss_days": "Max. Consecutive Loss Days",
+                "loss_streak": "Loss Streak",
+                "best_day_share": "Best Day (%)",
+                "min_trading_days": "Min. Trading Days",
+                "drawdown": "Phase Drawdown",
+                "loss_limit": "Daily Loss Limit",
+                "dailytarget": "Gains Target",
+                "dailyloss": "Loss Limit",
+                "unknown": "Criterion"
+            },
+            "stats": {
+                "globalLimit": "Global Limit",
+                "stageLimit": "Stage Limit",
+                "drawdownProgression": "Drawdown Progression",
+                "consumed": "Consumed",
+                "remaining": "Available",
+                "allowedSizing": "Allowed Sizing",
+                "availableOperational": "Available Operational",
+                "blockedStatus": "Blocked by Engine",
+                "currentPhase": "Current Phase",
+                "goal": "Goal",
+                "nextPhase": "Next Phase",
+                "intraday": "Intraday",
+                "maxPhase": "Max Phase",
+                "actual": "Actual",
+                "limit": "Limit",
+                "pending": "Pending",
+                "ok": "OK",
+                "hit": "HIT",
+                "max": "MAX",
+                "pendingStatus": "PENDING",
+                "inversion": "Inversion"
+            },
+            "status": {
+                "active": "System Active",
+                "systemLocked": "System Locked",
+                "orangeAlert": "Orange Alert",
+                "clearTrack": "Green Signal",
+                "terminalStatus": "Terminal Status",
+                "onPlanSlogan": "Management Within Plan",
+                "clearPath": "Clear Path",
+                "realTimeMonitor": "In-Memory Monitor",
+                "maintenanceMode": "Maintenance Mode",
+                "maintenanceSlogan": "Protecting Profits"
+            },
+            "supervisor": {
+                "blocked": "Operations Suspended",
+                "caution": "Full Attention Required",
+                "targetHigh": "Target Close - Defensive Mode",
+                "stable": "Stable Control"
+            },
+            "terminalOffline": "Terminal Offline"
+        },
+        "growth": {
+            "title": "Growth Plans",
+            "subtitle": "Scale Operational Management",
+            "planNameLabel": "Plan Identification",
+            "planNamePlaceholder": "Ex: 10k Prop, Pro Individual Plan...",
+            "phases": "Evolution Phases",
+            "addPhase": "Create New Phase",
+            "maxLotsLabel": "Max Lot",
+            "phaseNameLabel": "Phase Name",
+            "phaseNamePlaceholder": "Optional",
+            "progression": "Progression Rules",
+            "regression": "Regression Rules",
+            "manualAdvanceOnly": "Exclusively manual advancement.",
+            "noRegressionRules": "No automatic regression limits.",
+            "activeStatus": "Plan Status",
+            "none": "No plan (static limits)",
+            "modes": {
+                "accumulate": "Accumulated Method",
+                "recover": "Net Method",
+                "cumulative": "Cumulative Profit",
+                "reset": "Reset per Phase"
+            },
+            "metrics": {
+                "profit": "Profit Target",
+                "totalTarget": "Total Target",
+                "dailyTarget": "Daily Target",
+                "days": "Positive Days",
+                "winRate": "Win Rate %",
+                "consistency": "Consistency",
+                "drawdown": "Max Drawdown",
+                "dailyLoss": "Max Daily Loss",
+                "lossStreak": "Consecutive Loss Days",
+                "operated_days": "Operated Days",
+                "positive_sessions": "Positive Sessions",
+                "daily_target": "Daily Target",
+                "today_profit": "Today's Profit"
+            },
+            "actions": {
+                "promote": "PROMOTE PHASE",
+                "demote": "DEMOTE PHASE"
+            },
+            "otherRequirements": "Other Requirements",
+            "metrics_labels": {
+                "profit_achieved": "Profit in Phase",
+                "daily_pnl": "Daily PnL"
+            }
+        },
+        "plan": {
+            "title": "Risk Management",
+            "description": "Define your parameters, limits, and protection rules to trade safely.",
+            "name": "Profile Name",
+            "namePlaceholder": "Ex: Conservative, Institutional Trader...",
+            "active": "Active",
+            "activate": "Activate Profile",
+            "edit": "Edit Profile",
+            "new": "New Profile",
+            "sections": {
+                "downside": "Capital Protection (Downside)",
+                "upside": "Evolution Targets (Upside)",
+                "discipline": "Discipline and Locks",
+                "hierarchy": "Execution Hierarchy"
+            },
+            "labels": {
+                "dailyLossLimit": "Daily Loss Limit",
+                "maxRiskPerTrade": "Risk/Trade",
+                "dailyGoal": "Daily Profit Target",
+                "minRiskReward": "Min R/R",
+                "maxTradesDay": "Max Trades/Day",
+                "platformLock": "Auto Loss Lock",
+                "lockWarning": "The platform will be locked upon reaching the limit."
+            },
+            "tabs": {
+                "general": "Overview",
+                "rules": "Dynamic Rules",
+                "evolution": "Evolution and Phases",
+                "scope": "Scope of Action"
+            },
+            "finance": {
+                "title": "Capital and Scale",
+                "money": "Capital",
+                "points": "Points/Ticks",
+                "linkAccount": "Link to Account",
+                "fixedValue": "Fixed Value",
+                "capitalBase": "Base Capital",
+                "contracts": "Contracts",
+                "maxDailyLoss": "Max Daily Loss",
+                "referenceAccount": "Reference Account",
+                "selectAccount": "Select Account",
+                "baseStrategy": "Risk Strategy",
+                "baseTemplate": "Base Template",
+                "startBlank": "Start from Scratch",
+                "copyOf": "Copy of",
+                "templateDesc": "Use an existing profile as a starting point.",
+                "fixed_capital": "Fixed Capital",
+                "linked_account_id": "Linked Account ID"
+            },
+            "scope": {
+                "title": "Profile Applicability",
+                "accounts": "Linked Accounts",
+                "accountsTitle": "Execution Accounts",
+                "assets": "Assets in Scope",
+                "assetsTitle": "Linked Assets",
+                "noAssets": "No asset profile available. Link them above first.",
+                "selectAtLeastOne": "Select at least 1 profile."
+            },
+            "hierarchy": {
+                "title": "Execution Hierarchy (Priority)",
+                "global": "1. GLOBAL PLAN (BASE)",
+                "asset": "2. ASSET LIMITS",
+                "growth": "3. GROWTH PLAN",
+                "rules": "4. ADDITIONAL RULES"
+            },
+            "accountTypes": {
+                "All": "All Accounts",
+                "Demo": "Demo Account",
+                "Prop": "Prop Firm",
+                "Real": "Real Account",
+                "Specific": "Specific Accounts"
+            },
+            "applicability": {
+                "all": "All Assets",
+                "prop": "Prop Firms",
+                "real": "Real Market",
+                "demo": "Simulator",
+                "specific": "Specific Assets"
+            }
+        },
+        "rules": {
+            "title": "Dynamic Protection Rules",
+            "addRule": "Add New Rule",
+            "editRule": "Edit Dynamic Rule",
+            "ruleName": "Rule Name",
+            "ruleNamePlaceholder": "Ex: Max Daily Loss",
+            "active": "Active",
+            "scope": {
+                "label": "Application Scope",
+                "global": "Global",
+                "asset": "Per Asset",
+                "combined": "Combined",
+                "assetDesc": "Applies to each asset individually",
+                "globalDesc": "Applies to total account balance"
+            },
+            "advanced": {
+                "title": "Advanced Rules Engine (Engine V4)",
+                "desc": "Ignores base limits and uses the dynamic rules processor.",
+                "disciplineTitle": "Discipline and Safety Locks"
+            },
+            "adaptation": {
+                "psychological": {
+                    "title": "Psychological Monitor",
+                    "desc": "Reduces exposure after negative sequences to protect capital.",
+                    "multiplier": "Reduction (%)",
+                    "strategy": "Strategy",
+                    "strategyStrict": "Strict",
+                    "strategySequence": "Sequential (Loss Streak)",
+                    "lookback": "History (Trades)",
+                    "threshold": "Trigger (Z-Score)"
+                },
+                "outliers": {
+                    "title": "Deviation Filter",
+                    "desc": "Identifies atypical trades that stray from the statistical average.",
+                    "lookback": "Sampling"
+                },
+                "sniper": {
+                    "title": "Sniper Mode",
+                    "desc": "Increases precision by requiring convergence of multiple factors.",
+                    "selectivity": "Degree of Selectivity"
+                },
+                "multiplier": "Risk Multiplier"
+            },
+            "targetType": {
+                "label": "Rule Target Metric",
+                "max_daily_loss": "Daily Limit Type",
+                "profit_target": "Daily Profit Target",
+                "sum_contracts": "Contract Limit (Exposure)",
+                "day_trade_only": "Rule: Day Trade Only",
+                "close_before_close": "Early Closure",
+                "consistency": "Consistency Rule",
+                "rule_50_percent": "50% Rule (Prop)",
+                "max_trades_per_day": "Daily Order Limit"
+            },
+            "operator": {
+                "label": "Condition",
+                "lte": "Less than or equal to",
+                "gte": "Greater than or equal to",
+                "eq": "Equal to",
+                "lt": "Less than",
+                "gt": "Greater than",
+                "between": "Between"
+            },
+            "desk": {
+                "title": "Prop Desk Setup",
+                "config": "Desk Setup",
+                "enable": "Enable Prop Firm Rules",
+                "desc": "Enable to follow MDD, consistency, and prop firm limits.",
+                "planName": "Journey Name",
+                "planNamePlaceholder": "Ex: 100k Challenge, Phase 1...",
+                "currentStage": "Current Stage",
+                "modes": {
+                    "fixed": "Fixed Limit",
+                    "percent_of_margin": "% of Margin"
+                },
+                "auditTitle": "Performance Audit",
+                "metrics": {
+                    "operatedDays": "Days Traded",
+                    "positiveDays": "Green Days",
+                    "bestDayShare": "Best Day %",
+                    "totalProfit": "Total PnL"
+                },
+                "progression": {
+                    "title": "Stage Evolution",
+                    "current": "Stage",
+                    "can_advance": "Ready to Advance",
+                    "should_remain": "Awaiting Requirements"
+                },
+                "currentLevel": "Current Operational Level",
+                "canAdvance": "Approved to Advance",
+                "maintenance": "Awaiting Margin (Maintenance)",
+                "stages": {
+                    "current": "Current Journey Stage",
+                    "margin_building": "Margin Building",
+                    "real_phase_1": "Phase 1 (Real)",
+                    "real_final": "Professional Account",
+                    "default": "Initial Stage",
+                    "training": "Evaluation Phase",
+                    "junior": "Junior Trader",
+                    "senior": "Senior Trader",
+                    "master": "Master Trader",
+                    "professional": "Institutional Management"
+                },
+                "status": {
+                    "passed": "Passed",
+                    "failed": "Failed",
+                    "pending": "In Progress"
+                }
+            },
+            "combined": {
+                "title": "Asset Crossing Rules",
+                "add": "New Combined Rule",
+                "none": "No combined rules. Use to cross limits between different assets.",
+                "name": "Identification Name",
+                "namePlaceholder": "Ex: Max Weekly WIN+WDO",
+                "type": "Calculation Type",
+                "sumContracts": "Total Sum of Contracts",
+                "linkedProfiles": "Involved Asset Profiles",
+                "limit": "Cutoff / Limit Value",
+                "condition": "Condition",
+                "noProfilesAvailable": "No profile available"
+            },
+            "advancedRules": "Advanced Rules",
+            "advancedRulesDesc": "Enables granular protections and automatic adaptation engines.",
+            "disciplineTitle": "Discipline and Locks",
+            "engine": {
+                "max_daily_loss": "MAX DAILY LOSS"
+            }
+        },
+        "states": {
+            "evolutionRequirements": "Pending Evolution Requirements",
+            "allowed": "Operational Allowed",
+            "blocked": "Operational Blocked",
+            "caution": "Attention to Limits",
+            "stable": "Stable State",
+            "systemLocked": "Mechanism Locked",
+            "terminalStatus": "Terminal Status",
+            "phaseMaxReached": "Phase Ceiling Reached",
+            "violation": "Rule Violation",
+            "continuousAudit": "Continuous Audit",
+            "reason": "Reason",
+            "aiEngineStatus": "AI Engine Status"
+        },
+        "violations": {
+            "min_trading_days": "Min. Trading Days",
+            "max_daily_loss": "Daily Drawdown Reached",
+            "profit_target": "Profit Target Reached",
+            "max_drawdown": "Global Drawdown Reached",
+            "max_trades": "Trade Limit Reached",
+            "time_lock": "Time Lock Active"
+        },
+        "messages": {
+            "saveSuccess": "Risk Profile configured successfully.",
+            "saveError": "Failed to save risk configuration.",
+            "deleteSuccess": "Risk profile removed.",
+            "deleteError": "Failed to delete profile.",
+            "profileNotFound": "Risk profile not found.",
+            "deskAdvanceSuccess": "Promoted to the next stage!",
+            "restartConfirm": "Are you sure you want to restart progress?",
+            "restartSuccess": "Plan restarted successfully.",
+            "restartError": "Failed to restart plan.",
+            "deleteDesc": "This action will permanently delete the risk profile.",
+            "phaseAdvance": "Congratulations! You have advanced to phase: {name}",
+            "phaseRestart": "Growth plan restarted.",
+            "confirmRestart": "Do you want to restart the plan? Your progress will return to Phase 1.",
+            "removePhase": "Remove Phase",
+            "nextPhaseFallback": "Next Phase",
+            "promote": "Promoted to Phase {name}!",
+            "demote": "Demoted to Phase {name}.",
+            "promoteCriteriaNotMet": "Promotion criteria not met.",
+            "governedByGrowth": "GOVERNED BY PLAN",
+            "governedByGrowthHint": "Active limits defined by the current phase",
+            "baseValueHint": "Profile base value. Current plan phase may override this limit.",
+            "standaloneMode": "Using static profile limits",
+            "governanceToggle": "Enable Dynamic Governance",
+            "governanceToggleDesc": "When enabled, this profile's limits will be replaced by the current phase of the linked plan.",
+            "hiddenLayerWarning": "There are advanced settings and additional rules hidden in this profile.",
+            "hiddenGrowthWarning": "This profile has a linked Growth Plan that is inactive in Simple Mode.",
+            "cumulativeDesc": "Plan mode is ACCUMULATE: your gains and current days will be carried over to the new phase.",
+            "resetDesc": "Plan mode is RESET: the new phase will start a new count from zero.",
+            "lockedDesc": "Meet the objectives above to unlock the next phase.",
+            "advanceTo": "Advance to Phase {phase}",
+            "missingCriteria": "Missing {label}: {current}/{target}",
+            "notInitialized": "Risk not initialized",
+            "lockedOrLimitHit": "Daily limit reached or locked",
+            "maxContractsExceeded": "Max contracts exceeded ({limit})",
+            "startDateSuccess": "Plan start date updated!",
+            "startDateError": "Failed to update start date.",
+            "activateSuccess": "Risk profile activated successfully",
+            "activateError": "Error activating risk profile",
+            "assetAlreadyLinked": "Asset {asset} already belongs to group \"{group}\".",
+            "deleteActiveProfileError": "It is not allowed to delete the risk profile that is currently active.",
+            "deleteLinkedAccountsError": "This profile is linked to one or more specific accounts.",
+            "deleteLinkedScopeError": "This risk scope is linked to one or more management profiles.",
+            "copySuffix": "Copy",
+            "templateSuffix": "Template",
+            "migratedPrefix": "Migrated"
+        },
+        "modes": {
+            "title": "Management Mode",
+            "simple": "Simple",
+            "advanced": "Advanced",
+            "simpleDesc": "Direct configuration of essential risk metrics.",
+            "advancedDesc": "Granular control via rule engine and evolution plans."
+        },
+        "tooltips": {
+            "dailyLossLimit": "Blocks new orders if the day's loss reaches this value.",
+            "profitTarget": "Suggests or blocks orders after the target is hit.",
+            "sumContracts": "Sum of all open contracts simultaneously.",
+            "dayTradeOnly": "Prevents Swing Trade orders (held for the next day).",
+            "closeBeforeClose": "Closes positions automatically X minutes before closing.",
+            "consistency": "Requires profit to be distributed over X days.",
+            "rule50Percent": "No single day can represent more than 50% of total profit.",
+            "maxTradesDay": "Prevents 'Overtrading' by limiting total number of trades.",
+            "dailyLossAccumulate": "Sums only the day's losses. Gains do not free up margin.",
+            "dailyLossRecover": "Net PnL: Realized gains free up space in the daily limit.",
+            "drawdownAccumulate": "Drawdown based on the gross sum of losses.",
+            "drawdownRecover": "Drawdown calculated from the peak (High Watermark).",
+            "targetCumulative": "Target based on total profit since Start (Phase 1).",
+            "targetReset": "Profit target resets when starting a new phase.",
+            "combinedRuleAssets": "Assets:"
+        },
+        "title": "Risk Management",
+        "description": "Define your parameters, limits, and protection rules to trade safely.",
+        "new": "New Profile",
+        "edit": "Edit Profile",
+        "profiles": {
+            "active": "Active",
+            "activate": "Activate Profile",
+            "dailyLoss": "Max Daily Loss",
+            "dailyTarget": "Daily Profit Target",
+            "activate_btn": "Activate Profile"
+        },
+        "management": {
+            "searchPlaceholder": "Search profile...",
+            "currentlyInUse": "CURRENTLY IN USE",
+            "statusActive": "ACTIVE",
+            "statusInactive": "INACTIVE",
+            "activeCapitalEvolution": "Active Capital Evolution",
+            "phaseInfo": "PHASE {current} OF {total}",
+            "currentStage": "CURRENT STAGE",
+            "handSize": "HAND SIZE (CONTRACTS)",
+            "planNotFound": "PLAN NOT FOUND",
+            "manualManagement": "MANUAL STATISTICAL MANAGEMENT",
+            "bindPlan": "Link Plan",
+            "dailyRisk": "DAILY RISK",
+            "profitTarget": "PROFIT TARGET",
+            "exposure": "EXPOSURE",
+            "orders": "ORDERS",
+            "lossBlock": "LOSS BLOCK",
+            "orderBlock": "ORDER BLOCK",
+            "assetRules": "{count} ASSET RULES",
+            "activateStrategy": "Activate Strategy",
+            "inOperation": "IN OPERATION",
+            "noProfilesFound": "NO RISK PROFILES FOUND",
+            "createNewProfile": "CREATE NEW PROFILE",
+            "capitalSource": "Reference Account",
+            "activePlan": "Active Plan",
+            "noPlanLinked": "No Plan Linked",
+            "phase": "Phase",
+            "defaultPhaseName": "OPERATION",
+            "maxTrades": "Order Limit/Day",
+            "lockOnLoss": "Hard Block",
+            "warningOnLimit": "Directional Warning",
+            "duplicate": "Duplicate",
+            "linkedAssetProfilesDesc": "Applies global rules to specific asset profiles.",
+            "assetProfileSelector": "Select Asset Profile...",
+            "noLinkedAssetProfiles": "No links.",
+            "removeAssetProfile": "Remove",
+            "phases": "Plan Phases"
+        },
+        "evolution": {
+            "growthPlan": "Growth Plan",
+            "bindDesc": "LINK LOT SCALING PLAN"
+        },
+        "scope": {
+            "accountsTitle": "LINKED ACCOUNTS",
+            "accounts": "Applies this profile only to selected accounts.",
+            "applicability": "APPLICABILITY",
+            "assets": "ASSETS IN SCOPE"
+        },
+        "growthPlan": {
+            "title": "Progression Setup",
+            "activeStatus": "Plan Status",
+            "planNameLabel": "Plan Identification",
+            "enable": "Enable Automatic Progression",
+            "enableDesc": "Allows the system to advance phases automatically when targets are met.",
+            "actions": {
+                "restart": "Restart Evolution",
+                "promote": "Promote Phase",
+                "demote": "Demote Phase"
+            },
+            "maxLotsLabel": "Phase Lot",
+            "none": "No plan (static limits)",
+            "calculationModes": "Operational Logistics",
+            "dailyLossMode": "Daily Loss Accounting",
+            "phaseDrawdownMode": "Phase Drawdown Method",
+            "phaseTargetMode": "Profit Target Progression",
+            "targetUnit": "Profit Metric",
+            "drawdownUnit": "Risk Metric",
+            "financial": "Financial",
+            "points": "Points",
+            "noTemplate": "No template linked",
+            "helpers": {
+                "dailyLossRecover": "Net Method: Day's gains offset max loss.",
+                "dailyLossAccumulate": "Accumulated Method: Only losses sum in daily limit.",
+                "drawdownRecover": "High Watermark: Drawdown recovers as profit rises.",
+                "drawdownAccumulate": "Fixed Risk: Drawdown does not change with phase profit.",
+                "targetReset": "Reset per Phase: Profit target clears at each new stage.",
+                "targetCumulative": "Plan Total: Accumulated profit between phases counts toward target."
+            }
+        },
+        "ruleBuilder": {
+            "title": "Additional Rules",
+            "addRule": "Create New Additional Rule",
+            "noRules": "No additional rules configured.",
+            "presets": {
+                "maxDailyLoss": "Daily Loss Limit",
+                "profitTarget": "Results Target",
+                "sumContracts": "Max Exposure per Asset",
+                "combinedExposure": "Aggregated Exposure",
+                "maxTrades": "Order Limit",
+                "dayTradeOnly": "Allow Only Day Trade",
+                "closeBeforeClose": "Close Before Closing",
+                "consistency": "Consistency Rule",
+                "rule50": "50% Profit Rule"
+            },
+            "groups": {
+                "global": "Consolidated Limits",
+                "asset": "Asset Limits",
+                "combined": "Aggregated Exposure"
+            },
+            "types": {
+                "MaxDailyLoss": {
+                    "title": "Daily Loss Limit",
+                    "desc": "Immediate financial interruption barrier per active session."
+                },
+                "ProfitTarget": {
+                    "title": "Results Target",
+                    "desc": "Advisory financial goal for performance monitoring."
+                },
+                "MaxExposure": {
+                    "title": "Max Exposure per Asset",
+                    "desc": "Quantitative ceiling for simultaneously positioned lots."
+                },
+                "CombinedExposure": {
+                    "title": "Aggregated Exposure",
+                    "desc": "Shared allocation margin among multiple assets."
+                },
+                "MaxTradesPerDay": {
+                    "title": "Order Limit",
+                    "desc": "Max frequency of sends to avoid excessive trading (Overtrading)."
+                }
+            },
+            "targetType": {
+                "max_daily_loss": "Daily Loss Limit",
+                "profit_target": "Results Target",
+                "max_trades_per_day": "Order Limit",
+                "sum_contracts": "Max Exposure",
+                "day_trade_only": "Exclusive Day Trade",
+                "consistency": "Gains Consistency",
+                "rule_50_percent": "Profit Concentration",
+                "close_before_close": "Forced Closure"
+            },
+            "enforcementShort": {
+                "hard": "Hard",
+                "soft": "Soft"
+            },
+            "enforcementFull": {
+                "hard": "Hard Block",
+                "soft": "Directional Warning"
+            }
+        },
+        "form": {
+            "sections": {
+                "operational_limits": "Operational Limits",
+                "blocking_rules": "Blocking Rules",
+                "context": "Context",
+                "advanced_intelligence": "Advanced Intelligence"
+            },
+            "sidebar": {
+                "incomplete": "Incomplete",
+                "valid": "Validated",
+                "warning": "Warning"
+            },
+            "labels": {
+                "profileName": "Profile Name",
+                "capitalBase": "Base Capital",
+                "riskPerTrade": "Risk/Trade",
+                "dailyLoss": "Daily Loss",
+                "dailyTarget": "Daily Target",
+                "maxExposure": "Max Exposure",
+                "maxTrades": "Order Limit",
+                "groupAssets": "Group: {name}",
+                "linkedAssets": "Assets",
+                "sharedLimit": "Shared Limit",
+                "sharedDrawdown": "Shared Drawdown"
+            },
+            "institutionalRiskManagement": "Institutional Risk Management",
+            "linkAccount": "Link:",
+            "chooseAccount": "Choose Account...",
+            "profileNamePlaceholder": "Ex: Conservative B3 Profile",
+            "description": "Description",
+            "descriptionPlaceholder": "Risk strategy summary...",
+            "operationalManagement": "Operational Management",
+            "growthPlan": "Growth Plan",
+            "choosePlan": "Choose Plan...",
+            "cockpitProgressionMode": "Cockpit in Automatic Progression Mode",
+            "cockpitProgressionModeDesc": "Financial and exposure limits will be governed by the linked plan phases. The system will monitor your drawdown and gain automatically to advance or recede levels.",
+            "phaseStartDate": "Phase Start Date",
+            "saveDate": "Save Date",
+            "dateHelper": "* Change to backtrack the day and profit count",
+            "dailyLoss": "Daily Loss",
+            "profitTarget": "Daily Target",
+            "maxExposure": "Max Exposure",
+            "orderLimit": "Order Limit",
+            "automaticBlocks": "Automatic Blocks",
+            "blockOnDailyLoss": "Block on daily loss limit",
+            "blockOnDailyLossDesc": "Immediate mechanical intervention",
+            "blockOnOrderLimit": "Block on order limit",
+            "blockOnOrderLimitDesc": "Strict overtrading control",
+            "assetRules": "Asset / Market Rules",
+            "enableAssetRules": "Enable Specific Rules",
+            "addRule": "Add Rule",
+            "noAssetRules": "No specific rules configured",
+            "assetRulesDisabled": "Specific asset rules disabled",
+            "generalObservations": "General Observations",
+            "observationsPlaceholder": "Strategic notes about this risk profile...",
+            "saveProfile": "Save Profile",
+            "editRule": "Edit Rule",
+            "newAssetRule": "New Asset Rule",
+            "ruleType": "Rule Type",
+            "byAsset": "By Asset",
+            "byAssetType": "By Asset Type",
+            "selectAssets": "Select Assets",
+            "searchAssetPlaceholder": "Search asset...",
+            "bindAssetsHint": "Link assets above",
+            "selectAssetTypes": "Select Asset Types",
+            "searchAssetTypePlaceholder": "Search type...",
+            "bindAssetTypesHint": "Link asset types above",
+            "minLot": "Min Lot",
+            "maxLot": "Max Lot",
+            "defaultStop": "Default Stop (Pts)",
+            "ruleObservations": "Rule Observations",
+            "ruleObservationsPlaceholder": "Specific guidelines for these assets...",
+            "confirmRule": "Confirm Rule",
+            "linkedAccounts": "Linked Accounts",
+            "linkedAccountsDesc": "Define where this profile will be applied",
+            "globalFinancialLimits": "GLOBAL Financial Limits",
+            "globalFinancialLimitsDesc": "Cockpit safety barriers",
+            "automaticBlocksDesc": "Mechanical safety intervention",
+            "assetRulesDesc": "Granular action rules",
+            "generalObservationsDesc": "Strategic notes and guidelines",
+            "selectedAssets": "SELECTED ASSETS",
+            "messages": {
+                "saveDateSuccess": "Plan start date updated!",
+                "dateFormatPlaceholder": "DD/MM/YYYY",
+                "invalidDateFormat": "Invalid format. Use: DD/MM/YYYY",
+                "profileNameRequired": "The profile needs a name.",
+                "selectAssetOrType": "Select at least one asset or asset type."
+            }
+        },
+        "validation": {
+            "error": {
+                "name_empty": "Risk profile name cannot be empty.",
+                "capital_undefined": "Fixed capital must be greater than zero.",
+                "account_not_linked": "Select an account to link the capital.",
+                "no_assets_linked": "Add at least one asset profile to the scope.",
+                "growth_plan_not_found": "The selected growth plan does not exist.",
+                "orphan_asset_reference": "References to assets that were deleted exist.",
+                "daily_loss_invalid": "Max daily loss must be greater than zero (or governed by a plan).",
+                "daily_target_invalid": "Daily profit target must be greater than zero (or governed by a plan)."
+            },
+            "warning": {
+                "high_risk": "Daily risk is above 10% of capital. Consider reducing.",
+                "meta_disproportionate": "Profit target is too high relative to stop. Makes consistency difficult.",
+                "no_psych_filters": "Psychological filters disabled. Risk of emotional escalation.",
+                "no_blocking_rules": "No advanced blocking rules defined."
+            }
+        },
+        "growthPlans": {
+            "title": "Growth Plans",
+            "description": "Automated progression models for exposure scaling.",
+            "new": "New Plan"
+        },
+        "psychology": {
+            "conclusions": {
+                "offender": "\"{emotion}\" state is your primary offender, costing {amount}.",
+                "edge": "\"{emotion}\" emotion proves to be your mathematical edge zone, with a {winRate}% Win Rate.",
+                "negativeLosses": "Alert: {percent}% of your losses occur under adverse emotional effects. Behavioral bias is overriding technique.",
+                "normal": "No major mathematical discrepancies between emotions and results. Normal mechanical fluctuation."
+            },
+            "recommendations": {
+                "stopTrading": "DO NOT TRADE if you detect {emotion} feelings before the session.",
+                "reduceSize": "Reduce position size by half when trading while feeling {emotion}.",
+                "increaseConfidence": "Increase confidence and expose normal (or higher) risk when triggering trades under {emotion}.",
+                "moreJournals": "Increase the volume of Daily Reviews to train the AI in reading your daily sentiment.",
+                "keepRigorous": "Maintain the rigorous plan. Current emotional patterns are tamed."
+            },
+            "kpis": {
+                "psychoScore": "Psycho Score",
+                "score": "Score",
+                "bestPerformance": "Best Performance",
+                "offender": "Primary Offender",
+                "negativeLosses": "Financial Drain",
+                "tradesCount": "{count} trades",
+                "accumulatedDrain": "Accumulated Drain",
+                "dominantState": "Dominant State",
+                "totalTrades": "Total Operations",
+                "operationsBreakdown": "Operations Breakdown"
+            },
+            "modal": {
+                "dayDetails": "Psychological Details"
+            },
+            "period": {
+                "start": "Start",
+                "until": "until",
+                "today": "Today"
+            },
+            "analysis": {
+                "emotionalCalc": "Emotional Calculation",
+                "totalWeight": "Total Weight"
+            },
+            "insight": {
+                "title": "Mathematical Insight",
+                "formulaTitle": "Metric Calculation",
+                "opScoreLabel": "Trade Score",
+                "opScoreFormula": "(Entry Weight + Exit Weight) / 2",
+                "finalScoreLabel": "Final Score",
+                "finalScoreFormula": "Σ (Trade Scores) / Total Items",
+                "scoreSum": "Score Sum",
+                "itemCount": "Item Count",
+                "finalAvg": "Final Average",
+                "opScore": "Op. Score"
+            },
+            "modal": {
+                "dayDetails": "Psychological Details",
+                "dayOperations": "Day Operations",
+                "close": "Close Details"
+            }
+        }
+    }
+}

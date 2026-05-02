@@ -1,0 +1,31 @@
+{
+    "currencies": {
+        "description": "Enregistrez les devises utilisées dans vos comptes (BRL, USD, etc).",
+        "edit": "Modifier la Devise",
+        "empty": "Aucune devise trouvée",
+        "new": "Nouvelle Devise",
+        "searchPlaceholder": "Chercher une devise...",
+        "title": "Devises",
+        "labels": {
+            "baseCurrencies": "Devises de Base",
+            "foreignCurrencies": "Devises Étrangères",
+            "exchangeToBase": "Change vers {base}"
+        },
+        "form": {
+            "code": "Code",
+            "codePlaceholder": "Ex : BRL",
+            "name": "Nom",
+            "namePlaceholder": "Ex : Réal Brésilien",
+            "save": "Enregistrer la Devise",
+            "symbol": "Symbole",
+            "symbolPlaceholder": "Ex : R$",
+            "isoCode": "Code (ISO)",
+            "description": "Définissez les devises et les taux de conversion pour le système.",
+            "exchangeRate": "Taux de Conversion",
+            "baseProportion": "PROPORTION {base}",
+            "exchangeRateHint": "Définissez la valeur d'une unité de cette devise dans la devise de base.",
+            "createFirst": "Enregistrer la Première Devise",
+            "brlProportion": "Proportion en BRL"
+        }
+    }
+}

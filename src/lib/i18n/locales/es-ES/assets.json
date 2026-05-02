@@ -1,0 +1,40 @@
+{
+    "assets": {
+        "title": "Activos",
+        "description": "Registre los activos que opera (Símbolo, Valor del Punto, etc).",
+        "new": "Nuevo Activo",
+        "edit": "Editar Activo",
+        "empty": "No se encontraron activos",
+        "searchPlaceholder": "Buscar activo...",
+        "form": {
+            "symbol": "Ticker / Símbolo",
+            "symbolPlaceholder": "Ej: WIN, PETR4...",
+            "name": "Nombre del Activo",
+            "namePlaceholder": "Ej: Mini Índice, Petrobras...",
+            "pointValue": "Valor del Punto",
+            "contractSize": "Lote Estándar",
+            "isRoot": "Definir como Activo Raíz",
+            "rootAsset": "Activo Raíz Padre",
+            "type": "Clase",
+            "typePlaceholder": "Seleccione...",
+            "sector": "Sector",
+            "sectorPlaceholder": "Seleccione Sector",
+            "subsector": "Subsector",
+            "createFirst": "Registrar Primer Activo",
+            "save": "Guardar Activo",
+            "cancel": "Cancelar",
+            "saveChanges": "Guardar"
+        },
+        "buttons": {
+            "syncRTD": "Sincronizar RTD"
+        },
+        "labels": {
+            "root": "Raíz",
+            "none": "Ninguno"
+        },
+        "bulk": {
+            "actions": "Acciones en Masa",
+            "changeType": "Cambiar Tipo de Activo"
+        }
+    }
+}

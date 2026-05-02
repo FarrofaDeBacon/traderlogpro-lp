@@ -1,0 +1,43 @@
+{
+    "fees": {
+        "title": "Tasas y Costes",
+        "description": "Configure los costes operativos (Corretaje, B3, ISS) por perfil.",
+        "new": "Nuevo Perfil de Tasa",
+        "edit": "Editar Perfil de Tasa",
+        "empty": "Ningún perfil de tasa encontrado.",
+        "searchPlaceholder": "Buscar perfil de tasa...",
+        "form": {
+            "name": "Nombre del Perfil",
+            "namePlaceholder": "Ej: Broker X - Mini Contratos",
+            "brokerage": "Corretaje Fijo",
+            "b3": "Tasas B3 (%)",
+            "iss": "ISS (%)",
+            "spread": "Spread Cambiario (%)",
+            "operationalCosts": "Costes Operativos",
+            "modalityConfig": "Configuración por Modalidad",
+            "fixedFee": "Tasa Fija",
+            "percentageFee": "Tasa Porcentual (%)",
+            "exchangeFee": "Tasa de Bolsa / B3 (%)",
+            "initializing": "Inicializando...",
+            "noModalities": "Ninguna modalidad configurada.",
+            "createModalityFirst": "Crear Primera Modalidad",
+            "account": "Cuenta Vinculada",
+            "defaultAccount": "Predeterminado (Sin cuenta específica)",
+            "unknownAccount": "Cuenta Desconocida",
+            "noBroker": "Broker no informado",
+            "notes": "Notas y Observaciones",
+            "notesPlaceholder": "Describa detalles específicos de este perfil de tasas...",
+            "createFirst": "Registrar Primer Perfil de Tasa",
+            "save": "Guardar Perfil"
+        },
+        "simulator": {
+            "title": "Simulador de Costes",
+            "description": "Vea el impacto de las tasas en un volumen proyectado.",
+            "volume": "Volumen Estimado",
+            "fixed": "Costes Fijos",
+            "variable": "Costes Variables",
+            "b3": "Emolumentos (B3)",
+            "total": "Coste Total Estimado"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "accounts": {
+        "description": "Gestione sus cuentas de corredores y empresas de fondeo.",
+        "edit": "Editar Cuenta",
+        "empty": "No se encontraron cuentas.",
+        "new": "Nueva Cuenta",
+        "searchPlaceholder": "Buscar cuenta...",
+        "title": "Cuentas de Trading",
+        "types": {
+            "Demo": "Simuladores / Demo",
+            "Prop": "Empresas de Fondeo",
+            "Real": "Cuentas Reales"
+        },
+        "form": {
+            "addIcon": "Añadir Icono",
+            "balance": "Saldo Inicial",
+            "balanceLabel": "Saldo Actual",
+            "broker": "Corredor (Broker)",
+            "brokerPlaceholder": "Ej: Binance, XP...",
+            "currency": "Moneda",
+            "icon": "Icono",
+            "iconHint": "Haga clic para seleccionar",
+            "nickname": "Apodo (Nickname)",
+            "nicknamePlaceholder": "Ej: Cuenta Principal",
+            "number": "Número de Cuenta",
+            "numberPlaceholder": "Ej: 12345-6",
+            "save": "Guardar Cuenta",
+            "saving": "Guardando...",
+            "titleEdit": "Editar Cuenta",
+            "titleNew": "Crear Cuenta",
+            "type": "Tipo",
+            "linkMarket": "VINCULAR AL MERCADO",
+            "linkMarketPlaceholder": "Seleccione el Mercado Principal",
+            "openingBalance": "Saldo de Apertura / Actual",
+            "optional": "Opcional",
+            "createFirst": "Registrar Primera Cuenta",
+            "unknownAccount": "Cuenta Desconocida",
+            "noBroker": "Sin Corredor",
+            "nicknameRequired": "El apodo de la cuenta es obligatorio."
+        }
+    }
+}

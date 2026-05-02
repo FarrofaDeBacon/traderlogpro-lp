@@ -1,0 +1,244 @@
+{
+    "psychology": {
+        "title": "Hub de Psychologie",
+        "description": "Surveillez vos états émotionnels et identifiez les schémas qui affectent votre performance.",
+        "syncWeights": "Synchroniser les Poids",
+        "syncSuccess": "Poids synchronisés avec succès !",
+        "syncError": "Erreur lors de la synchronisation des poids.",
+        "emotions": {
+            "confiante": "Confiant",
+            "ansioso": "Anxieux",
+            "frustrado": "Frustré",
+            "furioso": "Furieux",
+            "ganancioso": "Avide",
+            "neutro": "Neutre",
+            "medo": "Peur",
+            "eufórico": "Euphorique",
+            "foco": "Concentré",
+            "disciplinado": "Discipliné",
+            "vingativo": "Vengeur",
+            "hesitante": "Hésitant"
+        },
+        "checkin": {
+            "button": "Check-in Quotidien",
+            "title": "Registre Psychologique Quotidien",
+            "description": "Comment vous êtes-vous senti aujourd'hui ? Enregistrez vos émotions pour l'analyse de performance.",
+            "date": "Date du Registre",
+            "stateLabel": "État Émotionnel Prédominant",
+            "statePlaceholder": "Sélectionnez une émotion...",
+            "intensityLabel": "Intensité du Sentiment",
+            "notesLabel": "Notes du Journal / Contexte",
+            "notesPlaceholder": "Décrivez ce qui s'est passé aujourd'hui, comment vous avez réagi aux trades, etc...",
+            "save": "Enregistrer le Registre",
+            "saving": "Enregistrement...",
+            "success": "Check-in effectué avec succès !",
+            "analyze": "Analyser avec l'IA",
+            "analyzing": "Analyse...",
+            "analysisComplete": "Analyse terminée !",
+            "aiFeedbackTitle": "Feedback du Mentor IA",
+            "minCharsError": "Écrivez un peu plus pour que l'IA puisse analyser.",
+            "saveError": "Remplissez au moins une émotion ou une note.",
+            "errorSaving": "Erreur lors de l'enregistrement du journal. Réessayez."
+        },
+        "kpis": {
+            "psychoScore": "Psycho Score",
+            "bestPerformance": "Meilleure Performance",
+            "offender": "Pire Performance",
+            "negativeLosses": "Drain de Perte",
+            "score": "Score",
+            "accumulatedDrain": "Drain Accumulé",
+            "tradesCount": "{count} trades"
+        },
+        "charts": {
+            "theMap": "Carte Comportementale",
+            "top5": "Top 5 Émotions (Fréquence)",
+            "impactRanking": "Classement d'Impact Financier",
+            "emotion": "Émotion",
+            "trades": "Trades",
+            "equityCurve": "Courbe de Performance Émotionnelle",
+            "filterPeriod": "Filtrez une période pour visualiser la courbe",
+            "behavioralVolume": "Volume Comportemental"
+        },
+        "hierarchical": {
+            "sessionsStructure": "Structure Hiérarchique des Sessions"
+        },
+        "journal": {
+            "title": "Journal Psychologique",
+            "entryStateShort": "Entrée",
+            "exitStateShort": "Sortie",
+            "intensityShort": "Int.",
+            "score": "Score",
+            "deleteWithClosure": "Supprimer avec Clôture ?",
+            "deleteWithClosureDesc": "Nous avons détecté des clôtures financières associées à cette date. Voulez-vous également supprimer le registre financier ?",
+            "deleteJournalOnly": "Journal Uniquement",
+            "deleteBoth": "Supprimer les Deux",
+            "deleteError": "Erreur lors de la suppression du registre : {error}",
+            "deleteSuccess": "Registre psychologique supprimé avec succès !",
+            "deletePartialError": "Registre psychologique supprimé, mais une erreur est survenue lors de la suppression des clôtures financières."
+        },
+        "ai": {
+            "cardTitle": "Analyse Comportementale (IA)",
+            "cardDescription": "Interprétation systémique des schémas émotionnels de la période.",
+            "dominantPattern": "Schéma Dominant",
+            "majorRisk": "Vulnérabilité Majeure",
+            "suggestedProtocol": "Protocole Suggéré",
+            "generateAction": "Générer um Insight",
+            "retryAction": "Réessayer",
+            "noProvider": "Aucun fournisseur d'IA activé dans Paramètres > Intégrations.",
+            "error": "Erreur dans l'analyse comportementale.",
+            "defaultProtocol": "Maintenir la discipline statistique",
+            "patternPlaceholder": "Schéma Dominant",
+            "riskPlaceholder": "Vulnérabilité Majeure",
+            "protocolPlaceholder": "Protocole Suggéré"
+        },
+        "analysis": {
+            "emotionalCalc": "Calcul Émotionnel",
+            "totalWeight": "Poids Total"
+        },
+        "intensityShort": "Int.",
+        "insight": {
+            "title": "Insight Opérationnel",
+            "opScore": "Score Opérationnel",
+            "formulaTitle": "Formule du Score"
+        },
+        "period": {
+            "title": "Période",
+            "start": "Début",
+            "until": "Jusqu'à",
+            "today": "Aujourd'hui"
+        },
+        "insights": {
+            "no_trades": {
+                "title": "Terminal Vide",
+                "description": "Aucun trade synchronisé. Effectuez votre première opération pour générer du contexte."
+            },
+            "revenge_trading": {
+                "title": "Tilt Imminent (Revenge Trading)",
+                "description": "Vous avez subi {count} pertes consécutives aujourd'hui. L'impulsion de récupérer immédiatement détruit les comptes. Videz votre esprit."
+            },
+            "profit_giveback": {
+                "title": "Rendu de Profits",
+                "description": "Vous étiez positif de {peak}, mais vous avez déjà rendu {percent}% au marché. Ne laissez pas la journée devenir négative."
+            },
+            "pareto_concentration": {
+                "title": "Résultat Concentré",
+                "description": "Attention : 1 seul trade a été responsable de plus de 70% de vos gains aujourd'hui. Cela masque le risque réel des autres opérations."
+            },
+            "time_edge_morning": {
+                "title": "Time Edge : Matin",
+                "description": "Mathématiquement, vous êtes bien meilleur en opérant le matin (9h-12h). Évitez d'ouvrir de nouvelles positions l'après-midi."
+            },
+            "time_edge_afternoon": {
+                "title": "Time Edge : Après-midi",
+                "description": "Vos meilleures lectures se produisent après 12h. Gardez votre anxiété le matin et attendez votre fenêtre de profit naturelle."
+            },
+            "week_consistency": {
+                "title": "Exécution Haute Performance",
+                "description": "Vous avez atteint 3 jours ou plus de gains consécutifs sans aucun jour de perte cette semaine. Gardez les lots sous contrôle."
+            },
+            "week_drawdown": {
+                "title": "Semaine de Vente Lourde",
+                "description": "Vous avez clôturé {count} jours dans le rouge cette semaine. Diminuez la charge drastiquement pour survivre ou prenez un jour de congé."
+            },
+            "no_trades_today": {
+                "title": "Journée Vide",
+                "description": "Aucune opération aujourd'hui. Rappelez-vous : ne pas trader, quand le marché est mauvais, c'est aussi trader."
+            },
+            "good_day": {
+                "title": "Journée Contrôlée",
+                "description": "Vous avez tradé et les émotions sont sous contrôle. Aucun schéma destructeur de revenge trading détecté."
+            },
+            "daily_limit_danger": {
+                "message": "Perte Quotidienne Critique : Vous avez atteint {percent}% de la limite maximale.",
+                "action": "ARRÊTEZ DE TRADER"
+            },
+            "tilt_imminent": {
+                "message": "{count} pertes consécutives détectées. Risque très élevé de Tilt.",
+                "action": "Respirez profondément"
+            },
+            "consecutive_losses_2": {
+                "message": "2 pertes consécutives. Réduisez le lot ou faites une pause avant la prochaine entrée."
+            }
+        },
+        "impacts": {
+            "fat_tail_loss": {
+                "title": "Échec de Coupure des Pertes",
+                "description": "Le jour {date}, une perte était 3 fois supérieure à votre gain moyen."
+            },
+            "danger_behavior": {
+                "title": "Comportement Destructeur Détecté"
+            },
+            "warn_behavior": {
+                "title": "Attention aux Habitudes"
+            },
+            "pos_behavior": {
+                "title": "Schéma Gagnant"
+            },
+            "emo_prejudicial": {
+                "title": "Émotion Préjudiciable (Entrée)",
+                "description": "Vous avez opéré sous '{name}' qui a un poids négatif dans le système."
+            },
+            "rev_g_day": {
+                "title": "Revue Quotidienne Positive",
+                "description": "Vous avez enregistré la journée avec un sentiment constructif et une approbation."
+            },
+            "rev_b_day": {
+                "title": "Revue Quotidienne Négative",
+                "description": "Vous avez terminé la séance frustré(e) par votre propre performance."
+            }
+        },
+        "recommendations": {
+            "revenge": "Nous avons identifié des traits de Revenge Trading. Configurez la limite de perte quotidienne dans le Panneau de Risque et fermez l'application une fois l'objectif atteint.",
+            "huge_loss": "Votre système a un bon taux de réussite, mais un ou deux mauvais jours détruisent des semaines de profit. Serrez drastiquement vos stops.",
+            "critical_emotion": "Certaines émotions (ex : Furie, Cupidité) minent votre psychologie. Entraînez-vous à fermer le terminal dès que vous ressentez ces déclencheurs.",
+            "low_winrate": "Votre taux de réussite est très bas. Révisez votre SETUP et enregistrez des vidéos de votre écran pendant que vous opérez pour analyser vos entrées.",
+            "good_management": "Votre gestion financière est affûtée. Maintenez des lots constants et protégez la constance.",
+            "balanced": "Votre opérationnel est équilibré. Attention en augmentant les tailles de positions maintenant, allez-y étape par étape.",
+            "no_data": "Pas assez de données. Effectuez votre première opération pour générer le Breakdown."
+        },
+        "assistant": {
+            "signals": {
+                "critical_score": {
+                    "title": "Performance Critique",
+                    "message": "Votre Score a chuté gravement. Le marché ne pardonne pas l'inattention. Protégez votre capital en réduisant les tailles ou en prenant du temps libre."
+                },
+                "severe_impact_detected": {
+                    "title": "Impact Grave Détecté",
+                    "message": "Nous avons détecté une défaillance lourde dans votre système (Pénalité : {points} pts). Concentration totale pour ne pas répéter cette erreur aujourd'hui."
+                },
+                "broken_emotional_control": {
+                    "title": "Rupture Émotionnelle Récente",
+                    "message": "Vos émotions ont récemment coûté des points de Score. Rappelez-vous : il n'y a pas de profit sans maîtrise de soi. Respirez avant de cliquer."
+                },
+                "overconfidence_reminder": {
+                    "title": "Attention à l'Arrogance",
+                    "message": "Vous sortez de {count} jours de profit (Green Streak). Le marché va essayer de les reprendre. Gardez les lots constants."
+                },
+                "discipline_rebuild": {
+                    "title": "Reconstruisez la Discipline",
+                    "message": "La rupture de discipline laisse des blessures silencieuses. Faites de la protection du setup votre objectif principal aujourd'hui."
+                },
+                "medium_impact_reminder": {
+                    "title": "Attention Opérationnelle",
+                    "message": "{description}"
+                },
+                "execution_mastery": {
+                    "title": "Systématisation Fluide",
+                    "message": "Avec un WR et un PF affûtés, vous avez trouvé votre Edge mathématique. Répétez le processus parfaitement. Aucune invention aujourd'hui."
+                },
+                "emotional_zen": {
+                    "title": "Trader de Glace",
+                    "message": "{count} jours en maintenant des émotions saines dans le registre. Vous gagnez en blindage."
+                },
+                "positive_edge": {
+                    "title": "Opportunité Cartographiée",
+                    "message": "{description}"
+                },
+                "neutral_consistency": {
+                    "title": "Construction Quotidienne",
+                    "message": "Votre opérationnel est équilibré. N'oubliez pas de respecter les limites de perte quotidienne fixées dans la centrale de Risque."
+                }
+            }
+        }
+    }
+}

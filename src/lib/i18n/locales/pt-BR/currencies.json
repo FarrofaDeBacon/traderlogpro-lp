@@ -1,0 +1,34 @@
+{
+    "currencies": {
+        "description": "Cadastre as moedas utilizadas em suas contas (BRL, USD, etc).",
+        "edit": "Editar Moeda",
+        "empty": "Nenhuma moeda encontrada",
+        "new": "Nova Moeda",
+        "searchPlaceholder": "Buscar moeda...",
+        "title": "Moedas",
+        "labels": {
+            "baseCurrencies": "Moedas de Base",
+            "foreignCurrencies": "Moedas Estrangeiras",
+            "exchangeToBase": "Câmbio p/ {base}"
+        },
+        "form": {
+            "code": "Código",
+            "codePlaceholder": "Ex: BRL",
+            "name": "Nome",
+            "namePlaceholder": "Ex: Real Brasileiro",
+            "save": "Salvar Moeda",
+            "symbol": "Símbolo",
+            "symbolPlaceholder": "Ex: R$",
+            "isoCode": "Código (ISO)",
+            "description": "Defina moedas e taxas de conversão para o sistema.",
+            "exchangeRate": "Taxa de Conversão",
+            "baseProportion": "PROPORÇÃO {base}",
+            "exchangeRateHint": "Defina quanto 1 unidade desta moeda vale na moeda base.",
+            "createFirst": "Cadastrar Primeira Moeda",
+            "brlProportion": "Proporção em BRL"
+        },
+        "errors": {
+            "inUse": "Não é possível excluir esta moeda: ela está sendo utilizada por uma ou mais contas."
+        }
+    }
+}

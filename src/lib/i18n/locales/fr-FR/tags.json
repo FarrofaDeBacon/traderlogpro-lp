@@ -1,0 +1,19 @@
+{
+    "tags": {
+        "description": "Créez des étiquettes pour catégoriser vos trades et journaux.",
+        "edit": "Modifier le Tag",
+        "empty": "Aucun tag trouvé",
+        "form": {
+            "cancel": "Annuler",
+            "color": "Couleur",
+            "createFirst": "Enregistrer le Premier Tag",
+            "name": "Nom",
+            "namePlaceholder": "Ex : Setup A, Erreur Opérationnelle...",
+            "preview": "Aperçu du Tag",
+            "save": "Enregistrer le Tag"
+        },
+        "new": "Nouveau Tag",
+        "searchPlaceholder": "Chercher un tag...",
+        "title": "Tags"
+    }
+}

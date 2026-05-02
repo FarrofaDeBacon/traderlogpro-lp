@@ -1,0 +1,50 @@
+{
+    "sectors": {
+        "title": "Classification Sectorielle",
+        "description": "Catégorisez vos actifs par hiérarchie de marché (Secteur Économique, Sous-secteur et Segment).",
+        "new": "Nouvelle Classification",
+        "edit": "Modifier la Classification",
+        "empty": "Aucune verticale économique cartographiée.",
+        "searchPlaceholder": "Filtrer par nom...",
+        "segmentsCount": "{count, plural, =0 {Aucun Segment} one {1 Segment} other {# Segments}}",
+        "macroSectorDefault": "Général",
+        "form": {
+            "market": "Marché",
+            "marketPlaceholder": "Sélectionnez le Marché (B3, NYSE...)",
+            "level": "Niveau de Classification",
+            "level1": "Secteur Économique",
+            "level1Desc": "Catégorie maître globale du marché",
+            "level2": "Sous-secteur",
+            "level2Desc": "Lier le groupe à un secteur économique",
+            "level3": "Segment",
+            "level3Desc": "Classification granulaire des actifs",
+            "parentLevel1": "Secteur Économique Lié",
+            "parentLevel2": "Sous-secteur Lié",
+            "name": "Nom de l'Élément",
+            "namePlaceholder": "Ex : Financier, Banques, etc...",
+            "macroSector": "Secteur Économique",
+            "macroSectorPlaceholder": "Ex : Consommation Cyclique, Financier...",
+            "segment": "Segment d'Activité",
+            "segmentPlaceholder": "Ex : Banques, Bâtiment...",
+            "icon": "Icône Opérationnelle",
+            "color": "Couleur d'Identification",
+            "save": "Enregistrer les Données",
+            "cancel": "Annuler",
+            "toastSubsectorAdded": "Sous-secteur ajouté",
+            "newSubsector": "Nouveau Segment",
+            "subsectorHint": "Sélectionnez un Sous-secteur pour gérer ses Segments d'activité.",
+            "createFirst": "Créer ma première classification"
+        },
+        "subsectors": {
+            "title": "Sous-secteurs",
+            "new": "Nouveau Sous-secteur",
+            "edit": "Modifier le Sous-secteur",
+            "name": "Nom du Sous-secteur",
+            "namePlaceholder": "Ex : Banques Moyennes...",
+            "segment": "Segment Opérationnel",
+            "segmentPlaceholder": "Ex : Assainissement...",
+            "save": "Enregistrer le Sous-secteur",
+            "activeMappings": "Liens Actifs"
+        }
+    }
+}

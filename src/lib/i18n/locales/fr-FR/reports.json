@@ -1,0 +1,152 @@
+{
+    "reports": {
+        "behavior": {
+            "noCriticalBehaviors": "Aucun comportement critique détecté sur la période. Rotation opérationnelle neutre."
+        },
+        "reflection": {
+            "reviewMissing": "Vous avez opéré sans enregistrer de revue quotidienne. Cela réduit la capacité d'audit et d'apprentissage de la période.",
+            "extractsTitle": "Extraits de Réflexion",
+            "noNotes": "Aucune note enregistrée.",
+            "noVolume": "Aucun volume de données.",
+            "reviewCountLabel": "Revues effectuées",
+            "rhythmTitle": "Rythme Opérationnel"
+        },
+        "daily": {
+            "actions": {
+                "save": "Enregistrer la Clôture"
+            },
+            "empty": "Aucune opération trouvée à cette date.",
+            "ratings": {
+                "bad": "Mauvais",
+                "good": "Bon",
+                "neutral": "Neutre",
+                "placeholder": "Note rapide (optionnelle)... Qu'avez-vous appris aujourd'hui ou où avez-vous péché ?"
+            },
+            "sections": {
+                "behavioral": "Analyse Comportementale",
+                "best": "Meilleur",
+                "selfEvaluation": "Votre Évaluation du Jour",
+                "stats": "Opérations",
+                "summary": "Résumé Financier",
+                "worst": "Pire"
+            },
+            "subtitle": "Revue comportementale rapide",
+            "title": "Clôture du Jour",
+            "toasts": {
+                "rateFirst": "Veuillez d'abord évaluer votre journée.",
+                "saveSuccess": "Clôture quotidienne enregistrée avec succès ! 🎯",
+                "shieldWall": "Shield Wall ! Discipline étendue sur {days} jours consécutifs !",
+                "streakBroken": "Série de discipline brisée. L'objectif est maintenant de reprendre le contrôle demain."
+            }
+        },
+        "imminentRisks": "Risques Imminents",
+        "operationalTitle": "Rapport de Performance Opérationnelle",
+        "pdf": {
+            "aiAudit": "Audit IA (Mécanique)",
+            "auditedPeriod": "Période Auditée",
+            "competitiveAdvantages": "Avantages Compétitifs",
+            "daysRead": "Jours Lus",
+            "documentedSessions": "Sessions Documentées",
+            "emotionalControl": "Contrôle Émotionnel",
+            "executionCut": "Coupe Exécution (Économique)",
+            "executionPlan": "Plan d'Exécution",
+            "finalDiagnosis": "Diagnostic Final",
+            "financialStats": "Statistiques Financières Officielles",
+            "functionalSystem": "Système fonctionnel, zéro défaut critique.",
+            "imminentRisks": "Risques Imminents",
+            "inDays": "en",
+            "infractions": "Infractions (Haute Sévérité)",
+            "linearOperation": "Trade linéaire sans écarts pertinents par rapport au Setup.",
+            "lossesUnderNegative": "des pertes sont survenues sous un état émotionnel négatif",
+            "masterScore": "Master Score",
+            "medianNoJumps": "Médian, sans sauts mathématiques en faveur.",
+            "netPnl": "Net (PnL)",
+            "noDailyReview": "Vous avez opéré sans enregistrer de revue quotidienne. Cela réduit la capacité d'audit et d'apprentissage de la période.",
+            "noGraveRisks": "Aucun risque matriciel grave identifié.",
+            "noTrades": "Aucun trade enregistré dans la fenêtre sélectionnée.",
+            "offendersEdges": "Offenseurs & Edges",
+            "postMarketSummary": "Résumé Post-Marché",
+            "preservedStreaks": "Séries Préservées (Fenêtre)",
+            "primaryObservations": "Observations Primaires (Extraits)",
+            "profitFactor": "Profit Factor",
+            "psychologicalDaily": "Psychologique (Quotidien)",
+            "qualitativeScore": "Évaluation Qualitative (Score)",
+            "riskManagement": "Gestion des Risques (Limites)",
+            "scoreUnavailable": "Score indisponible sans volume opérationnel.",
+            "tiltPrevention": "Prévention du Tilt",
+            "title": "Rapport de Performance Opérationnelle",
+            "tradeVolume": "Volume d'Affaires",
+            "unbreakableDiscipline": "Discipline Inébranlable",
+            "unsupportedEvaluations": "Évaluations non étayées par des textes descriptifs suffisants.",
+            "winRate": "Win Rate",
+            "trades": "Opérations"
+        },
+        "scoreUnavailable": "Score indisponible sans volume de trades.",
+        "ui": {
+            "exportTitle": "Exportation Directe en PDF",
+            "exportDesc": "Le fichier sera généré de manière masquée garantissant le format Institutionnel en 2 pages. Le visuel à l'écran restera propre (Mode Sombre).",
+            "generating": "Génération du Document...",
+            "exportAction": "Exporter en PDF",
+            "performanceReportTitle": "Rapport de Performance",
+            "auditorSubtitle": "Audit Professionnel Consolidé ({start} a {end})",
+            "sections": {
+                "summary": "1. Résumé de la Période",
+                "score": "2. Score Officiel de la Fenêtre (Évaluation Qualitative)",
+                "behavioral": "3. Audit Comportemental",
+                "reflection": "4. Journal & Réflexion Subjective",
+                "decision": "5. Couche de Décision (Direction Tactique)"
+            },
+            "metrics": {
+                "pnl": "Net (PnL)",
+                "winRate": "Win Rate",
+                "profitFactor": "Profit Factor",
+                "volume": "Volume (Trades / Jours)",
+                "activeDays": "{days}j actifs",
+                "executionCut": "Coupe Exécution",
+                "riskCut": "Coupe Risque",
+                "behavior": "Comportement",
+                "psychological": "Psychologique",
+                "masterScore": "Master Score",
+                "streaksTitle": "Séries de la Fenêtre",
+                "unbreakableDiscipline": "Discipline Inébranlable",
+                "emotionalControl": "Contrôle Émotionnel",
+                "noTilt": "No-Tilt (Blindage)"
+            },
+            "behavior": {
+                "offendersTitle": "Offenseurs de Système (Top Punitions)",
+                "edgesTitle": "Edges Trouvés (Top Bonus)",
+                "perfectSystem": "Système en parfait fonctionnement mécanique. Zéro défaut.",
+                "noAdvantages": "Aucun avantage exceptionnel comptabilisé.",
+                "noCriticalBehaviors": "Aucun comportement critique détecté sur la période. Rotation opérationnelle neutre."
+            },
+            "reflection": {
+                "rhythmTitle": "Rythme d'Enregistrement",
+                "extractsTitle": "Extraits Pertinents du Journal",
+                "noNotes": "Les évaluations enregistrées ne contiennent pas de textes assez longs pour une analyse qualitative.",
+                "noVolume": "Score indisponible sans volume opérationnel.",
+                "reviewMissing": "Vous avez opéré sans enregistrer de revue quotidienne. Cela réduit la capacité d'audit et d'apprentissage de la période."
+            },
+            "tactical": {
+                "finalDiagnosis": "Diagnostic Final",
+                "imminentRisks": "Risques Imminents",
+                "executionPlan": "Plan d'Exécution",
+                "noGraveRisks": "Aucun risque matriciel grave identifié."
+            },
+            "ai": {
+                "visionTitle": "Vision Executive du Portefeuille (IA)",
+                "visionDesc": "Croisement macro des KPIs et efficacité du capital.",
+                "visionError": "Échec de la génération de la Vision Executive.",
+                "error_no_config": "IA non configurée. Activez une clé API dans les paramètres.",
+                "generateAction": "Générer l'Analyse",
+                "retryAction": "Réessayer",
+                "institutionalSummary": "Résumé Institutionnel",
+                "coreAdvantage": "Avantage Principal",
+                "criticalPoint": "Point Critique",
+                "requiredFocus": "Focus Requis"
+            }
+        },
+        "ai": {
+            "error_no_config": "Configurez l'IA dans les paramètres."
+        }
+    }
+}

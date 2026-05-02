@@ -1,0 +1,22 @@
+{
+    "modalities": {
+        "title": "Operational Modalities",
+        "description": "Define trading timeframes (Day Trade, Swing Trade, Position...).",
+        "new": "New Modality",
+        "edit": "Edit Modality",
+        "empty": "No modalities configured.",
+        "searchPlaceholder": "Filter modalities...",
+        "form": {
+            "name": "Modality Name",
+            "namePlaceholder": "Ex: Day Trade, Swing Trade...",
+            "code": "Internal Code",
+            "codePlaceholder": "Ex: DT, ST...",
+            "color": "Identification Color",
+            "createFirst": "Register First Modality",
+            "save": "Save Modality",
+            "description": "Description",
+            "descriptionPlaceholder": "Define the details of this modality...",
+            "noDescription": "No description defined"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "accounts": {
+        "description": "Gerencie suas contas de corretoras e mesas proprietárias.",
+        "edit": "Editar Conta",
+        "empty": "Nenhuma conta encontrada.",
+        "new": "Nova Conta",
+        "searchPlaceholder": "Buscar conta...",
+        "title": "Contas de Trading",
+        "types": {
+            "Demo": "Simuladores / Demo",
+            "Prop": "Mesas Proprietárias",
+            "Real": "Contas Reais"
+        },
+        "form": {
+            "addIcon": "Adicionar Ícone",
+            "balance": "Saldo Inicial",
+            "balanceLabel": "Saldo Atual",
+            "broker": "Corretora",
+            "brokerPlaceholder": "Ex: Binance, XP...",
+            "currency": "Moeda",
+            "icon": "Ícone",
+            "iconHint": "Clique para selecionar",
+            "nickname": "Apelido (Nickname)",
+            "nicknamePlaceholder": "Ex: Conta Principal",
+            "number": "Número da Conta",
+            "numberPlaceholder": "Ex: 12345-6",
+            "save": "Salvar Conta",
+            "saving": "Salvando...",
+            "titleEdit": "Editar Conta",
+            "titleNew": "Criar Conta",
+            "type": "Tipo",
+            "linkMarket": "VINCULAR AO MERCADO",
+            "linkMarketPlaceholder": "Selecione o Mercado Principal",
+            "openingBalance": "Saldo de Abertura / Atual",
+            "optional": "Opcional",
+            "createFirst": "Cadastrar Primeira Conta",
+            "unknownAccount": "Conta Desconhecida",
+            "noBroker": "Sem Corretora",
+            "nicknameRequired": "O apelido da conta é obrigatório."
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "timeframes": {
+        "description": "Configure the operational graphical timeframes.",
+        "displayName": "Display Name",
+        "edit": "Edit Timeframe",
+        "empty": "No timeframe found",
+        "namePlaceholder": "Ex: 5 Minutes",
+        "new": "New Interval",
+        "searchPlaceholder": "Search timeframe...",
+        "title": "Timeframes",
+        "value": "Value / Code",
+        "valuePlaceholder": "Ex: 5m, 1H, 1D",
+        "form": {
+            "cancel": "Cancel",
+            "createFirst": "Register First Timeframe",
+            "save": "Save"
+        }
+    }
+}

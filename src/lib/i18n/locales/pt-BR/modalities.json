@@ -1,0 +1,22 @@
+{
+    "modalities": {
+        "title": "Modalidades Operacionais",
+        "description": "Defina os tempos de operação (Day Trade, Swing Trade, Position...).",
+        "new": "Nova Modalidade",
+        "edit": "Editar Modalidade",
+        "empty": "Nenhuma modalidade configurada.",
+        "searchPlaceholder": "Filtrar modalidades...",
+        "form": {
+            "name": "Nome da Modalidade",
+            "namePlaceholder": "Ex: Day Trade, Swing Trade...",
+            "code": "Código Interno",
+            "codePlaceholder": "Ex: DT, ST...",
+            "color": "Cor de Identificação",
+            "createFirst": "Cadastrar Primeira Modalidade",
+            "save": "Salvar Modalidade",
+            "description": "Descrição",
+            "descriptionPlaceholder": "Defina os detalhes desta modalidade...",
+            "noDescription": "Sem descrição definida"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "chartTypes": {
+        "description": "Define the chart types you use (Candle, Renko, etc.).",
+        "edit": "Edit Type",
+        "empty": "No chart type found",
+        "methodology": "Methodology",
+        "name": "Chart Name",
+        "namePlaceholder": "Ex: 10R Renko, 5 Minutes...",
+        "new": "New Type",
+        "parameter": "Parameter (Optional)",
+        "parameterPlaceholder": "Ex: 10, 5, 21...",
+        "searchPlaceholder": "Search chart type...",
+        "title": "Chart Types",
+        "types": {
+            "Range": "Range Bar",
+            "Renko": "Renko",
+            "TimeBased": "Time-Based (Candle/Bar)"
+        },
+        "form": {
+            "cancel": "Cancel",
+            "createFirst": "Register First Chart Type",
+            "save": "Save"
+        }
+    }
+}

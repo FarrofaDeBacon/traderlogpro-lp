@@ -1,0 +1,18 @@
+{
+    "filters": {
+        "date": {
+            "all": "Todo el Período",
+            "custom": "Personalizado",
+            "last_month": "Mes Pasado",
+            "last_week": "Semana Pasada",
+            "last_year": "Año Pasado",
+            "select": "Seleccionar Período",
+            "this_month": "Este Mes",
+            "this_week": "Esta Semana",
+            "this_year": "Este Año",
+            "today": "Hoy",
+            "yesterday": "Ayer",
+            "period": "Período"
+        }
+    }
+}

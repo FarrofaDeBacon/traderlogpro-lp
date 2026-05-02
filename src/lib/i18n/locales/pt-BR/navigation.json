@@ -1,0 +1,45 @@
+{
+    "header": {
+        "searchPlaceholder": "Pesquisar...",
+        "toggleUserMenu": "Alternar Menu do Usuário",
+        "userMenu": {
+            "logout": "Sair",
+            "myAccount": "Minha Conta",
+            "settings": "Configurações",
+            "support": "Suporte"
+        }
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "finance": "Financeiro",
+        "fiscal": {
+            "irpf": "Imposto de Renda",
+            "darf": "Gerenciar DARFs"
+        },
+        "help": "Ajuda",
+        "psychology": "Psicologia",
+        "risk": "Cockpit de Risco",
+        "settings": "Configurações",
+        "strategies": "Estratégias",
+        "reports": "Relatórios",
+        "trades": "Negociações"
+    },
+    "sidebar": {
+        "categories": {
+            "analysis": "Análise",
+            "risk": "Gestão de Risco",
+            "fiscal": "Fiscal",
+            "support": "Suporte",
+            "workspace": "Início"
+        },
+        "dashboard": "Painel",
+        "finance": "Hub Financeiro",
+        "help": "Central de Ajuda",
+        "irpf": "Fiscal",
+        "psychology": "Psicologia",
+        "settings": "Configurações",
+        "strategies": "Estratégias",
+        "reports": "Relatórios",
+        "trades": "Negociações"
+    }
+}

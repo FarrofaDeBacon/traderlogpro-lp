@@ -1,0 +1,145 @@
+<script lang="ts">
+  import { currenciesStore } from "$lib/stores/currencies.svelte";
+  import { accountsStore } from "$lib/stores/accounts.svelte";
+    import { t } from "svelte-i18n";
+    import EChart from "$lib/components/ui/echart.svelte";
+    import { appStore } from "$lib/stores/app.svelte";
+    import { tradesStore } from "$lib/stores/trades.svelte";
+    import { formatCurrency } from "$lib/utils";
+
+    let { trades = [] } = $props();
+
+    const chartOptions = $derived.by(() => {
+        // Explicitly track trades for reactivity via snapshot
+        const tradesData = $state.snapshot(trades);
+
+        let gainCount = 0;
+        let lossCount = 0;
+        let beCount = 0;
+
+        tradesData.forEach((t) => {
+            const res = tradesStore.getConvertedTradeResult(
+                t,
+                accountsStore.accounts,
+                currenciesStore.currencies,
+            );
+            if (res > 0) gainCount++;
+            else if (res < 0) lossCount++;
+            else beCount++;
+        });
+
+        const gainLabel = $t("trades.charts.outcome.gain");
+        const lossLabel = $t("trades.charts.outcome.loss");
+        const beLabel = $t("trades.charts.outcome.be", { default: "B.E." });
+        const emptyLabel = $t("trades.charts.outcome.vazio", { default: "Vazio" });
+
+        const data = [];
+        if (gainCount > 0)
+            data.push({
+                value: gainCount,
+                name: gainLabel,
+                itemStyle: { color: "#10b981" },
+            });
+        if (lossCount > 0)
+            data.push({
+                value: lossCount,
+                name: lossLabel,
+                itemStyle: { color: "#f43f5e" },
+            });
+        if (beCount > 0)
+            data.push({
+                value: beCount,
+                name: beLabel,
+                itemStyle: { color: "#71717a" },
+            });
+
+        // Fallback for empty data
+        const finalData =
+            data.length > 0
+                ? data
+                : [
+                      {
+                          value: 1,
+                          name: emptyLabel,
+                          itemStyle: { color: "rgba(128, 128, 128, 0.1)" },
+                          label: { show: false },
+                      },
+                  ];
+
+        return {
+            backgroundColor: "transparent",
+            tooltip: {
+                trigger: "item",
+                backgroundColor: "rgba(0, 0, 0, 0.8)",
+                borderColor: "rgba(255, 255, 255, 0.1)",
+                textStyle: { color: "#fff", fontSize: 10 },
+                formatter: "{b}: <b>{c}</b> ({d}%)",
+            },
+            legend: {
+                orient: "horizontal",
+                bottom: 0,
+                left: "center",
+                itemWidth: 8,
+                itemHeight: 8,
+                textStyle: {
+                    color: "#71717a",
+                    fontSize: 10,
+                    fontWeight: "bold",
+                },
+            },
+            series: [
+                {
+                    type: "pie",
+                    radius: ["40%", "60%"],
+                    center: ["50%", "42%"],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 4,
+                        borderColor: "transparent",
+                        borderWidth: 2,
+                    },
+                    label: {
+                        show: true,
+                        position: "center",
+                        formatter: () =>
+                            `{total|${tradesData.length}}\n{label|${$t("trades.kpi.trades_label")}}`,
+                        rich: {
+                            total: {
+                                fontSize: 11,
+                                fontWeight: "black",
+                                fontFamily: "JetBrains Mono, monospace",
+                                color: "inherit",
+                            },
+                            label: {
+                                fontSize: 6,
+                                fontWeight: "black",
+                                color: "#52525b",
+                                padding: [1, 0, 0, 0],
+                            },
+                        },
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                        },
+                    },
+                    data: finalData,
+                },
+            ],
+        };
+    });
+</script>
+
+<div class="relative w-full h-full">
+    {#if trades.length > 0}
+        {#key trades}
+            <EChart options={chartOptions} class="absolute inset-0" />
+        {/key}
+    {:else}
+        <div
+            class="absolute inset-0 flex items-center justify-center text-muted-foreground italic text-[10px]"
+        >
+            {$t("common.noData", { default: "Sem dados" })}
+        </div>
+    {/if}
+</div>

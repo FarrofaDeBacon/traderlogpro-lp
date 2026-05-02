@@ -1,0 +1,364 @@
+{
+    "analysis": {
+        "psychology": {
+            "journal_main": {
+                "empty": {
+                    "description": "Start recording your mindset today.",
+                    "title": "No notes yet"
+                },
+                "newNote": "New Note",
+                "title": "Trading Journal"
+            },
+            "ai": {
+                "analyze": "Analyze",
+                "behaviorAnalysis": "Behavioral Analysis",
+                "crossReference": "We cross-reference the mathematical findings on the left with the Artificial Intelligence engine to generate instant tactical tips.",
+                "integrations": "Integrations",
+                "mapping": "Mapping...",
+                "mentor": "AI Mentor",
+                "noAiLinked": "No AI linked to your Psychology layer. Activate your key to unlock the interpretative analyzer of the mathematical base.",
+                "rediagnose": "Rediagnose",
+                "updating": "Updating..."
+            },
+            "analysis": {
+                "emotionalCalc": "Emotional Calculation",
+                "hierarchy": "Hierarchy",
+                "title": "Behavioral Mapping",
+                "totalWeight": "Total Weight"
+            },
+            "charts": {
+                "correlation": "Correlation: Emotion x Result (Daily)",
+                "equityCurve": "Tactical Equity Curve in Period",
+                "filterPeriod": "Filter a period with data",
+                "pnlByEmotion": "Financial Result by Emotion",
+                "resultTitle": "Result vs Emotional",
+                "theMap": "The Map",
+                "top5": "Top 5 Segmented",
+                "winRate": "Efficiency %",
+                "winRateTitle": "Win Rate vs Emotional",
+                "impactRanking": "Impact Ranking",
+                "emotion": "Emotion",
+                "trades": "Trades"
+            },
+            "checkin": {
+                "button": "New Record",
+                "date": "Trade Date",
+                "description": "Record how you were feeling at the time of this trade.",
+                "intensity": "Intensity",
+                "intensityLabel": "Intensity Level",
+                "intensity_label": "Intensity",
+                "intensity_placeholder": "What is the intensity (1-10)?",
+                "notesLabel": "Additional Observations",
+                "notesPlaceholder": "What triggered this? (Optional)",
+                "save": "Save Check-in",
+                "stateLabel": "Emotional State",
+                "statePlaceholder": "Select the predominant emotion",
+                "success": "Record saved successfully!",
+                "title": "Emotional Check-in"
+            },
+            "deleteDialog": {
+                "cancel": "Cancel",
+                "confirm": "Delete",
+                "description": "Are you sure you want to delete this emotional record? This action cannot be undone.",
+                "title": "Confirm Deletion"
+            },
+            "description": "Understand how your emotions impact your financial result.",
+            "filters": {
+                "groupBy": "Group by"
+            },
+            "hierarchical": {
+                "sessionsStructure": "Sessions and Hierarchical Structure"
+            },
+            "insight": {
+                "formulaTitle": "How did we get this score?",
+                "opScore": "Score",
+                "title": "Calculation Detail and Impact"
+            },
+            "journal": {
+                "entryStateShort": "INT. STATE (SHORT)",
+                "exitStateShort": "EXT. STATE (SHORT)",
+                "intensityShort": "INTENSITY",
+                "score": "Score (0-10)",
+                "title": "Direct Records and Trades"
+            },
+            "journalList": {
+                "date": "Date",
+                "emotion": "Emotion",
+                "intensity": "Intensity",
+                "noEntries": "No records found.",
+                "notes": "Notes",
+                "title": "Emotional Journal"
+            },
+            "kpi": {
+                "accumulatedLoss": "Accumulated Loss",
+                "bestMindset": "Best Mindset",
+                "consolidated": "Consolidated",
+                "records": "Journal Records",
+                "recordsDescription": "Evaluations completed on the platform",
+                "tiltCost": "The Cost of Tilt",
+                "tiltDescription": "The total sum of losses trading outside the control zone is {value}",
+                "unregistered": "Not Registered",
+                "unregisteredDescription": "Trades without check-in",
+                "worstMindset": "Worst Mindset"
+            },
+            "kpis": {
+                "bestPerformance": "Peak State",
+                "negativeLosses": "Emotional Drain",
+                "offender": "Critical Vulnerability",
+                "psychoScore": "Psychological Index",
+                "score": "SCORE"
+            },
+            "list": {
+                "asset": "Asset",
+                "date": "Date",
+                "entryState": "State (Entry)",
+                "exitState": "State (Exit)",
+                "noTrades": "No trades registered.",
+                "result": "Result",
+                "title": "Last Registered Trades",
+                "unknown": "Not Registered",
+                "unknownBadge": "Unknown"
+            },
+            "syncWeights": "Sync Weights",
+            "title": "Psychological Analysis"
+        },
+        "strategies": {
+            "empty": "No strategy registered.",
+            "description": "Document your setups and operational rules.",
+            "new": "New Strategy",
+            "edit": "Edit Strategy",
+            "searchPlaceholder": "Search strategy...",
+            "form": {
+                "addImage": "Add",
+                "assetTypes": "Asset Types",
+                "cancel": "Cancel",
+                "description": "Summary Description",
+                "descriptionPlaceholder": "Ex: Correction setup...",
+                "entryPlaceholder": "What defines the entry?",
+                "entryTriggers": "1. Entry Triggers",
+                "indicators": "Indicators",
+                "linkedMarkets": "Linked Markets",
+                "management": "3. Management / Conduct",
+                "managementPlaceholder": "Trailing stop? Breakeven?",
+                "name": "Strategy Name",
+                "namePlaceholder": "Ex: MME9 Pullback",
+                "noMarketSelected": "No market selected.",
+                "operationalContext": "Operational Context",
+                "partials": {
+                    "placeholder": "Describe partial rule...",
+                    "switch": "Perform Partial Exits?"
+                },
+                "addIndicator": "Add Indicator",
+                "addTimeframe": "Add Time",
+                "addAssetType": "Add Instrument",
+                "addAsset": "Add Asset",
+                "partialDetails": "Partial Details",
+                "imageCaption": "Caption...",
+                "save": "Save Strategy",
+                "select": "Select",
+                "specificAssets": "Specific Assets",
+                "stopExit": "2. Stop / Exit",
+                "stopPlaceholder": "Where is the stop?",
+                "timeframes": "Timeframes",
+                "tips": {
+                    "noImages": "No images"
+                },
+                "visualExamples": "Visual Examples"
+            },
+            "currency_modes": {
+                "main": "Main",
+                "original": "Original"
+            },
+            "aiCockpit": {
+                "ctaBtn": "AI Vision Cockpit",
+                "title": "AI Vision Cockpit",
+                "health": {
+                    "title": "Strategy Health",
+                    "status": "Status",
+                    "currentRisk": "Exposure Risk",
+                    "stability": "Mathematical Stability"
+                },
+                "psychology": {
+                    "title": "Strategy x Psychology",
+                    "infractionRate": "Loss due to Indiscipline:",
+                    "dominantEmotion": "Dominant Emotion:"
+                },
+                "xray": {
+                    "title": "Operational X-Ray",
+                    "bestAsset": "Best Asset",
+                    "worstAsset": "Worst Asset",
+                    "bestTime": "Best Window",
+                    "worstTime": "Worst Window",
+                    "bestSide": "Predominant Side"
+                },
+                "ai": {
+                    "title": "AI Reading",
+                    "desc": "Data cross-referencing and tactical suggestions.",
+                    "insufficientVolume": "Insufficient volume for deep analysis.",
+                    "actions": {
+                        "reduce": "Action: Aggressively reduce lot splitting or temporarily freeze operations.",
+                        "maintain": "Action: Maintain full volume. Let profits overflow in the geometric law of original targets.",
+                        "bias": "Action: Adopt the predominant direction ({direction}) as primary bias to stabilize short drawdowns.",
+                        "continue": "Continue executing the strategy within parameters to allow the algorithm to calibrate efficiency reading."
+                    },
+                    "messages": {
+                        "critical": "This strategy's capital is exposed to a Drawdown incompatible with the Payoff.",
+                        "hot": "The system vibrates in maximum harmony. Operational and emotional flow prove directional consistency.",
+                        "maturing": "Consistency in maturation. Results suffer cross-friction (Hot/Cold) between asset classes or hourly sessions."
+                    },
+                    "error": "Error processing AI."
+                },
+                "values": {
+                    "HOT": "HOT (Active Edge)",
+                    "COLD": "COLD (Inactive Edge)",
+                    "LEVEL": "NEUTRAL",
+                    "LOW": "LOW",
+                    "CRITICAL": "CRITICAL",
+                    "MODERATE": "MODERATE",
+                    "STABLE": "STABLE",
+                    "UNSTABLE": "UNSTABLE",
+                    "BUY": "BUY",
+                    "SELL": "SELL",
+                    "Buy": "Buy",
+                    "Sell": "Sell",
+                    "buy": "buy",
+                    "sell": "sell",
+                    "winRateShort": "WR"
+                }
+            },
+            "strategyCard": {
+                "totalResult": "Total Result",
+                "tradesSuffix": "trades",
+                "viewAnalysis": "View Full Analysis"
+            },
+            "strategyDashboard": {
+                "charts": {
+                    "drawdown": "Drawdown",
+                    "drawdownStrategy": "Drawdown (Strategy)",
+                    "equity": "Net Equity",
+                    "equityStrategy": "Equity (Strategy)"
+                },
+                "heatmap": {
+                    "days": {
+                        "fri": "Fri",
+                        "mon": "Mon",
+                        "sat": "Sat",
+                        "sun": "Sun",
+                        "thu": "Thu",
+                        "tue": "Tue",
+                        "wed": "Wed"
+                    },
+                    "legend": {
+                        "breakeven": "Breakeven",
+                        "loss": "Loss",
+                        "profit": "Profit",
+                        "strongLoss": "High Loss",
+                        "strongProfit": "High Profit"
+                    },
+                    "noMarket": "No linked market",
+                    "subtitle": "Accumulated performance by Weekday and Hour",
+                    "title": "Heatmap (PnL)",
+                    "tooltip": {
+                        "loss": "Loss",
+                        "neutral": "Neutral",
+                        "profit": "Profit",
+                        "status": "Status"
+                    }
+                },
+                "messages": {
+                    "noTrades": "No trades in selected period."
+                },
+                "stats": {
+                    "averageLoss": "Average Loss",
+                    "averageWin": "Average Win",
+                    "avgDurationLoss": "Avg Duration (Loss)",
+                    "avgDurationWin": "Avg Duration (Profit)",
+                    "avgInterval": "Interval Between Trades",
+                    "avgTimeBetweenTrades": "Avg Time between Trades",
+                    "bestTrade": "Best Trade",
+                    "consecutiveLosses": "Consecutive Losses",
+                    "consecutiveWins": "Consecutive Wins",
+                    "mathExpectation": "Mathematical Expectation",
+                    "maxDrawdown": "Max Drawdown",
+                    "netResult": "Net Result",
+                    "operations": "Trades",
+                    "payoff": "Payoff",
+                    "planAdherence": "Plan Adherence",
+                    "profitFactor": "Profit Factor",
+                    "recoveryFactor": "Recovery Factor",
+                    "totalTrades": "Total Trades",
+                    "winRate": "Win Rate",
+                    "winningTrades": "Winning Trades",
+                    "worstTrade": "Worst Trade"
+                },
+                "subtitle": "Welcome to your command center.",
+                "summary": {
+                    "chartPlaceholder": "Performance Chart (Soon)",
+                    "noTrades": "No trades performed today.",
+                    "title": "Day Summary"
+                },
+                "tabs": {
+                    "dashboard": "Dashboard",
+                    "dossier": "Strategy Dossier",
+                    "gann": "Gann Vibrations"
+                },
+                "title": "Dashboard"
+            },
+            "strategyDossier": {
+                "all": "All",
+                "assetTypes": "Asset Types",
+                "context": "Operational Context",
+                "daysSuffix": "days",
+                "entryTriggers": "Entry Triggers",
+                "exit": "Stop / Exit",
+                "indicators": "Indicators",
+                "linkedMarkets": "Linked Markets",
+                "management": "Management / Conduct",
+                "multi": "MULTI",
+                "noCriteria": "No criteria defined.",
+                "noImages": "No images attached.",
+                "noLinkedMarket": "No specifically linked market (Free Time).",
+                "partials": "Partial Exits",
+                "specificAssets": "Specific Assets",
+                "timeframes": "Timeframes",
+                "visualExamples": "Visual Examples"
+            },
+            "strategyGann": {
+                "accuracy": "Accuracy",
+                "adherence": "Adherence",
+                "alignment": "Alignment",
+                "alignmentDesc": "SQ9 Level Entries",
+                "analyticalConfluence": "Analytical Confluence",
+                "angleScore": "Angle Score",
+                "confluenceDesc": "How this strategy reacts to Gann's Mathematical Laws",
+                "cycleWatch": "Cycle Watch",
+                "cycleWatchDesc": "Win Rate on Natural Dates",
+                "geometricPrecision": "Geometric Precision",
+                "geometryLaw": "Geometry Law",
+                "geometryLawDesc": "Angle Adherence represents the balance between Price and Time. Strategies that respect geometric angles (like 45°) are considered stable and sustainable throughout the Master Cycle.",
+                "mastery": "Gann Mastery",
+                "mathematicalConfluence": "Mathematical Confluence",
+                "success": "Success",
+                "timeLaw": "Time Law",
+                "timeLawDesc": "Cycle Success Rate reveals if this strategy is \"seasonal\". Gann believed time is the most important factor; this score indicates if the strategy edge is amplified during Season Changes.",
+                "vibrationLaw": "Vibration Law",
+                "vibrationLawDesc": "The strategy's alignment with the vibrations of the Square of Nine measures entry quality. A high score suggests the strategy naturally finds liquidity at Gann's mathematical expansion points."
+            },
+            "strategyList": {
+                "description": "Track the statistical performance of your operational setups.",
+                "new": "New",
+                "notFound": {
+                    "action": "Go to Settings",
+                    "description": "We didn't find setups with the current filters. How about creating a new one in Settings?",
+                    "title": "No strategy found"
+                },
+                "searchPlaceholder": "Search strategy...",
+                "title": "Strategies"
+            },
+            "strategyNotFound": "Strategy not found",
+            "strategy": {
+                "notFound": "Strategy not found"
+            }
+        }
+    }
+}

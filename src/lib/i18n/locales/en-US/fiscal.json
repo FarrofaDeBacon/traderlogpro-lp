@@ -1,0 +1,246 @@
+{
+    "fiscal": {
+        "irpf": {
+            "title": "IRPF Appraisal",
+            "description": "View and track the monthly income tax calculation on your trades.",
+            "history": "Appraisal History",
+            "kpis": {
+                "calculationBasis": "Calculation Basis",
+                "taxDue": "Tax Due",
+                "compensatedLosses": "Compensated Loss",
+                "netProfit": "Net Profit",
+                "totalDue": "Total Due",
+                "dueYearHint": "Expected payment in the year",
+                "totalPaid": "Total Paid",
+                "paidYearHint": "DARFs settled in the period",
+                "pending": "Current Pending",
+                "pendingHint": "{count} Pending Guides",
+                "losses": "Accumulated Losses"
+            },
+            "manageDarfs": "Manage DARFs",
+            "newAppraisal": "New Appraisal",
+            "evolution": "Fiscal Evolution",
+            "periodFilter": "Period Filter",
+            "saveBeforeDarf": "Save the appraisal before generating the DARF.",
+            "complementary": "Complementary",
+            "table": {
+                "month": "Month",
+                "netProfit": "Gross Result",
+                "base": "Calc. Basis",
+                "tax": "Tax Due",
+                "status": "Status",
+                "paid": "Paid",
+                "pending": "Pending",
+                "late": "Late",
+                "ok": "OK",
+                "toPay": "Total to Pay",
+                "compensated": "Compensated",
+                "operation": "Operation Type",
+                "actions": "Actions",
+                "shortNet": "Net",
+                "alreadyGenerated": "DARF already generated for this month.",
+                "cannotDelete": "Cannot delete a paid DARF.",
+                "generateDarf": "Generate DARF"
+            },
+            "messages": {
+                "loading": "Loading fiscal appraisal...",
+                "noData": "No appraisal found for the year {year}."
+            },
+            "calculate": "Calculate",
+            "calculating": "Calculating...",
+            "modal": {
+                "title": "New Monthly Appraisal",
+                "description": "Select the month and year to calculate the IRPF appraisal.",
+                "month": "Reference Month",
+                "year": "Reference Year"
+            }
+        },
+        "darf": {
+            "title": "DARF Management",
+            "description": "Control your tax guides, make payments, and keep an organized history.",
+            "active": "PENDING / TOTAL GUIDES",
+            "history": "Payment History for {year}",
+            "emptyHistory": "No paid DARF found in {year}.",
+            "accountError": "Select an account to make the payment.",
+            "registerPayment": "Register DARF Payment",
+            "paymentDescription": "Enter the payment details so the system can update your balance.",
+            "sourceAccount": "Payment Account",
+            "selectAccount": "Select account...",
+            "principalValue": "Principal Value",
+            "fineInterest": "Fine / Interest",
+            "totalPaid": "Total Paid",
+            "complementaryWarning": "Complementary DARF Alert",
+            "complementaryDescription": "The result for this month has increased by {amount}. Check if a complementary DARF is needed to avoid late fines.",
+            "min_value_info": "Remember: The minimum value for issuing a DARF is R$ 10.00.",
+            "labels": {
+                "valueToPay": "Payment Value",
+                "dueDate": "Due Date",
+                "principal": "Principal Value",
+                "fine": "Fine",
+                "interest": "Interest",
+                "paymentDate": "Payment Date",
+                "totalPaid": "Total Paid Value"
+            },
+            "status": {
+                "pending": "Pending",
+                "paid": "Paid",
+                "late": "Overdue"
+            },
+            "buttons": {
+                "pay": "Pay DARF",
+                "view": "View DARF",
+                "delete": "Remove",
+                "unpay": "Undo Payment",
+                "cancel": "Cancel",
+                "confirmPay": "Confirm Payment",
+                "confirmUnpay": "Revert Payment"
+            },
+            "messages": {
+                "loading": "Loading guide history...",
+                "successPay": "DARF marked as paid and balance updated!",
+                "successDelete": "DARF successfully removed.",
+                "successUnpay": "Payment successfully undone.",
+                "emptyHistory": "No DARF generated yet."
+            },
+            "modal": {
+                "pay": {
+                    "noAccount": "Please select an account."
+                },
+                "delete": {
+                    "title": "Delete DARF",
+                    "prompt": "Are you sure you want to delete this DARF?"
+                },
+                "unpay": {
+                    "title": "Revert Payment",
+                    "descriptionLine1": "By reverting, the DARF will return to pending status.",
+                    "descriptionLine2": "You can pay again at any time.",
+                    "descriptionLine3": "Do you want to continue?"
+                }
+            }
+        },
+        "settings": {
+            "title": "Fiscal Rules",
+            "description": "Configure tax rates (IRPF) for each asset type and modality.",
+            "tabs": {
+                "mappings": "Assignments",
+                "rules": "Tax Rules"
+            },
+            "assignments": {
+                "title": "Fiscal Assignments",
+                "description": "Assign fiscal profiles to asset types to automate tax calculation.",
+                "searchPlaceholder": "Search asset type...",
+                "goToAssetTypes": "Go to Asset Types",
+                "tip": {
+                    "title": "Tip:",
+                    "text": "Assignments are based on Asset Types. You can change the fiscal profile by editing the corresponding Asset Type."
+                },
+                "table": {
+                    "assetType": "Asset Type",
+                    "market": "Market",
+                    "fiscalProfile": "Fiscal Profile",
+                    "defaultExempt": "Default / Exempt",
+                    "unknownProfile": "Unknown Profile",
+                    "empty": "No assignments found.",
+                    "code": "Code"
+                }
+            },
+            "profiles": {
+                "title": "Fiscal Profiles",
+                "description": "Fiscal profiles consolidate various rules.",
+                "new": "New Profile",
+                "create": "Create Profile",
+                "empty": "No fiscal profile found.",
+                "linkedRules": "Linked Rules",
+                "noLinkedRules": "No linked rules.",
+                "form": {
+                    "titleNew": "New Profile",
+                    "titleEdit": "Edit Profile",
+                    "name": "Name",
+                    "namePlaceholder": "Ex: Stock Profile",
+                    "descriptionLabel": "Description",
+                    "descriptionPlaceholder": "Profile description...",
+                    "modality": "Modality",
+                    "rule": "Fiscal Rule",
+                    "save": "Save",
+                    "saving": "Saving...",
+                    "update": "Update",
+                    "select": "Select...",
+                    "addModalityHint": "Click + to add a rule to a modality.",
+                    "rulesByModality": "Rules by Modality",
+                    "emptyRules": "No rules added.",
+                    "description": "Fiscal profile description",
+                    "linkBuilder": "Link Builder",
+                    "activeLinks": "Active Links",
+                    "emptyLinks": "No links configured.<br/>Use the builder below.",
+                    "selectionRequired": "Select modality and rule.",
+                    "linkExists": "Link already exists.",
+                    "createFirst": "Register First Fiscal Profile"
+                },
+                "success": {
+                    "create": "Profile created successfully.",
+                    "update": "Profile updated successfully.",
+                    "ruleAdded": "Rule added successfully.",
+                    "ruleAddedDraft": "Rule added as draft.",
+                    "ruleRemoved": "Rule removed successfully.",
+                    "ruleRemovedDraft": "Rule removed from draft."
+                },
+                "error": {
+                    "nameRequired": "Name is required",
+                    "duplicateModality": "This modality is already configured.",
+                    "saveError": "Error saving profile",
+                    "selectRequired": "Selection required",
+                    "errorAddEntry": "Error adding entry"
+                }
+            },
+            "rules": {
+                "title": "Tax Rules",
+                "description": "Individual fiscal rules.",
+                "new": "New Rule",
+                "empty": "No fiscal rule configured.",
+                "searchPlaceholder": "Search fiscal rule...",
+                "form": {
+                    "titleNew": "New Fiscal Rule",
+                    "titleEdit": "Edit Fiscal Rule",
+                    "name": "Name",
+                    "namePlaceholder": "Ex: Day Trade Rule",
+                    "nameRequired": "Rule name is required.",
+                    "modality": "Modality",
+                    "rate": "Rate",
+                    "rateHint": "Tax percentage due",
+                    "revenueCode": "Revenue Code",
+                    "revenueCodePlaceholder": "Ex: 6015",
+                    "revenueCodeHint": "DARF code for payment (Ex: 6015, 3317).",
+                    "exemption": "Exemption",
+                    "exemptionHint": "Tax-exempt value",
+                    "cumulative": "Compensates Losses",
+                    "cumulativeHint": "Allows offsetting losses from previous months.",
+                    "basis": "Calculation Basis",
+                    "basisOptions": {
+                        "netProfit": "Net Profit",
+                        "saleAmount": "Sale Amount"
+                    },
+                    "withholding": "IRRF (Withholding)",
+                    "withholdingHint": "Percentage withheld at source that can be offset.",
+                    "withholdingBasis": "Withholding Basis",
+                    "withholdingBasisOptions": {
+                        "profit": "On Profit",
+                        "sales": "On Sale Amount"
+                    },
+                    "save": "Save Rule",
+                    "successSave": "Rule saved successfully!",
+                    "errorSave": "Error saving fiscal rule.",
+                    "basisHint": "Tax calculation basis",
+                    "withholdingBasisHint": "Withholding calculation basis",
+                    "createFirst": "Register First Fiscal Rule"
+                }
+            },
+            "mappings": {
+                "description": "Link each Asset Type and Modality to a Fiscal Rule.",
+                "assetType": "Asset Type",
+                "modality": "Modality",
+                "rule": "Applicable Rule",
+                "noRule": "No Rule (Exempt/Ignored)"
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "indicators": {
+        "add": "Añadir",
+        "addFirst": "Añadir el primero",
+        "categories": {
+            "Oscillator": "Oscilador",
+            "Other": "Otros",
+            "Trend": "Tendencia",
+            "Volume": "Volumen"
+        },
+        "category": "Categoría",
+        "defaultColor": "Color Predeterminado",
+        "description": "Registre sus indicadores técnicos favoritos y configuraciones predeterminadas.",
+        "edit": "Editar Indicador",
+        "empty": "No se encontraron indicadores",
+        "modelHint": "Seleccione un modelo para completar automáticamente los campos de abajo.",
+        "name": "Nombre del Indicador",
+        "namePlaceholder": "Ej: MMA 20, RSI...",
+        "new": "Nuevo Indicador",
+        "noParams": "Ningún parámetro definido.",
+        "paramName": "Nombre",
+        "paramNameLabel": "Nombre",
+        "paramNamePlaceholder": "Ej: Período",
+        "paramValue": "Valor",
+        "parameters": "Parámetros",
+        "params": {
+            "Anchorage": "Anclaje",
+            "Daily": "Diaria",
+            "Deviation": "Desviación",
+            "Fast": "Rápida",
+            "Signal": "Señal",
+            "Slow": "Lenta"
+        },
+        "plotType": "Tipo de Trazado",
+        "plotTypes": {
+            "Overlay": "Superpuesto al Gráfico",
+            "SubWindow": "Ventana Separada"
+        },
+        "presets": {
+            "bb": "Bandas de Bollinger",
+            "custom": "Personalizado",
+            "ema": "Media Móvil Exponencial (EMA)",
+            "macd": "MACD",
+            "rsi": "RSI (Índice de Fuerza Relativa)",
+            "sma": "Media Móvil Simples (SMA)",
+            "vol": "Volumen Financiero",
+            "vwap": "VWAP"
+        },
+        "previewColor": "Previsualización de Color",
+        "quickModel": "Modelo Rápido",
+        "searchPlaceholder": "Buscar indicador...",
+        "selectModel": "Seleccione un modelo...",
+        "title": "Indicadores",
+        "usage": "Descripción de Uso",
+        "usagePlaceholder": "¿Cómo usa este indicador? (Ej: Compro cuando cruza hacia arriba...)",
+        "form": {
+            "cancel": "Cancelar",
+            "createFirst": "Registrar Primer Indicador",
+            "save": "Guardar"
+        }
+    }
+}

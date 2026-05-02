@@ -1,0 +1,10 @@
+{
+    "help": {
+        "emptyState": "No se encontraron resultados",
+        "emptyStateDescription": "Sin resultados. Cambie la búsqueda o use el menú lateral.",
+        "searchHint": "Buscar en el manual (ej: DARF, RTD, Estrategias)...",
+        "subtitle": "Encuentre respuestas y aprenda a usar todas las funcionalidades de TraderLog Pro.",
+        "title": "Centro de Ayuda",
+        "topics": "Temas"
+    }
+}

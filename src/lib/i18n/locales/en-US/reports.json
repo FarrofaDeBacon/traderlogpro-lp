@@ -1,0 +1,152 @@
+{
+    "reports": {
+        "behavior": {
+            "noCriticalBehaviors": "No critical behaviors detected in the period. Neutral operational rotation."
+        },
+        "reflection": {
+            "reviewMissing": "You operated without recording a daily review. This reduces the audit and learning capacity for the period.",
+            "extractsTitle": "Reflection Extracts",
+            "noNotes": "No notes recorded.",
+            "noVolume": "No data volume.",
+            "reviewCountLabel": "Reviews performed",
+            "rhythmTitle": "Operational Rhythm"
+        },
+        "daily": {
+            "actions": {
+                "save": "Save Closure"
+            },
+            "empty": "No operations found on this date.",
+            "ratings": {
+                "bad": "Bad",
+                "good": "Good",
+                "neutral": "Neutral",
+                "placeholder": "Quick rating (optional)... What did you learn today or where did you fail?"
+            },
+            "sections": {
+                "behavioral": "Behavioral Analysis",
+                "best": "Best",
+                "selfEvaluation": "Your Daily Evaluation",
+                "stats": "Operations",
+                "summary": "Financial Summary",
+                "worst": "Worst"
+            },
+            "subtitle": "Quick behavioral review",
+            "title": "Daily Closure",
+            "toasts": {
+                "rateFirst": "Please rate your day first.",
+                "saveSuccess": "Daily closure saved successfully! 🎯",
+                "shieldWall": "Shield Wall! Discipline extended for {days} consecutive days!",
+                "streakBroken": "Discipline streak broken. Focus is now on regaining control tomorrow."
+            }
+        },
+        "imminentRisks": "Imminent Risks",
+        "operationalTitle": "Operational Performance Report",
+        "pdf": {
+            "aiAudit": "AI Audit (Mechanical)",
+            "auditedPeriod": "Audited Period",
+            "competitiveAdvantages": "Competitive Advantages",
+            "daysRead": "Days Read",
+            "documentedSessions": "Documented Sessions",
+            "emotionalControl": "Emotional Control",
+            "executionCut": "Execution Cut (Economic)",
+            "executionPlan": "Execution Plan",
+            "finalDiagnosis": "Final Diagnosis",
+            "financialStats": "Official Financial Statistics",
+            "functionalSystem": "Functional system, zero critical failures.",
+            "imminentRisks": "Imminent Risks",
+            "inDays": "in",
+            "infractions": "Infractions (High Severity)",
+            "linearOperation": "Linear trade without relevant deviations from Setup.",
+            "lossesUnderNegative": "of losses occurred under negative emotional state",
+            "masterScore": "Master Score",
+            "medianNoJumps": "Median, no positive mathematical jumps.",
+            "netPnl": "Net (PnL)",
+            "noDailyReview": "You operated without recording a daily review. This reduces the audit and learning capacity for the period.",
+            "noGraveRisks": "No serious matrix risks identified.",
+            "noTrades": "No trades recorded in the selected window.",
+            "offendersEdges": "Offenders & Edges",
+            "postMarketSummary": "Post-Market Summary",
+            "preservedStreaks": "Preserved Streaks (Window)",
+            "primaryObservations": "Primary Observations (Extracts)",
+            "profitFactor": "Profit Factor",
+            "psychologicalDaily": "Psychological (Daily)",
+            "qualitativeScore": "Qualitative Evaluation (Score)",
+            "riskManagement": "Risk Management (Limits)",
+            "scoreUnavailable": "Score unavailable without operational volume.",
+            "tiltPrevention": "Tilt Prevention",
+            "title": "Operational Performance Report",
+            "tradeVolume": "Trade Volume",
+            "unbreakableDiscipline": "Unbreakable Discipline",
+            "unsupportedEvaluations": "Evaluations not supported by enough descriptive text.",
+            "winRate": "Win Rate",
+            "trades": "Operations"
+        },
+        "scoreUnavailable": "Score unavailable without trade volume.",
+        "ui": {
+            "exportTitle": "Direct PDF Export",
+            "exportDesc": "The file will be generated hidden, ensuring the Institutional format in 2 pages. The screen visual will remain clean (Dark Mode).",
+            "generating": "Generating Document...",
+            "exportAction": "Export to PDF",
+            "performanceReportTitle": "Performance Report",
+            "auditorSubtitle": "Consolidated Professional Audit ({start} to {end})",
+            "sections": {
+                "summary": "1. Period Summary",
+                "score": "2. Official Window Score (Qualitative Evaluation)",
+                "behavioral": "3. Behavioral Audit",
+                "reflection": "4. Journal & Subjective Reflection",
+                "decision": "5. Decision Layer (Tactical Direction)"
+            },
+            "metrics": {
+                "pnl": "Net (PnL)",
+                "winRate": "Win Rate",
+                "profitFactor": "Profit Factor",
+                "volume": "Volume (Trades / Days)",
+                "activeDays": "{days}d active",
+                "executionCut": "Execution Cut",
+                "riskCut": "Risk Cut",
+                "behavior": "Behavior",
+                "psychological": "Psychological",
+                "masterScore": "Master Score",
+                "streaksTitle": "Window Streaks",
+                "unbreakableDiscipline": "Unbreakable Discipline",
+                "emotionalControl": "Emotional Control",
+                "noTilt": "No-Tilt (Shielding)"
+            },
+            "behavior": {
+                "offendersTitle": "System Offenders (Top Punishments)",
+                "edgesTitle": "Edges Found (Top Bonuses)",
+                "perfectSystem": "System in perfect mechanical functioning. Zero failures.",
+                "noAdvantages": "No exceptional advantages accounted for.",
+                "noCriticalBehaviors": "No critical behaviors detected in the period. Neutral operational rotation."
+            },
+            "reflection": {
+                "rhythmTitle": "Recording Rhythm",
+                "extractsTitle": "Relevant Journal Extracts",
+                "noNotes": "The recorded evaluations do not contain long enough texts for qualitative analysis.",
+                "noVolume": "Score unavailable without operational volume.",
+                "reviewMissing": "You operated without recording a daily review. This reduces the audit and learning capacity for the period."
+            },
+            "tactical": {
+                "finalDiagnosis": "Final Diagnosis",
+                "imminentRisks": "Imminent Risks",
+                "executionPlan": "Execution Plan",
+                "noGraveRisks": "No serious matrix risks identified."
+            },
+            "ai": {
+                "visionTitle": "Portfolio Executive View (AI)",
+                "visionDesc": "Macro KPI cross-referencing and capital efficiency.",
+                "visionError": "Failed to generate Executive View.",
+                "error_no_config": "AI not configured. Enable an API key in settings.",
+                "generateAction": "Generate Analysis",
+                "retryAction": "Try Again",
+                "institutionalSummary": "Institutional Summary",
+                "coreAdvantage": "Core Advantage",
+                "criticalPoint": "Critical Point",
+                "requiredFocus": "Required Focus"
+            }
+        },
+        "ai": {
+            "error_no_config": "Configure AI in settings."
+        }
+    }
+}

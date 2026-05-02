@@ -1,0 +1,22 @@
+{
+    "modalities": {
+        "title": "Modalités Opérationnelles",
+        "description": "Définissez les horizons de trading (Day Trade, Swing Trade, Position...).",
+        "new": "Nouvelle Modalité",
+        "edit": "Modifier la Modalité",
+        "empty": "Aucune modalité configurée.",
+        "searchPlaceholder": "Filtrer les modalités...",
+        "form": {
+            "name": "Nom de la Modalité",
+            "namePlaceholder": "Ex : Day Trade, Swing Trade...",
+            "code": "Code Interne",
+            "codePlaceholder": "Ex : DT, ST...",
+            "color": "Couleur d'Identification",
+            "createFirst": "Enregistrer la Première Modalité",
+            "save": "Enregistrer la Modalité",
+            "description": "Description",
+            "descriptionPlaceholder": "Définissez les détails de cette modalité...",
+            "noDescription": "Aucune description définie"
+        }
+    }
+}

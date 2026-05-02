@@ -1,0 +1,43 @@
+{
+    "fees": {
+        "title": "Taxas e Custos",
+        "description": "Configure os custos operacionais (Corretagem, B3, ISS) por perfil.",
+        "new": "Novo Perfil de Taxa",
+        "edit": "Editar Perfil de Taxa",
+        "empty": "Nenhum perfil de taxa encontrado.",
+        "searchPlaceholder": "Buscar perfil de taxa...",
+        "form": {
+            "name": "Nome do Perfil",
+            "namePlaceholder": "Ex: Corretora X - Mini Contratos",
+            "brokerage": "Corretagem Fixa",
+            "b3": "Taxas B3 (%)",
+            "iss": "ISS (%)",
+            "spread": "Spread Cambial (%)",
+            "operationalCosts": "Custos Operacionais",
+            "modalityConfig": "Configuração por Modalidade",
+            "fixedFee": "Taxa Fixa",
+            "percentageFee": "Taxa Percentual (%)",
+            "exchangeFee": "Taxa de Bolsa / B3 (%)",
+            "initializing": "Inicializando...",
+            "noModalities": "Nenhuma modalidade configurada.",
+            "createModalityFirst": "Criar Primeira Modalidade",
+            "account": "Conta Vinculada",
+            "defaultAccount": "Padrão (Sem conta específica)",
+            "unknownAccount": "Conta Desconhecida",
+            "noBroker": "Corretora não informada",
+            "notes": "Notas e Observações",
+            "notesPlaceholder": "Descreva detalhes específicos deste perfil de taxas...",
+            "createFirst": "Cadastrar Primeiro Perfil de Taxa",
+            "save": "Salvar Perfil"
+        },
+        "simulator": {
+            "title": "Simulador de Custos",
+            "description": "Veja o impacto das taxas em um volume projetado.",
+            "volume": "Volume Estimado",
+            "fixed": "Custos Fixos",
+            "variable": "Custos Variáveis",
+            "b3": "Emolumentos (B3)",
+            "total": "Custo Total Estimado"
+        }
+    }
+}

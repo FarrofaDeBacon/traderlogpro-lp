@@ -1,0 +1,48 @@
+{
+    "assets": {
+        "title": "Ativos",
+        "description": "Cadastre os ativos que você opera (Símbolo, Valor do Ponto, etc).",
+        "new": "Novo Ativo",
+        "edit": "Editar Ativo",
+        "empty": "Nenhum ativo encontrado",
+        "searchPlaceholder": "Buscar ativo...",
+        "form": {
+            "symbol": "Ticker / Símbolo",
+            "symbolPlaceholder": "Ex: WIN, PETR4...",
+            "name": "Nome da Mercadoria",
+            "namePlaceholder": "Ex: Mini Índice, Petrobras...",
+            "pointValue": "Valor do Ponto",
+            "contractSize": "Lote Padrão",
+            "isRoot": "Definir como Ativo Raiz",
+            "rootAsset": "Ativo Raiz Pai",
+            "type": "Classe",
+            "typePlaceholder": "Selecione...",
+            "sector": "Setor",
+            "sectorPlaceholder": "Selecione o Setor",
+            "subsector": "Subsetor",
+            "createFirst": "Cadastrar Primeiro Ativo",
+            "save": "Salvar Ativo",
+            "cancel": "Cancelar",
+            "saveChanges": "Salvar"
+        },
+        "buttons": {
+            "syncRTD": "Sincronizar RTD"
+        },
+        "labels": {
+            "root": "Raiz",
+            "none": "Nenhum"
+        },
+        "bulk": {
+            "actions": "Ações em Massa",
+            "changeType": "Alterar Tipo de Ativo",
+            "changeSector": "Alterar Setor"
+        },
+        "errors": {
+            "notFound": "Ativo não encontrado.",
+            "usedInStrategy": "Este ativo está sendo usado em uma ou mais Estratégias.",
+            "usedInTrades": "Não é permitido excluir um ativo que possui trades vinculados.",
+            "usedInRisk": "Este ativo está sendo usado em um ou mais Escopos de Risco.",
+            "hasChildren": "Não é permitido excluir um ativo raiz que possui ativos filhos vinculados."
+        }
+    }
+}

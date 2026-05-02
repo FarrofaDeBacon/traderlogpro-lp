@@ -1,0 +1,193 @@
+{
+    "finance": {
+        "charts": {
+            "evolution": "Evolución",
+            "evolutionSubtitle": "Evolución del Patrimonio y Aportaciones"
+        },
+        "closureWizard": {
+            "description": "Consolide o resultado dos seus trades no saldo das contas.",
+            "error": "Error",
+            "step1": {
+                "hint": "Geralmente realizado para o dia anterior (ontem) ou dias passados.",
+                "label": "Seleccione la Fecha",
+                "noTradesWarning": "Ninguna operación encontrada para el día seleccionado. Seleccione otra fecha o registre operaciones."
+            },
+            "step2": {
+                "columns": {
+                    "account": "Cuenta",
+                    "result": "Resultado",
+                    "select": "Sel.",
+                    "trades": "Operaciones"
+                },
+                "confirm": "Confirmar Apuntes",
+                "noTrades": "Ninguna operación encontrada en esta fecha.",
+                "processing": "Procesando..."
+            },
+            "step3": {
+                "finish": "Concluir",
+                "successDescription": "Los valores han sido registrados en el extracto de las cuentas seleccionadas.",
+                "successTitle": "¡Cierre Completado!"
+            },
+            "stepEmotion": {
+                "description": "Evalúe cómo fue su control psicológico hoy.",
+                "intensityIntense": "Extrema",
+                "intensityLabel": "Intensidad ({value})",
+                "intensityLight": "Leve",
+                "notesLabel": "Notas del Día",
+                "notesPlaceholder": "Describa brevemente cómo fue su dia, disciplina, enfoque...",
+                "stateLabel": "¿Cómo se sintió hoy?",
+                "statePlaceholder": "Seleccione una emoción...",
+                "title": "Check-in Emocional"
+            },
+            "success": "Éxito",
+            "title": "Cierre Diario"
+        },
+        "dailyClosure": "Cierre Diario",
+        "darfDetails": {
+            "calculationBasis": "Base de Cálculo",
+            "calculationInfo": "Información del Cálculo",
+            "compensatedLosses": "Pérdidas Compensadas",
+            "complementaryBadge": "Guía Complementaria",
+            "dateNotAvailable": "Fecha no disponible",
+            "description": "Información completa de liquidación y pago.",
+            "dueDate": "Fecha de Vencimiento",
+            "errorMessage": "Hubo un problema al cargar esta DARF.",
+            "fine": "Multa",
+            "grossResult": "Resultado Bruto",
+            "interest": "Interés",
+            "loading": "Cargando DARF y Liquidación...",
+            "operations": "Operaciones Vinculadas",
+            "paidAt": "Pagado el",
+            "period": "Período",
+            "principalValue": "Valor Principal",
+            "revenueCode": "Código de Ingresos",
+            "statusPaid": "Estado Pagado",
+            "statusPending": "Estado Pendiente",
+            "taxRate": "Alícuota",
+            "title": "Detalles de la DARF",
+            "totalPaid": "Total Pagado",
+            "unpayAction": "Deshacer Pago",
+            "unpayCancel": "Cancelar",
+            "unpayConfirm": "Confirmar",
+            "unpayTitle": "Deshacer"
+        },
+        "description": "Gestión centralizada de caja, extractos y cierres.",
+        "details": {
+            "account": "Cuenta",
+            "columns": {
+                "asset": "Activo",
+                "result": "Resultado",
+                "side": "Lado"
+            },
+            "date": "Fecha",
+            "noTrades": "Ninguna operación vinculada a esta transacción.",
+            "title": "Detalles de la Transacción",
+            "totalAmount": "Valor Total"
+        },
+        "newTransaction": "Nueva Aportación/Retirada",
+        "quickStats": {
+            "activeAccounts": "Cuentas Activas",
+            "balanceIn": "Saldo en {currency}",
+            "breakdownDesc": "Resumen de las cuentas vinculadas a esta moneda.",
+            "breakdownTitle": "Detalle de {currency}",
+            "consolidated": "Consolidado",
+            "monthlyResult": "Resultado del Mes",
+            "monthlyResultDesc": "Resumen de rendimiento en el mes",
+            "totalBalance": "Saldo Total (Est.)",
+            "totalEquity": "Patrimonio Total",
+            "viewBreakdown": "Ver Detalles"
+        },
+        "statement": {
+            "account": "Cuenta",
+            "allAccounts": "Todas las Cuentas",
+            "allCurrencies": "Todas las Monedas",
+            "categories": {
+                "adjustment": "AJUSTE",
+                "tax_payment": "IMPUESTO",
+                "tax_refund": "REEMBOLSO",
+                "trading": "CIERRE",
+                "transfer": "TRANSF."
+            },
+            "columns": {
+                "account": "CUENTA",
+                "amount": "VALOR",
+                "date": "Fecha",
+                "description": "DESCRIPCIÓN",
+                "type": "TIPO"
+            },
+            "entries": "Apuntes",
+            "hierarchy": "Jerarquía",
+            "messages": {
+                "deleteError": "Error al Eliminar",
+                "systemLinked": "Esta transacción fue generada por el sistema y solo puede cambiarse en el módulo de origen (ej: IRPF)."
+            },
+            "monthlyResult": "Resultado Mensual",
+            "noNumber": "Sin Número",
+            "noTransactions": "Ninguna transacción encontrada en el período.",
+            "result": "Resultado",
+            "searchPlaceholder": "Buscar en la descripción o valor...",
+            "summary": {
+                "netResult": "Resultado Neto",
+                "periodEntries": "Apuntes del Período",
+                "title": "Resumen del Día",
+                "totalDeposits": "Total Entradas",
+                "totalWithdrawals": "Total Salidas"
+            },
+            "title": "Extracto de Movimientos",
+            "types": {
+                "adjustment": "Ajuste",
+                "deposit": "Aportación",
+                "result": "RESULTADO",
+                "transfer": "Transferencia",
+                "withdraw": "Retirada"
+            }
+        },
+        "title": "Hub Financiero",
+        "transactionDialog": {
+            "newOperation": "Nueva Operación",
+            "operationShortDesc": "Registre aportaciones, retiradas o ajustes manuales de saldo.",
+            "type": "Tipo",
+            "account": "Cuenta",
+            "amount": "Valor",
+            "date": "Fecha",
+            "description": "Descripción",
+            "descriptionPlaceholder": "Ej: Aportación mensual...",
+            "fxRate": "Tasa de Cambio",
+            "tabs": {
+                "transaction": "Transacción",
+                "transfer": "Transferencia"
+            },
+            "defaults": {
+                "deposit": "Aportación",
+                "withdraw": "Retirada",
+                "transfer": "Transferencia",
+                "adjustment": "Ajuste"
+            },
+            "labels": {
+                "amountWithCurrency": "Valor ({currency})",
+                "entryWithCurrency": "Entrada ({currency})",
+                "feePercent": "Tasa (%)"
+            },
+            "errors": {
+                "requiredFields": "Complete todos los campos obligatorios.",
+                "differentAccounts": "Seleccione cuentas diferentes para la transferencia.",
+                "saveError": "Error al guardar la transacción.",
+                "transferError": "Error al realizar la transferencia."
+            }
+        },
+        "transferDialog": {
+            "title": "Transferencia entre Cuentas",
+            "description": "Mueva saldo entre sus cuentas con conversión automática de moneda.",
+            "amount": "Valor a Transferir",
+            "fee": "Tasa de la Operación (%)",
+            "rate": "Tasa de Cambio",
+            "finalAmount": "Valor Final Recibido",
+            "finalAmountHint": "Valor tras aplicar la tasa de cambio y tasas.",
+            "confirm": "Confirmar Transferencia",
+            "success": "¡Transferencia realizada con éxito!",
+            "errorDifferentAccounts": "Seleccione cuentas diferentes.",
+            "errorPositiveValue": "Introduzca un valor positivo.",
+            "errorSave": "Error al guardar transferencia."
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "modalities": {
+        "title": "Modalidades Operativas",
+        "description": "Defina los marcos temporales de operación (Day Trade, Swing Trade, Position...).",
+        "new": "Nueva Modalidad",
+        "edit": "Editar Modalidad",
+        "empty": "Ninguna modalidad configurada.",
+        "searchPlaceholder": "Filtrar modalidades...",
+        "form": {
+            "name": "Nombre de la Modalidad",
+            "namePlaceholder": "Ej: Day Trade, Swing Trade...",
+            "code": "Código Interno",
+            "codePlaceholder": "Ej: DT, ST...",
+            "color": "Color de Identificación",
+            "createFirst": "Registrar Primera Modalidad",
+            "save": "Guardar Modalidad",
+            "description": "Descripción",
+            "descriptionPlaceholder": "Defina los detalles de esta modalidad...",
+            "noDescription": "Sin descripción definida"
+        }
+    }
+}

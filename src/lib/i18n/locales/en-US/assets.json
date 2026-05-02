@@ -1,0 +1,47 @@
+{
+    "assets": {
+        "title": "Assets",
+        "description": "Register the assets you trade (Symbol, Point Value, etc).",
+        "new": "New Asset",
+        "edit": "Edit Asset",
+        "empty": "No assets found",
+        "searchPlaceholder": "Search asset...",
+        "form": {
+            "symbol": "Ticker / Symbol",
+            "symbolPlaceholder": "Ex: WIN, PETR4...",
+            "name": "Asset Name",
+            "namePlaceholder": "Ex: Mini Index, Petrobras...",
+            "pointValue": "Point Value",
+            "contractSize": "Standard Lot",
+            "isRoot": "Define as Root Asset",
+            "rootAsset": "Parent Root Asset",
+            "type": "Class",
+            "typePlaceholder": "Select...",
+            "sector": "Sector",
+            "sectorPlaceholder": "Select Sector",
+            "subsector": "Subsector",
+            "createFirst": "Register First Asset",
+            "save": "Save Asset",
+            "cancel": "Cancel",
+            "saveChanges": "Save"
+        },
+        "buttons": {
+            "syncRTD": "Sync RTD"
+        },
+        "labels": {
+            "root": "Root",
+            "none": "None"
+        },
+        "bulk": {
+            "actions": "Bulk Actions",
+            "changeType": "Change Asset Type"
+        },
+        "errors": {
+            "notFound": "Asset not found.",
+            "usedInStrategy": "This asset is being used in one or more Strategies.",
+            "usedInTrades": "Deleting an asset with linked trades is not allowed.",
+            "usedInRisk": "This asset is being used in one or more Risk Scopes.",
+            "hasChildren": "Deleting a root asset with linked child assets is not allowed."
+        }
+    }
+}

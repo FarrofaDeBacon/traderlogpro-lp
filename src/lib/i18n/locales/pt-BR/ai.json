@@ -1,0 +1,52 @@
+{
+    "aiCockpit": {
+        "ai": {
+            "desc": "Cruzamos as descobertas matemáticas da esquerda com o motor da Inteligência Artificial para gerar dicas táticas instantâneas.",
+            "healthy": "Execução estável. Nenhuma falha detectada.",
+            "insufficientVolume": "Dados insuficientes para análise. Manter plano atual.",
+            "title": "Recomendação Tática (IA)"
+        },
+        "aiPsychology": {
+            "dominantState": "Estado Dominante",
+            "history": "Seu histórico algorítmico de comportamento na mesa.",
+            "loss": "Prejuízo",
+            "netProfit": "Lucro Líquido",
+            "title": "Estratégia vs Psicologia"
+        },
+        "ctaBtn": "Cockpit Analítico",
+        "health": {
+            "currentRisk": "Risco Atual",
+            "stability": "Estabilidade",
+            "status": "Status",
+            "title": "Saúde Algorítmica"
+        },
+        "psychology": {
+            "dominantState": "Estado Dominante",
+            "history": "Seu histórico algorítmico de comportamento na mesa.",
+            "loss": "Prejuízo",
+            "netProfit": "Lucro Líquido",
+            "title": "Estratégia vs Psicologia"
+        },
+        "values": {
+            "BUY": "COMPRA",
+            "COLD": "FRIO",
+            "CRITICAL": "CRÍTICO",
+            "HOT": "QUENTE",
+            "INSUFFICIENT_DATA": "DADOS INSUFICIENTES",
+            "LOW": "BAIXO",
+            "NEUTRAL": "NEUTRO",
+            "SELL": "VENDA",
+            "STABLE": "ESTÁVEL",
+            "VOLATILE": "VOLÁTIL",
+            "winRateShort": "Tx Vit"
+        },
+        "xray": {
+            "bestAsset": "Melhor Ativo",
+            "bestSide": "Direção Dominante",
+            "bestTime": "Melhor Horário",
+            "title": "Contexto Operacional (X-Ray)",
+            "worstAsset": "Pior Ativo",
+            "worstTime": "Pior Horário"
+        }
+    }
+}

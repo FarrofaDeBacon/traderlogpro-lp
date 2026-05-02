@@ -1,0 +1,30 @@
+{
+    "markets": {
+        "title": "Markets",
+        "description": "Register the exchanges and markets where you trade (B3, Nasdaq, Forex...).",
+        "new": "New Market",
+        "edit": "Edit Market",
+        "empty": "No markets found",
+        "searchPlaceholder": "Search market...",
+        "form": {
+            "code": "Code",
+            "codePlaceholder": "Ex: B3, CME, FX...",
+            "fullName": "Full Name",
+            "fullNamePlaceholder": "Ex: Brazil Bolsa Balcão...",
+            "timezone": "Timezone",
+            "baseCurrency": "Base Currency",
+            "tradingDays": "Trading Days",
+            "tradingSessions": "Sessions",
+            "addSession": "Add Session",
+            "start": "Start",
+            "end": "End",
+            "createFirst": "Register First Market",
+            "save": "Save Market",
+            "add": "Add Market",
+            "not_available": "Session N/A"
+        },
+        "errors": {
+            "inUse": "Cannot delete this market: it is currently used by one or more asset types."
+        }
+    }
+}

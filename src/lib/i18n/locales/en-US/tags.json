@@ -1,0 +1,19 @@
+{
+    "tags": {
+        "description": "Create labels to categorize your trades and journals.",
+        "edit": "Edit Tag",
+        "empty": "No tags found",
+        "form": {
+            "cancel": "Cancel",
+            "color": "Color",
+            "createFirst": "Register First Tag",
+            "name": "Name",
+            "namePlaceholder": "Ex: Setup A, Operational Error...",
+            "preview": "Tag Preview",
+            "save": "Save Tag"
+        },
+        "new": "New Tag",
+        "searchPlaceholder": "Search tag...",
+        "title": "Tags"
+    }
+}

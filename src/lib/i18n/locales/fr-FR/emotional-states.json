@@ -1,0 +1,37 @@
+{
+    "emotionalStates": {
+        "description": "Enregistrez les états émotionnels qui affectent votre trading.",
+        "edit": "Modifier l'État",
+        "empty": "Aucun état émotionnel trouvé",
+        "form": {
+            "cancel": "Annuler",
+            "createFirst": "Enregistrer le Premier État",
+            "description": "Description",
+            "descriptionPlaceholder": "Décrivez le sentiment...",
+            "impact": "Impact",
+            "impactOptions": {
+                "Negative": "Négatif",
+                "Neutral": "Neutre",
+                "Positive": "Positif"
+            },
+            "name": "Nom",
+            "namePlaceholder": "Ex : Frustration, Anxiété...",
+            "potentialImpact": "Impact Potentiel sur le Trade",
+            "potentialImpactPlaceholder": "Ex : Entrées anticipées, augmentation de position...",
+            "save": "Enregistrer l'État",
+            "weight": "Poids (0-10)"
+        },
+        "new": "Nouvel État",
+        "searchPlaceholder": "Chercher un état...",
+        "title": "États Émotionnels",
+        "groups": {
+            "Positive": "Positifs",
+            "Negative": "Négatifs",
+            "Neutral": "Neutres"
+        },
+        "messages": {
+            "delete_success": "État émotionnel supprimé.",
+            "delete_error": "Erreur lors de la suppression de l'état émotionnel."
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "license": {
+        "blocker": {
+            "title": "Access Blocked",
+            "description": "Your 7-day trial period has expired. To continue using the Institutional Terminal with all features, you need an active license.",
+            "buyTitle": "Don't have a license yet?",
+            "buyDesc": "Choose the plan that best fits your profile and get instant access.",
+            "buyButton": "View Plans on Hotmart",
+            "activateTitle": "Already have a license?",
+            "activateDesc": "Enter the email used in the purchase to activate your terminal automatically.",
+            "activateButton": "Activate Terminal",
+            "invalidEmail": "Please enter a valid email.",
+            "activatedSuccess": "Terminal successfully activated! Welcome to TraderLog Pro.",
+            "activatedError": "Activation error. Check your email or purchase status."
+        },
+        "banner": {
+            "activateNow": "Activate Now",
+            "expired": "TRIAL PERIOD EXPIRED",
+            "getLicenseNow": "Buy Now",
+            "getLicensePrompt": "Secure your lifetime access now.",
+            "trialActive": "Trial Period: {days} days remaining"
+        }
+    }
+}

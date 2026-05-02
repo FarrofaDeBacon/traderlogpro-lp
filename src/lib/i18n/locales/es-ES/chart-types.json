@@ -1,0 +1,25 @@
+{
+    "chartTypes": {
+        "description": "Defina los tipos de gráfico que utiliza (Vela, Renko, etc.).",
+        "edit": "Editar Tipo",
+        "empty": "Ningún tipo de gráfico encontrado",
+        "methodology": "Metodología",
+        "name": "Nombre del Gráfico",
+        "namePlaceholder": "Ej: Renko 10R, 5 Minutos...",
+        "new": "Nuevo Tipo",
+        "parameter": "Parámetro (Opcional)",
+        "parameterPlaceholder": "Ej: 10, 5, 21...",
+        "searchPlaceholder": "Buscar tipo de gráfico...",
+        "title": "Tipos de Gráfico",
+        "types": {
+            "Range": "Range Bar",
+            "Renko": "Renko",
+            "TimeBased": "Temporal (Vela/Barra)"
+        },
+        "form": {
+            "cancel": "Cancelar",
+            "createFirst": "Registrar Primer Tipo de Gráfico",
+            "save": "Guardar"
+        }
+    }
+}

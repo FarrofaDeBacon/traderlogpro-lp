@@ -1,0 +1,19 @@
+{
+    "timeframes": {
+        "description": "Configure los tiempos gráficos operativos.",
+        "displayName": "Nombre de Visualización",
+        "edit": "Editar Timeframe",
+        "empty": "Ningún timeframe encontrado",
+        "namePlaceholder": "Ej: 5 Minutos",
+        "new": "Nuevo Intervalo",
+        "searchPlaceholder": "Buscar timeframe...",
+        "title": "Timeframes",
+        "value": "Valor / Código",
+        "valuePlaceholder": "Ej: 5m, 1H, 1D",
+        "form": {
+            "cancel": "Cancelar",
+            "createFirst": "Registrar Primer Timeframe",
+            "save": "Guardar"
+        }
+    }
+}

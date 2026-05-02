@@ -1,0 +1,25 @@
+{
+    "chartTypes": {
+        "description": "Defina os tipos de gráfico que utiliza (Candle, Renko, etc.).",
+        "edit": "Editar Tipo",
+        "empty": "Nenhum tipo de gráfico encontrado",
+        "methodology": "Metodologia",
+        "name": "Nome do Gráfico",
+        "namePlaceholder": "Ex: Renko 10R, 5 Minutos...",
+        "new": "Novo Tipo",
+        "parameter": "Parâmetro (Opcional)",
+        "parameterPlaceholder": "Ex: 10, 5, 21...",
+        "searchPlaceholder": "Buscar tipo de gráfico...",
+        "title": "Tipos de Gráfico",
+        "types": {
+            "Range": "Range Bar",
+            "Renko": "Renko",
+            "TimeBased": "Temporal (Candle/Barra)"
+        },
+        "form": {
+            "cancel": "Cancelar",
+            "createFirst": "Cadastrar Primeiro Tipo de Gráfico",
+            "save": "Salvar"
+        }
+    }
+}

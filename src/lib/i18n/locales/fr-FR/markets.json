@@ -1,0 +1,27 @@
+{
+    "markets": {
+        "title": "Marchés",
+        "description": "Enregistrez les bourses et marchés où vous tradez (B3, Nasdaq, Forex...).",
+        "new": "Nouveau Marché",
+        "edit": "Modifier le Marché",
+        "empty": "Aucun marché trouvé",
+        "searchPlaceholder": "Chercher un marché...",
+        "form": {
+            "code": "Code",
+            "codePlaceholder": "Ex : B3, CME, FX...",
+            "fullName": "Nom Complet",
+            "fullNamePlaceholder": "Ex : Brasil Bolsa Balcão...",
+            "timezone": "Fuseau Horaire",
+            "baseCurrency": "Devise de Base",
+            "tradingDays": "Jours de Négociation",
+            "tradingSessions": "Sessions",
+            "addSession": "Ajouter une Session",
+            "start": "Début",
+            "end": "Fin",
+            "createFirst": "Enregistrer le Premier Marché",
+            "save": "Enregistrer le Marché",
+            "add": "Ajouter un Marché",
+            "not_available": "Session N/A"
+        }
+    }
+}

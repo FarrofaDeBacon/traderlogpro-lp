@@ -1,0 +1,25 @@
+{
+    "chartTypes": {
+        "description": "Définissez les types de graphique que vous utilisez (Chandelier, Renko, etc.).",
+        "edit": "Modifier le Type",
+        "empty": "Aucun type de graphique trouvé",
+        "methodology": "Méthodologie",
+        "name": "Nom du Graphique",
+        "namePlaceholder": "Ex : Renko 10R, 5 Minutes...",
+        "new": "Nouveau Type",
+        "parameter": "Paramètre (Optionnel)",
+        "parameterPlaceholder": "Ex : 10, 5, 21...",
+        "searchPlaceholder": "Chercher un type de graphique...",
+        "title": "Types de Graphique",
+        "types": {
+            "Range": "Range Bar",
+            "Renko": "Renko",
+            "TimeBased": "Temporel (Chandelier/Barre)"
+        },
+        "form": {
+            "cancel": "Annuler",
+            "createFirst": "Enregistrer le Premier Type de Graphique",
+            "save": "Enregistrer"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "aiCockpit": {
+        "ai": {
+            "desc": "We cross-reference the mathematical findings on the left with the Artificial Intelligence engine to generate instant tactical tips.",
+            "healthy": "Stable execution. No flaws detected.",
+            "insufficientVolume": "Insufficient data for analysis. Maintain current plan.",
+            "title": "Tactical Recommendation (AI)"
+        },
+        "aiPsychology": {
+            "dominantState": "Dominant State",
+            "history": "Your algorithmic history of behavior at the desk.",
+            "loss": "Loss",
+            "netProfit": "Net Profit",
+            "title": "Strategy vs Psychology"
+        },
+        "ctaBtn": "Analytical Cockpit",
+        "health": {
+            "currentRisk": "Current Risk",
+            "stability": "Stability",
+            "status": "Status",
+            "title": "Algorithmic Health"
+        },
+        "psychology": {
+            "dominantState": "Dominant State",
+            "history": "Your algorithmic history of behavior at the desk.",
+            "loss": "Loss",
+            "netProfit": "Net Profit",
+            "title": "Strategy vs Psychology"
+        },
+        "values": {
+            "BUY": "BUY",
+            "COLD": "COLD",
+            "CRITICAL": "CRITICAL",
+            "HOT": "HOT",
+            "INSUFFICIENT_DATA": "INSUFFICIENT DATA",
+            "LOW": "LOW",
+            "NEUTRAL": "NEUTRAL",
+            "SELL": "SELL",
+            "STABLE": "STABLE",
+            "VOLATILE": "VOLATILE",
+            "winRateShort": "Win Rt"
+        },
+        "xray": {
+            "bestAsset": "Best Asset",
+            "bestSide": "Dominant Direction",
+            "bestTime": "Best Time",
+            "title": "Operational Context (X-Ray)",
+            "worstAsset": "Worst Asset",
+            "worstTime": "Worst Time"
+        }
+    }
+}

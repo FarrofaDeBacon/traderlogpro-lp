@@ -1,0 +1,27 @@
+{
+    "markets": {
+        "title": "Mercados",
+        "description": "Registre las bolsas y mercados donde opera (B3, Nasdaq, Forex...).",
+        "new": "Nuevo Mercado",
+        "edit": "Editar Mercado",
+        "empty": "No se encontraron mercados",
+        "searchPlaceholder": "Buscar mercado...",
+        "form": {
+            "code": "Código",
+            "codePlaceholder": "Ej: B3, CME, FX...",
+            "fullName": "Nombre Completo",
+            "fullNamePlaceholder": "Ej: Brasil Bolsa Balcão...",
+            "timezone": "Zona Horaria",
+            "baseCurrency": "Moneda Base",
+            "tradingDays": "Días de Negociación",
+            "tradingSessions": "Sesiones",
+            "addSession": "Añadir Sesión",
+            "start": "Inicio",
+            "end": "Fin",
+            "createFirst": "Registrar Primer Mercado",
+            "save": "Guardar Mercado",
+            "add": "Añadir Mercado",
+            "not_available": "Sesión N/A"
+        }
+    }
+}

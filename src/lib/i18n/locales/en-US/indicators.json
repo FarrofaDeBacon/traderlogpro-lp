@@ -1,0 +1,62 @@
+{
+    "indicators": {
+        "add": "Add",
+        "addFirst": "Add the first",
+        "categories": {
+            "Oscillator": "Oscillator",
+            "Other": "Others",
+            "Trend": "Trend",
+            "Volume": "Volume"
+        },
+        "category": "Category",
+        "defaultColor": "Default Color",
+        "description": "Register your favorite technical indicators and default settings.",
+        "edit": "Edit Indicator",
+        "empty": "No indicators found",
+        "modelHint": "Select a model to automatically fill in the fields below.",
+        "name": "Indicator Name",
+        "namePlaceholder": "Ex: MMA 20, RSI...",
+        "new": "New Indicator",
+        "noParams": "No parameters defined.",
+        "paramName": "Name",
+        "paramNameLabel": "Name",
+        "paramNamePlaceholder": "Ex: Period",
+        "paramValue": "Value",
+        "parameters": "Parameters",
+        "params": {
+            "Anchorage": "Anchorage",
+            "Daily": "Daily",
+            "Deviation": "Deviation",
+            "Fast": "Fast",
+            "Signal": "Signal",
+            "Slow": "Slow"
+        },
+        "plotType": "Plot Type",
+        "plotTypes": {
+            "Overlay": "Overlaid on Chart",
+            "SubWindow": "Separate Window"
+        },
+        "presets": {
+            "bb": "Bollinger Bands",
+            "custom": "Custom",
+            "ema": "Exponential Moving Average (EMA)",
+            "macd": "MACD",
+            "rsi": "RSI (Relative Strength Index)",
+            "sma": "Simple Moving Average (SMA)",
+            "vol": "Financial Volume",
+            "vwap": "VWAP"
+        },
+        "previewColor": "Color Preview",
+        "quickModel": "Quick Model",
+        "searchPlaceholder": "Search indicator...",
+        "selectModel": "Select a model...",
+        "title": "Indicators",
+        "usage": "Usage Description",
+        "usagePlaceholder": "How do you use this indicator? (Ex: I buy when it crosses up...)",
+        "form": {
+            "cancel": "Cancel",
+            "createFirst": "Register First Indicator",
+            "save": "Save"
+        }
+    }
+}

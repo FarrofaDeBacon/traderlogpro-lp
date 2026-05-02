@@ -1,0 +1,234 @@
+{
+    "onboarding": {
+        "auth": {
+            "login": {
+                "createAccount": "Crear cuenta",
+                "description": "Ingrese sus credenciales para acceder a Bienvenido a TraderLog Pro.",
+                "email": "Email",
+                "error": {
+                    "fillAll": "Complete todos los campos.",
+                    "invalidCredentials": "Credenciales inválidas."
+                },
+                "forgotPassword": "¿Olvidó su contraseña?",
+                "loading": "Entrando...",
+                "noAccount": "¿Aún no tiene una cuenta?",
+                "orContinueWith": "O continúe con",
+                "password": "Contraseña",
+                "recovery": {
+                    "back": "Volver al Login",
+                    "confirm": "Confirmar Contraseña",
+                    "description": "Ingrese su clave de recuperación y defina una nueva contraseña.",
+                    "error": {
+                        "fillAll": "Complete todos los campos.",
+                        "generic": "Error al restablecer la contraseña.",
+                        "invalidKey": "Clave de recuperación inválida.",
+                        "mismatch": "Las contraseñas no coinciden."
+                    },
+                    "keyLabel": "Clave de Recuperación",
+                    "loading": "Restableciendo...",
+                    "newPassword": "Nueva Contraseña",
+                    "submit": "Restablecer Contraseña",
+                    "success": "¡Contraseña restablecida con éxito!",
+                    "title": "Recuperar Acceso"
+                },
+                "signup": "Registrarse",
+                "social": "Redes Sociales",
+                "submit": "Entrar en la Plataforma",
+                "success": "¡Login realizado con éxito!",
+                "title": "Bienvenido de nuevo"
+            },
+            "register": {
+                "alreadyHaveAccount": "¿Ya tiene una cuenta?",
+                "birthDate": "Fecha de Nacimiento",
+                "confirmPassword": "Confirmar Contraseña",
+                "cpf": "CPF/ID",
+                "description": "Cree su cuenta en Bienvenido a TraderLog Pro.",
+                "email": "Email",
+                "error": {
+                    "fillAll": "Complete todos los campos.",
+                    "passwordsMismatch": "Las contraseñas no coinciden."
+                },
+                "loading": "Creando cuenta...",
+                "login": "Entrar",
+                "name": "Nombre Completo",
+                "password": "Contraseña",
+                "recoveryKey": {
+                    "confirm": "¡Entendido, he guardado mi clave!",
+                    "copyPrompt": "Copiar Clave",
+                    "description": "Esta es su clave de recuperación. Guárdela en un lugar seguro — sin ella, no será posible recuperar el acceso.",
+                    "keepSecure": "¡Guárdela en lugar seguro!",
+                    "label": "Su Clave de Recuperación",
+                    "successCopy": "¡Clave copiada!",
+                    "title": "Clave de Recuperación Generada",
+                    "warning": "No comparta esta clave con nadie."
+                },
+                "submit": "Crear Cuenta",
+                "success": "¡Cuenta creada con éxito!",
+                "terms": "Términos de Uso",
+                "title": "Crear Cuenta"
+            }
+        },
+        "wizard_extra": {
+            "confirm_password": "CONFIRMAR CONTRASEÑA",
+            "copied": "¡COPIADO!",
+            "copyright": "© 2026 TRADERLOG PRO · JOURNAL ENGINE",
+            "email": "E-MAIL",
+            "email_placeholder": "su@email.com",
+            "logo_alt": "LOGO",
+            "select_theme": "SELECCIONE EL TEMA VISUAL",
+            "setup_engine": "SETUP ENGINE V1.0"
+        }
+    },
+    "setup": {
+        "wizard": {
+            "accounts": {
+                "add_more_prompt": "¿Desea añadir más cuentas ahora?",
+                "description_intro": "Configure sus cuentas para comenzar.",
+                "market_title": "Mercado",
+                "personalize": "Personalizar",
+                "skip": "Saltar",
+                "standard_title": "Configuración Estándar",
+                "title": "Mis Cuentas"
+            },
+            "common": {
+                "activation_desc": "Si ya posee una licencia, importe el archivo .lic abajo.",
+                "activation_title": "Activación de Licencia",
+                "active_license": "¡Licencia Activa!",
+                "asset_types_desc": "¿Qué instrumentos financieros forman parte de su día a día?",
+                "asset_types_title": "Tipos de Activos",
+                "assets": {
+                    "T1": "Acciones BR",
+                    "T2": "Opciones BR",
+                    "T3": "Futuros BR",
+                    "T4": "FIIs",
+                    "T5": "Stocks US (NYSE)",
+                    "T5B": "Stocks US (NASDAQ)",
+                    "T6": "Pares Forex",
+                    "T7": "Criptomonedas"
+                },
+                "configuring": "CONFIGURANDO...",
+                "confirm_password": "Confirmar Contraseña",
+                "copy_to_clipboard": "Toque para copiar",
+                "currency_desc": "Elija la moneda oficial para la consolidación de todos sus beneficios e impuestos.",
+                "currency_title": "Moneda Base",
+                "email": "E-mail",
+                "import_lic": "IMPORTAR ARCHIVO .LIC",
+                "markets": {
+                    "M1": "B3 (Brasil)",
+                    "M2": "NYSE (EE.UU.)",
+                    "M3": "NASDAQ (EE.UU.)",
+                    "M4": "CME Group",
+                    "M5": "Forex",
+                    "M6": "Cripto"
+                },
+                "markets_desc": "Seleccione los mercados para habilitar las herramientas correctas.",
+                "markets_title": "¿Dónde opera?",
+                "params": {
+                    "Anchorage": "Anclaje",
+                    "Daily": "Diaria",
+                    "Deviation": "Desviación",
+                    "Fast": "Rápida",
+                    "Signal": "Señal",
+                    "Slow": "Lenta"
+                },
+                "master_key": "MASTER KEY",
+                "mission_ready": "¡Misión Lista!",
+                "mission_ready_desc": "Su base de operaciones ha sido configurada con éxito. ¡Buenas operaciones!",
+                "name": "Nombre Completo",
+                "name_placeholder": "Su nombre",
+                "never_share": "⚠️ NUNCA comparta esta clave. Guárdela en un lugar físico y seguro.",
+                "no_license_desc": "Al saltar, iniciará en modo TRIAL limitado.",
+                "no_license_title": "¿NO TIENE UNA LICENCIA?",
+                "password": "Contraseña de Acceso",
+                "plan": "Plan",
+                "recovery_key_desc": "Esta clave es the única forma de recuperar su acceso si olvida su contraseña.",
+                "recovery_key_title": "Clave de Recuperación",
+                "rtd_active_desc": "Detecte operaciones de Profit/Tryd al instante.",
+                "rtd_active_now": "Activar RTD ahora",
+                "rtd_desc": "Conecte Bienvenido a TraderLog Pro a su terminal de negociación vía Excel.",
+                "rtd_later_desc": "Puede activar el RTD en el menú de ajustes en cualquier momento.",
+                "rtd_later_title": "Configurar Después",
+                "rtd_skip": "SALTAR ESTE PASO",
+                "rtd_title": "Conexión en Tiempo Real (RTD)",
+                "start_journey": "INICIAR JORNADA"
+            },
+            "data": {
+                "custom": {
+                    "desc": "Seleccione manualmente lo que desea importar.",
+                    "title": "Personalizado"
+                },
+                "description": "Elija la configuración de datos.",
+                "standard": {
+                    "desc": "Configuración recomendada con activos estándar de la B3.",
+                    "title": "Estándar"
+                },
+                "title": "Configuración de Datos"
+            },
+            "finish": {
+                "configuringDb": "Configurando Base de Datos...",
+                "description": "Haga clic en el botón de abajo para completar la inicialización.",
+                "ready": "Todo listo",
+                "savingProfile": "Guardando Perfil...",
+                "startNow": "Empezar Ahora",
+                "startingPlatform": "Iniciando Plataforma...",
+                "syncingTerminal": "Sincronizando Terminal",
+                "waitingSurvivorData": "Esperando datos del Survivor Hub..."
+            },
+            "license": {
+                "activated": "¡Licencia Activada!",
+                "description": "Si posee una Licencia Bienvenido a TraderLog Pro, seleccione el archivo .lic ahora.",
+                "import": "Importar Licencia",
+                "optional": "Opcional: Puede saltar este paso para usar la versión Trial gratuita.",
+                "planDetected": "Plan detectado",
+                "selectFile": "Seleccionar Archivo .lic",
+                "title": "Activación de Licencia",
+                "verifying": "Verificando..."
+            },
+            "nav": {
+                "back": "Volver",
+                "next": "Siguiente",
+                "skipTrial": "Saltar (Trial)"
+            },
+            "profile": {
+                "confirmPasswordLabel": "Confirmar Contraseña",
+                "confirmPasswordPlaceholder": "Repita la contraseña",
+                "description": "Introduzca su información básica.",
+                "emailHint": "Usado para recuperación o vínculo de licencia especial.",
+                "emailLabel": "E-mail o Clave de Acceso",
+                "nameLabel": "Nombre",
+                "namePlaceholder": "Su nombre completo",
+                "passwordLabel": "Contraseña de Acceso de la App",
+                "passwordPlaceholder": "Cree una contraseña fuerte",
+                "testAccount": "Cuenta de Prueba reconocida. Se inyectarán datos de demostración.",
+                "title": "Su Perfil"
+            },
+            "recovery": {
+                "clickToCopy": "Haga clic para copiar",
+                "copied": "¡Clave copiada al portapapeles!",
+                "description": "Esta es la única forma de recuperar su cuenta si olvida su contraseña. Como la aplicación es offline, no tenemos forma de recuperarla vía e-mail.",
+                "keyLabel": "Clave de Seguridad",
+                "title": "Su Clave de Recuperación",
+                "warning": "Guarde esta clave en un lugar seguro. Si pierde la contraseña y esta clave, sus datos quedarán permanentemente inaccesibles."
+            },
+            "step": "Paso",
+            "style": {
+                "currency": "Moneda Principal",
+                "description": "Ajuste la apariencia y el idioma de su panel.",
+                "language": "Idioma",
+                "theme": "Tema Visual",
+                "title": "Estilo y Preferencias"
+            },
+            "welcome": {
+                "dark": "Dark (Noche)",
+                "description": "Configurando área de trabajo...",
+                "light": "Light (Día)",
+                "select_language": "SELECCIONE SU IDIOMA",
+                "select_theme": "SELECCIONE EL TEMA VISUAL",
+                "title": "Bienvenido a TraderLog Pro"
+            }
+        },
+        "splash": {
+            "tagline": "Operando con precisión. Evolucionando con datos."
+        }
+    }
+}

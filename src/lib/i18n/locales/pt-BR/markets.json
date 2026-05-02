@@ -1,0 +1,30 @@
+{
+    "markets": {
+        "title": "Mercados",
+        "description": "Cadastre as bolsas e mercados onde você opera (B3, Nasdaq, Forex...).",
+        "new": "Novo Mercado",
+        "edit": "Editar Mercado",
+        "empty": "Nenhum mercado encontrado",
+        "searchPlaceholder": "Buscar mercado...",
+        "form": {
+            "code": "Código",
+            "codePlaceholder": "Ex: B3, CME, FX...",
+            "fullName": "Nome Completo",
+            "fullNamePlaceholder": "Ex: Brasil Bolsa Balcão...",
+            "timezone": "Fuso Horário",
+            "baseCurrency": "Moeda Base",
+            "tradingDays": "Dias de Negociação",
+            "tradingSessions": "Sessões",
+            "addSession": "Adicionar Sessão",
+            "start": "Início",
+            "end": "Fim",
+            "createFirst": "Cadastrar Primeiro Mercado",
+            "save": "Salvar Mercado",
+            "add": "Adicionar Mercado",
+            "not_available": "Sessão N/A"
+        },
+        "errors": {
+            "inUse": "Não é possível excluir este mercado: ele está sendo usado por um ou mais tipos de ativos."
+        }
+    }
+}

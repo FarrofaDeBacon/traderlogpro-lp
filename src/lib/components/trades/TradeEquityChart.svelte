@@ -1,0 +1,216 @@
+<script lang="ts">
+  import { currenciesStore } from "$lib/stores/currencies.svelte";
+  import { accountsStore } from "$lib/stores/accounts.svelte";
+    import { t } from "svelte-i18n";
+    import EChart from "$lib/components/ui/echart.svelte";
+    import * as echarts from "echarts";
+    import { userProfileStore } from "$lib/stores/user-profile.svelte.ts";
+    import { tradesStore } from "$lib/stores/trades.svelte";
+    import { formatCurrency, parseSafeDate } from "$lib/utils";
+    import { format } from "date-fns/format";
+
+    let { trades = [] } = $props();
+
+    const chartOptions = $derived.by(() => {
+        const currentTrades = trades;
+        const tradesData = $state.snapshot(currentTrades);
+
+        // Sort trades by date
+        const sortedTrades = [...tradesData].sort(
+            (a, b) =>
+                parseSafeDate(a.exit_date || a.date).getTime() -
+                parseSafeDate(b.exit_date || b.date).getTime(),
+        );
+
+        let cumulativePnL = 0;
+        let maxPeak = 0;
+        const equityCurve = sortedTrades.map((t) => {
+            const result = tradesStore.getConvertedTradeResult(
+                t,
+                accountsStore.accounts,
+                currenciesStore.currencies,
+            );
+            cumulativePnL += result;
+            if (cumulativePnL > maxPeak) maxPeak = cumulativePnL;
+
+            const tradeTimestamp = parseSafeDate(t.exit_date || t.date).getTime();
+
+            return {
+                value: [
+                    tradeTimestamp,
+                    cumulativePnL,
+                ],
+                drawdown: maxPeak - cumulativePnL,
+                tradeId: t.id,
+            };
+        });
+
+        const drawdownData = equityCurve.map((item) => ({
+            value: [item.value[0], -item.drawdown], // Show as negative for visual clarity
+        }));
+
+        // Add a starting point at zero if there are trades
+        if (equityCurve.length > 0) {
+            const firstDate = parseSafeDate(
+                sortedTrades[0].exit_date || sortedTrades[0].date,
+            ).getTime();
+            equityCurve.unshift({
+                value: [firstDate - 3600000, 0],
+                drawdown: 0,
+                tradeId: "start",
+            });
+            drawdownData.unshift({
+                value: [firstDate - 3600000, 0],
+            });
+        }
+
+        return {
+            backgroundColor: "transparent",
+            grid: {
+                top: "10%",
+                left: "3%",
+                right: "4%",
+                bottom: "10%",
+                containLabel: true,
+            },
+            tooltip: {
+                trigger: "axis",
+                backgroundColor: "rgba(0, 0, 0, 0.8)",
+                borderColor: "rgba(255, 255, 255, 0.1)",
+                textStyle: { color: "#fff", fontSize: 10 },
+                formatter: (params: any) => {
+                    const capitalLabel = $t("trades.charts.equity.capital");
+                    const ddLabel = $t("trades.charts.equity.drawdown");
+                    const equity = params.find(
+                        (p: any) => p.seriesName === capitalLabel,
+                    )?.data;
+                    const dd = params.find(
+                        (p: any) => p.seriesName === ddLabel,
+                    )?.data;
+                    if (!equity) return "";
+
+                    const date = format(
+                        new Date(equity.value[0]),
+                        "dd/MM HH:mm",
+                    );
+                    const val = equity.value[1];
+                    const color = val >= 0 ? "#10b981" : "#f43f5e";
+
+                    let html = `
+                        <div class="flex flex-col gap-1">
+                            <span class="text-zinc-500 text-[10px] font-bold uppercase">${date}</span>
+                            <div class="flex items-center justify-between gap-4">
+                                <span class="text-[10px] text-zinc-400 uppercase">${capitalLabel}</span>
+                                <span class="text-xs font-black" style="color: ${color}">
+                                    ${val >= 0 ? "+" : ""}${formatCurrency(val, userProfileStore.userProfile?.main_currency || "BRL")}
+                                </span>
+                            </div>
+                    `;
+
+                    if (dd && dd.value[1] < 0) {
+                        html += `
+                            <div class="flex items-center justify-between gap-4 border-t border-white/5 pt-1 mt-1">
+                                <span class="text-[10px] text-zinc-400 uppercase">${ddLabel}</span>
+                                <span class="text-xs font-bold text-rose-500">
+                                    ${formatCurrency(Math.abs(dd.value[1]), userProfileStore.userProfile?.main_currency || "BRL")}
+                                </span>
+                            </div>
+                        `;
+                    }
+
+                    html += `</div>`;
+                    return html;
+                },
+            },
+            xAxis: {
+                type: "time",
+                axisLine: { lineStyle: { color: "#27272a" } },
+                axisLabel: {
+                    color: "#71717a",
+                    fontSize: 9,
+                    formatter: (value: number) =>
+                        format(new Date(value), "dd/MM"),
+                },
+                splitLine: { show: false },
+            },
+            yAxis: {
+                type: "value",
+                axisLine: { show: false },
+                axisLabel: {
+                    color: "#71717a",
+                    fontSize: 9,
+                    formatter: (value: number) =>
+                        formatCurrency(
+                            value,
+                            userProfileStore.userProfile?.main_currency || "BRL",
+                        ).replace(/[^\d.,+-]/g, ""),
+                },
+                splitLine: { lineStyle: { color: "rgba(128, 128, 128, 0.1)", type: "dashed" } },
+            },
+            series: [
+                {
+                    name: $t("trades.charts.equity.capital"),
+                    type: "line",
+                    smooth: true,
+                    showSymbol: true,
+                    symbol: "circle",
+                    symbolSize: 3,
+                    z: 5,
+                    animationDuration: 300,
+                    data: equityCurve,
+                    lineStyle: {
+                        width: 1.5,
+                        color: "#10b981",
+                    },
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            { offset: 0, color: "rgba(16, 185, 129, 0.2)" },
+                            { offset: 1, color: "rgba(16, 185, 129, 0.0)" },
+                        ]),
+                    },
+                    markLine: {
+                        silent: true,
+                        data: [{ yAxis: 0 }],
+                        lineStyle: {
+                            color: "#71717a",
+                            type: "solid",
+                            width: 1,
+                            opacity: 0.8,
+                        },
+                        label: {
+                            show: false,
+                        },
+                        symbol: ["none", "none"],
+                    },
+                },
+                {
+                    name: $t("trades.charts.equity.drawdown"),
+                    type: "line",
+                    smooth: true,
+                    showSymbol: false,
+                    z: 2,
+                    data: drawdownData,
+                    lineStyle: { opacity: 0 },
+                    areaStyle: {
+                        color: "rgba(244, 63, 94, 0.15)",
+                    },
+                },
+            ],
+            animation: true,
+        };
+    });
+</script>
+
+<div class="relative w-full h-full min-h-[200px]">
+    {#if trades.length > 0}
+        {#key trades}
+            <EChart options={chartOptions} class="absolute inset-0" />
+        {/key}
+    {:else}
+        <div
+            class="absolute inset-0 flex items-center justify-center text-muted-foreground italic text-xs"
+        >
+            {$t("trades.charts.equity.empty")}
+        </div>
+    {/if}
+</div>

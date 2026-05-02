@@ -1,0 +1,19 @@
+{
+    "tags": {
+        "description": "Cree etiquetas para categorizar sus trades y diarios.",
+        "edit": "Editar Tag",
+        "empty": "Ninguna tag encontrada",
+        "form": {
+            "cancel": "Cancelar",
+            "color": "Color",
+            "createFirst": "Registrar Primera Tag",
+            "name": "Nombre",
+            "namePlaceholder": "Ej: Setup A, Error Operativo...",
+            "preview": "Preview de la Tag",
+            "save": "Guardar Tag"
+        },
+        "new": "Nueva Tag",
+        "searchPlaceholder": "Buscar tag...",
+        "title": "Tags"
+    }
+}

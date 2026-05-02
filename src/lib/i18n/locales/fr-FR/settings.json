@@ -1,0 +1,593 @@
+{
+    "license": {
+        "blocker": {
+            "title": "Accès Bloqué",
+            "description": "Votre période d'essai de 7 jours a expiré. Pour continuer à utiliser l'Institutional Terminal avec toutes ses fonctionnalités, vous avez besoin d'une licence active.",
+            "buyTitle": "Vous n'avez pas encore de licence ?",
+            "buyDesc": "Choisissez le plan qui s'adapte le mieux à votre profil et recevez un accès instantané.",
+            "buyButton": "Voir les Plans sur Hotmart",
+            "activateTitle": "Vous possédez déjà une licence ?",
+            "activateDesc": "Saisissez l'e-mail utilisé lors de l'achat pour activer votre terminal automatiquement.",
+            "activateButton": "Activer le Terminal",
+            "invalidEmail": "Veuillez saisir un e-mail valide.",
+            "activatedSuccess": "Terminal activé avec succès ! Bienvenue sur TraderLog Pro.",
+            "activatedError": "Erreur d'activation. Vérifiez votre e-mail ou le statut de votre achat."
+        },
+        "banner": {
+            "activateNow": "Activer Maintenant",
+            "expired": "PÉRIODE D'ESSAI EXPIRÉE",
+            "getLicenseNow": "Acheter Maintenant",
+            "getLicensePrompt": "Garantissez votre accès à vie maintenant.",
+            "trialActive": "Période d'Essai : {days} jours restants"
+        }
+    },
+    "settings": {
+        "api": {
+            "form": {
+                "apiKey": "Clé d'API",
+                "apiKeyPlaceholder": "sk-...",
+                "cancel": "Annuler",
+                "dailyLimit": "Limite Quotidienne (Avertissements)",
+                "dailyLimitHint": "Notifie quand l'utilisation atteint cette limite.",
+                "description": "Configurez une nouvelle clé d'API pour activer les intégrations sur TraderLog Pro.",
+                "editTitle": "Modifier la Configuration API",
+                "enabled": "Activer cette API",
+                "enabledHint": "Les API désactivées ne feront pas de requêtes.",
+                "enterKeyError": "Veuillez d'abord saisir une clé d'API.",
+                "errors": {
+                    "enterKeyFirst": "Renseignez d'abord la clé.",
+                    "keyRequired": "Clé API obligatoire",
+                    "testSuccess": "Connexion établie avec succès !"
+                },
+                "getGeminiApiKey": "Obtenir la clé Gemini",
+                "getOpenAIApiKey": "Obtenir la clé OpenAI",
+                "getPolygonApiKey": "Obtenir la clé Polygon",
+                "messages": {
+                    "connectionSuccess": "Connexion testée avec succès ! (Simulé)"
+                },
+                "newTitle": "Nouvelle Configuration API",
+                "noteBody": "Les clés d'API sont stockées localement sur votre appareil. Ne les partagez jamais.",
+                "noteTitle": "Gardez vos clés en sécurité.",
+                "provider": "Fournisseur",
+                "providerCustom": "Personnalisé",
+                "providers": {
+                    "alpha_vantage": "Alpha Vantage",
+                    "anthropic": "Anthropic Claude",
+                    "custom": "Personnalisé",
+                    "exchangerate-api": "ExchangeRate-API (Change)",
+                    "google_gemini": "Google Gemini",
+                    "mock": "Simulation (Mock)",
+                    "openai": "OpenAI",
+                    "polygon": "Polygon.io",
+                    "profit": "Profit Chart (RTD)"
+                },
+                "save": "Enregistrer",
+                "test": "Tester la Clé",
+                "testInfo": "Test de la clé d'API...",
+                "testSuccess": "Clé d'API testée avec succès !",
+                "viewOpenAIPrices": "Voir les prix OpenAI",
+                "viewPolygonPlans": "Voir les plans Polygon"
+            },
+            "integrations": {
+                "currency": {
+                    "description": "Utilisé pour convertir vos soldes et résultats en BRL dans le Hub Financier. Nous utilisons AwesomeAPI par défaut.",
+                    "endpointLabel": "Adresse de l'API (Endpoint)",
+                    "error": "Erreur",
+                    "errorSync": "Erreur lors de la synchronisation des devises.",
+                    "hint": "Si l'adresse change à l'avenir, vous pouvez la mettre à jour ici sans modifier le code.",
+                    "saveUrl": "Enregistrer l'URL",
+                    "success": "Succès",
+                    "successSave": "URL de Change enregistrée avec succès !",
+                    "successSync": "Change mis à jour ! {count} devises synchronisées.",
+                    "syncNow": "Synchroniser Maintenant",
+                    "syncing": "Synchronisation...",
+                    "tag": "Public et Gratuit",
+                    "title": "Service de Change (Devises)"
+                },
+                "keys": {
+                    "description": "Gérez vos identifiants pour les fournisseurs externes",
+                    "newItem": "Nouvel Élément",
+                    "searchPlaceholder": "Chercher...",
+                    "table": {
+                        "actions": "Actions",
+                        "active": "Active",
+                        "empty": "Aucun résultat trouvé.",
+                        "inactive": "Inactive",
+                        "limit": "Limite Quotidienne",
+                        "provider": "Fournisseur",
+                        "status": "Statut",
+                        "usage": "Usage Aujourd'hui"
+                    },
+                    "title": "Clés d'API"
+                },
+                "profit": {
+                    "allAssetsSupport": "Supporte n'importe quel actif B3 (PETR4, VALE3, etc.)",
+                    "connect": "Connecter Profit",
+                    "connected": "Connected",
+                    "connecting": "Connexion...",
+                    "description": "Recevez des cotations en temps réel directement de Profit Chart via Excel.",
+                    "disconnect": "Déconnecter",
+                    "disconnected": "Déconnecté",
+                    "error": "Erreur de Connexion",
+                    "excelFile": "Fichier Excel",
+                    "fileSelected": "Fichier sélectionné",
+                    "noFileSelected": "Aucun fichier sélectionné",
+                    "requirementDesc": "Le fichier doit contenir les onglets : DADOS, BOOK [ACTIF], PLAYERS. Profit doit exporter vers ce fichier.",
+                    "requirementTitle": "Configuration Excel",
+                    "selectFile": "Sélectionner le Fichier",
+                    "setupGuide": "Voir le Guide de Configuration",
+                    "status": "Statut de la Connexion",
+                    "title": "Connexion Profit RTD",
+                    "openExcel": "Ouvrir le Tableur Automatiquement",
+                    "openExcelDesc": "Ouvre automatiquement le fichier Excel lors de la connexion ou au démarrage du terminal.",
+                    "openExcelEnabled": "Ouverture automatique du fichier activée.",
+                    "openExcelDisabled": "Ouverture automatique du fichier désactivée."
+                },
+                "serviceMapping": {
+                    "calendarSave": "Enregistrer l'URL",
+                    "calendarSource": "Source du Calendrier (URL)",
+                    "calendarSourceHint": "Site pour chercher des actualités (Scraping + IA).",
+                    "description": "Choisissez quelle intelligence ou source de données alimentera chaque module.",
+                    "marketData": "Données de Marché",
+                    "marketDataHint": "Source des mises à jour des prix et graphiques.",
+                    "mockDataLabel": "Données Simulées",
+                    "mockLabel": "Simulation (Mock)",
+                    "psychology": "Intelligence Psychologique (Mentor IA)",
+                    "psychologyHint": "Qui analyse vos journaux et génère des insights.",
+                    "save": "Enregistrer le Mappage",
+                    "success": "Mappage des services enregistré !",
+                    "title": "Mappage des Services"
+                }
+            }
+        },
+        "appearance": {
+            "compactDescription": "Mode compact pour une plus grande densité de données.",
+            "compactLabel": "Interface Compacte",
+            "description": "Ajustez l'apparence visuelle de la plateforme.",
+            "themeDescription": "Choisissez entre les thèmes clair et sombre.",
+            "themeLabel": "Thème Visuel",
+            "title": "Apparence",
+            "toggleTheme": "Changer le thème"
+        },
+        "growthPlans": {
+            "searchPlaceholder": "Chercher un plan...",
+            "evolutionStages": "{count} Étapes d'Évolution",
+            "scalability": "Scalabilité",
+            "contracts": "ctts",
+            "status": "Statut",
+            "active": "Actif",
+            "paused": "En pause",
+            "noSearchResults": "Aucun résultat pour votre recherche",
+            "noPlansFound": "Aucun plan de croissance trouvé",
+            "clearSearch": "Effacer la Recherche",
+            "createFirst": "Créer le Premier Plan"
+        },
+        "license": {
+            "management": "Gestion de Licence",
+            "subtitle": "Activez, renouvelez ou modifiez le plan de votre machine.",
+            "trialBadge": "Évaluation",
+            "perk1": "Inclut toutes les mises à jour d'intelligence artificielle et le support premium pendant 12 mois.",
+            "perk2": "Accès permanent à TraderLog Pro, mises à jour vitales gratuites. Le meilleur rapport qualité-prix pour les traders sérieux.",
+            "step1": "Identification de la Machine",
+            "step1Desc": "Ce terminal possède une signature matérielle unique. Lors de l'achat, vous devez fournir ce code ou générer la licence correspondante.",
+            "pinLabel": "PIN de cette Machine",
+            "incompleteData": "Données Incomplètes",
+            "copy": "Copier le PIN",
+            "sendPinInfo": "Si vous achetez la licence via le support direct ou obtenez une activation hors ligne, envoyez ce PIN à notre service client.",
+            "pinDisclaimer": "Note : Le PIN est unique par ordinateur. La licence ne fonctionnera que sur cette machine.",
+            "step2": "Activation Hors Ligne",
+            "step2Desc": "Vous possédez déjà le fichier .lic généré pour ce PIN ? Chargez-le ici.",
+            "noFile": "Aucun fichier sélectionné",
+            "formatAccepted": "Seuls les fichiers avec l'extension .lic sont acceptés",
+            "loadFile": "Charger la Licence",
+            "activeSubscription": "Abonnement {plan} Actif",
+            "expired": "Expiré",
+            "removeLicense": "Supprimer la Licence",
+            "licenseType": "Type de Licence",
+            "duration": "Durée Contractée",
+            "lifetime": "À vie",
+            "remaining": "Restant",
+            "traditional": "Traditionnel",
+            "annualBilling": "Facturation Annuelle",
+            "perYear": "/an",
+            "legacy": "Legacy",
+            "lifetimeAccess": "Accès à Vie",
+            "oneTime": "/unique",
+            "expressActivation": "Activation Express (Recommandé)",
+            "expressDesc": "Si vous avez déjà acheté TraderLog Pro, saisissez simplement votre e-mail ci-dessous pour activer instantanément.",
+            "purchaseEmail": "E-mail d'Achat",
+            "emailPlaceholder": "exemple@email.com",
+            "activating": "Activation...",
+            "activateNow": "Activer Maintenant",
+            "removeTitle": "Supprimer la Licence Actuelle ?",
+            "removeDesc": "Cette action supprimera l'accès premium de ce terminal immédiatement. Vous reviendrez à la période d'évaluation ou n'aurez plus d'accès si celle-ci a déjà expiré.",
+            "confirmRemove": "Confirmer la Suppression"
+        },
+        "assetTypes": {
+            "description": "Catégories d'actifs (Actions, Futures, Options, Forex...).",
+            "edit": "Modifier le Type",
+            "editTitle": "Modifier le Type d'Actif",
+            "newTitle": "Nouveau Type d'Actif",
+            "formDesc": "Remplissez les paramètres techniques du type d'actif.",
+            "searchPlaceholder": "Chercher par nom ou code...",
+            "noMarket": "Aucun Marché",
+            "emptyDesc": "Enregistrez les types d'actifs négociés pour les organiser.",
+            "createFirst": "Définir la Première Classe Structurelle",
+            "fields": {
+                "code": "Code",
+                "name": "Nom",
+                "market": "Marché",
+                "financialRules": "Règles Financières",
+                "financialRulesDesc": "Lier les profils de frais et fiscaux par défaut pour ce type.",
+                "defaultFees": "Frais par Défaut",
+                "taxProfile": "Profil Fiscal",
+                "unitLabel": "Libellé de l'Unité",
+                "resultType": "Type de Résultat",
+                "hasSectors": "Utilise des Secteurs",
+                "hasSectorsDesc": "Activer le regroupement par secteur et sous-secteur pour ce type."
+            },
+            "placeholders": {
+                "selectMarket": "Sélectionnez le marché...",
+                "globalDefault": "Par Défaut Global"
+            },
+            "options": {
+                "monetary": "Devise ($)",
+                "points": "Points"
+            },
+            "form": {
+                "code": "Code",
+                "codePlaceholder": "Sélectionner",
+                "defaultFee": "Frais par Défaut",
+                "defaultFeePlaceholder": "Sélectionner (Optionnel)",
+                "market": "Marché",
+                "marketPlaceholder": "Sélectionner",
+                "name": "Nom",
+                "namePlaceholder": "Futures",
+                "none": "Aucun",
+                "resultType": "Type de Résultat",
+                "resultTypeOptions": {
+                    "currency": "Devise",
+                    "points": "Points"
+                },
+                "save": "Enregistrer",
+                "unitLabel": "Libellé de l'Unité",
+                "unitLabelPlaceholder": "Ex : Pts, Contrats, etc."
+            },
+            "labels": {
+                "brokerageProfile": "Profil de Courtage",
+                "fiscalProfile": "Profil Fiscal",
+                "none": "Aucun",
+                "noneDefault": "Aucun / Par Défaut",
+                "noneExempt": "Aucun / Exempté"
+            },
+            "new": "Nouveau Type",
+            "title": "Types d'Actifs",
+            "empty": "Aucun type d'actif enregistré."
+        },
+        "assets": {
+            "importDialog": {
+                "success": "{count, plural, one {# actif importé} other {# actifs importés}} avec succès !"
+            }
+        },
+        "chartTypes": {
+            "title": "Types de Graphique",
+            "description": "Configurez les représentations graphiques utilisées (Renko, Chandeliers, Range).",
+            "new": "Nouveau Type de Graphique",
+            "edit": "Modifier le Type de Graphique",
+            "empty": "Aucun type de graphique enregistré.",
+            "searchPlaceholder": "Chercher un type de graphique...",
+            "form": {
+                "name": "Nom du Graphique",
+                "baseType": "Type de Construction",
+                "parameter": "Paramètre (Ticks/Min)",
+                "save": "Enregistrer la Configuration"
+            },
+            "types": {
+                "TimeBased": "Basé sur le Temps (Chandeliers)",
+                "Renko": "Renko (Ticks)",
+                "Range": "Range (Variation)"
+            }
+        },
+        "backup": {
+            "clearButton": "Effacer Toutes les Données",
+            "confirmReset": "Êtes-vous sûr de vouloir réinitialiser la base de données ? Cette action est irréversible.",
+            "dangerDescription": "Supprimez définitivement toutes les données et rétablissez les paramètres d'usine.",
+            "dangerZone": "Zone de Danger",
+            "description": "Gérez vos sauvegardes et l'état du système.",
+            "exportButton": "Exporter la Sauvegarde",
+            "exportDescription": "Sauvegardez vos données dans un fichier JSON.",
+            "exportTitle": "Exporter les Données",
+            "title": "Sauvegarde et Système"
+        },
+        "indicators": {
+            "title": "Indicateurs",
+            "description": "Gérez vos indicateurs favoris et paramètres opérationnels.",
+            "new": "Nouvel Indicateur",
+            "edit": "Modifier l'Indicateur",
+            "empty": "Aucun indicateur enregistré.",
+            "searchPlaceholder": "Chercher un indicateur...",
+            "form": {
+                "name": "Nom de l'Indicateur",
+                "category": "Catégorie",
+                "plotType": "Lieu de Tracé",
+                "color": "Couleur d'Affichage",
+                "usage": "Description d'Utilisation",
+                "params": "Paramètres"
+            },
+            "categories": {
+                "Trend": "Tendance",
+                "Oscillator": "Oscillateur",
+                "Volume": "Volume",
+                "Other": "Autres",
+                "Tendência": "Tendance",
+                "Oscilador": "Oscillateur"
+            }
+        },
+        "database": {
+            "backup": {
+                "description": "Exportez toutes vos données vers un fichier JSON et récupérez-les si vous devez réinstaller l'application.",
+                "errorExport": "Erreur lors de l'exportation de la sauvegarde",
+                "errorImport": "Erreur lors de la restauration de la sauvegarde",
+                "export": "Exporter la Sauvegarde",
+                "exporting": "Exportation...",
+                "hint": "La sauvegarde inclut : Trades, Comptes, Paramètres, Journal, Fiscal et toutes les données personnalisées.",
+                "import": "Restaurer la Sauvegarde",
+                "importing": "Restauration...",
+                "openTitle": "Sélectionner le Fichier de Sauvegarde",
+                "saveTitle": "Enregistrer la Sauvegarde",
+                "successExport": "Sauvegarde exportée avec succès !",
+                "successImport": "{count} enregistrements restaurés avec succès !",
+                "title": "Sauvegarde et Restauration"
+            },
+            "danger": {
+                "button": "Réinitialiser la Base de Données (Complet)",
+                "confirm": "ATTENTION : Cela effacera TOUTES les données (Trades, Comptes, Paramètres) et recréera la base à partir de zéro avec des données d'exemple. Êtes-vous absolument sûr ?",
+                "description": "Efface toutes les données et recrée la base à partir de zéro avec les données d'usine.",
+                "resetting": "Réinitialisation...",
+                "title": "Zone de Danger : Réinitialisation Totale",
+                "warning": "PRUDENCE : Tous vos trades, comptes et personnalisations seront perdus."
+            },
+            "defaults": {
+                "button": "Vérifier et Restaurer les Paramètres par Défaut",
+                "confirm": "Cela vérifiera et corrigera les données par défaut manquantes (Devises, Types d'Actif, etc.), sans effacer vos données. Voulez-vous continuer ?",
+                "description": "Utilisez cette option si vous remarquez que des options comme \"Types d'Actif\" ou \"États Émotionnels\" sont manquantes.",
+                "restoring": "Restauration...",
+                "title": "Restaurer les Paramètres Système par Défaut",
+                "warning": "Sûr à utiliser : Cette action vérifie l'intégrité des données système essentielles et recrée uniquement ce qui manque ou est incorrect. Vos trades et comptes ne seront PAS effacés."
+            },
+            "demo": {
+                "cleanAll": "Effacer Toutes les Données Démo",
+                "cleaning": "Nettoyage...",
+                "confirmDeleteDescription": "Êtes-vous sûr de vouloir supprimer les données de démonstration ? Cette action est irréversible.",
+                "confirmDeleteTitle": "Confirmer la Suppression",
+                "delete": "Supprimer la Sélection",
+                "deleteWarning": "Attention : Cette action supprimera définitivement les trades des comptes sélectionnés.",
+                "deleting": "Suppression...",
+                "description": "Générez ou supprimez des trades d'exemple pour tester les fonctionnalités du système.",
+                "generate": "Générer des Données d'Exemple",
+                "smartGenerate": "Générer des Trades Intelligents (Basés sur des Comptes Réels)",
+                "generating": "Génération...",
+                "populateAll": "Peupler Tout (Démo)",
+                "removeTrades": "Supprimer les Trades Démo",
+                "selectAccount": "Sélectionnez au moins un compte",
+                "successClean": "Tous les trades démo ont été supprimés !",
+                "successGenerate": "Données démo générées avec succès !",
+                "title": "Données de Démonstration (Démo)"
+            },
+            "selective": {
+                "deleteAll": "Supprimer la Sélection ({count})",
+                "description": "Choisissez des catégories complètes ou des éléments individuels à supprimer ou à peupler.",
+                "processing": "Traitement...",
+                "reseedAll": "Peupler la Sélection ({count})",
+                "selectedCount": "{selected} / {total} sélectionnés",
+                "title": "Gestionnaire Sélectif"
+            },
+            "description": "Outils pour diagnostiquer et gérer la base de données.",
+            "status": {
+                "button": "Vérifier le Statut",
+                "checking": "Vérification...",
+                "description": "Voyez combien d'enregistrements existent dans chaque table principale.",
+                "error": "Erreur lors de la vérification",
+                "success": "Statut vérifié avec succès !",
+                "title": "Vérifier le Statut de la Base"
+            },
+            "title": "Gérer la Base de Données"
+        },
+        "defaults": {
+            "autoCalcLabel": "Calcul Automatique",
+            "description": "Personnalisez le comportement par défaut de la plateforme.",
+            "riskHint": "Sélectionnez le profil de risque global.",
+            "riskLabel": "Profil de Risque par Défaut",
+            "strategyHint": "Sélectionnez la stratégie globale pour les nouvelles opérations.",
+            "strategyLabel": "Stratégie par Défaut",
+            "strategyPlaceholder": "Aucune stratégie sélectionnée",
+            "title": "Paramètres Globaux"
+        },
+        "general": {
+            "checkUpdates": "Vérifier les Mises à Jour",
+            "description": "Informations système et préférences globales.",
+            "no": "Non",
+            "title": "Général",
+            "version": "Version de l'Application",
+            "versionValue": "v0.1.0 (Alpha)",
+            "yes": "Oui"
+        },
+        "nav": {
+            "accounts": "Comptes",
+            "asset-profiles": "Profils d'Actif",
+            "assetProfiles": "Profils d'Actif",
+            "assetTypes": "Types d'Actif",
+            "assets": "Actifs",
+            "chartTypes": "Types de Graphique",
+            "currencies": "Devises",
+            "database": "Base de Données",
+            "new": "Nouveau Profil",
+            "edit": "Modifier le Profil",
+            "descriptions": {
+                "accounts": "Gérez vos comptes et courtiers",
+                "asset-profiles": "Profils spécifiques par actif.",
+                "assetTypes": "Organisez les catégories d'actifs",
+                "assets": "Configurez les symboles que vous négociez",
+                "chartTypes": "Définissez les représentations graphiques",
+                "currencies": "Gérez les devises de négociation",
+                "database": "Statut et intégrité des données",
+                "emotionalStates": "Cartographiez les déclencheurs émotionnels",
+                "fees": "Configurez les profils de frais",
+                "fiscal": {
+                    "assignments": "Attribuez des actifs aux profils fiscaux",
+                    "profiles": "Configurez les profils IR",
+                    "rules": "Règles de taux et taxes"
+                },
+                "general": "Paramètres globaux et système",
+                "growth-plans": "Plans de croissance automatisés.",
+                "indicators": "Gérez vos indicateurs favoris",
+                "integrations": "Configurez les intégrations et API",
+                "license": "Gérez le licenciement à vie",
+                "markets": "Gérez les marchés de base",
+                "modalities": "Configurez les styles opérationnels",
+                "profile": "Gérez votre profil et vos préférences",
+                "risk": "Configurez les limites et protections",
+                "risk-management": "Gestion globale des risques.",
+                "new": "Création d'un nouveau profil de risque institutionnel.",
+                "edit": "Édition des paramètres de risque et conformité.",
+                "strategies": "Documentez vos setups et règles",
+                "sectors": "Gérez la hiérarchie sectorielle.",
+                "tags": "Étiquettes personnalisées pour les trades",
+                "timeframes": "Configurez les intervalles opérationnels"
+            },
+            "emotionalStates": "États Émotionnels",
+            "fees": "Frais",
+            "fiscal": {
+                "assignments": "Attributions",
+                "profiles": "Profils",
+                "rules": "Règles"
+            },
+            "general": "Général",
+            "growth-plans": "Plans de Croissance",
+            "growthPlans": "Plans de Croissance",
+            "indicators": "Indicateurs",
+            "integrations": "Intégrations",
+            "license": "Licence",
+            "markets": "Marchés de Base",
+            "modalities": "Modalités",
+            "profile": "Mon Profil",
+            "risk": "Risque",
+            "risk-management": "Gestion des Risques",
+            "riskManagement": "Gestion des Risques",
+            "sections": {
+                "analysis": "Analyse",
+                "assets": "Actifs",
+                "fiscal": "Fiscal",
+                "general": "Général",
+                "integrations": "Intégrations",
+                "operational": "Opérationnel",
+                "registration": "Enregistrements",
+                "system": "Système"
+            },
+            "strategies": "Stratégies",
+            "sectors": "Secteurs",
+            "tags": "Tags",
+            "timeframes": "Timeframes"
+        },
+        "timeframes": {
+            "title": "Timeframes",
+            "description": "Configurez les intervalles opérationnels pour le regroupement de trades.",
+            "new": "Nouveau Timeframe",
+            "edit": "Modifier le Timeframe",
+            "empty": "Aucun timeframe enregistré.",
+            "searchPlaceholder": "Chercher un timeframe..."
+        },
+        "profile": {
+            "description": "Gérez vos informations personnelles et préférences système.",
+            "license": {
+                "active": "Active",
+                "copy": "Copier le PIN",
+                "expired": "Expirée",
+                "formatAccepted": "Format accepté : .lic",
+                "incompleteData": "DONNÉES INCOMPLÈTES - REMPLISSEZ VOTRE PROFIL",
+                "keyStatus": "Statut de la Clé",
+                "lifetime": "Bienvenue sur TraderLog Pro - À Vie",
+                "loadFile": "Charger le Fichier",
+                "management": "Gestion de Licence",
+                "noFile": "Aucun fichier de licence sélectionné",
+                "perk1": "Synchronisation RTD / Profit",
+                "perk2": "Journaux Illimités et Dashboard à Vie",
+                "perk3": "Mises à Jour Constantes avec le Module IA",
+                "perksTitle": "Avantages de la Licence Pro",
+                "pinDisclaimer": "Le Code Machine est strictement lié au matériel et sécurisé. La licence est non transférable.",
+                "pinLabel": "VOTRE CODE MACHINE (DEVICE ID)",
+                "prompt": "Voici votre Code Machine unique.",
+                "sendPinInfo": "Envoyez ce code à l'administrateur commercial pour recevoir la clé originale.",
+                "status": "Statut",
+                "step1": "Votre Identifiant (Code Machine)",
+                "step1Desc": "Ce code est généré à partir de votre matériel. Il est nécessaire pour générer votre licence.",
+                "step2": "Activer la Licence",
+                "step2Desc": "Après avoir reçu le fichier .lic généré par l'administrateur, chargez-le ici.",
+                "subtitle": "Activate your product and manage your subscription.",
+                "title": "LICENCE DU PRODUIT",
+                "trial": "Licence Trial",
+                "trialBadge": "Période d'Essai",
+                "viewDetails": "Voir les Détails"
+            },
+            "personalInfo": {
+                "avatar": "Photo de Profil",
+                "avatarHint": "Cliquez pour changer votre photo.",
+                "email": "E-mail",
+                "fullName": "Nom Complet",
+                "phone": "Téléphone",
+                "removePhoto": "Supprimer la Photo",
+                "title": "INFORMATIONS PERSONNELLES"
+            },
+            "currencies": {
+                "brl": "BRL (R$)",
+                "usd": "USD ($)",
+                "eur": "EUR (€)"
+            },
+            "timezones": {
+                "acre": "UTC -5 (Acre)",
+                "amazon": "UTC -4 (AM/MT/MS)",
+                "brasilia": "UTC -3 (Brasília/SP)",
+                "noronha": "UTC -2 (Fernando de Noronha)",
+                "london": "UTC (Londres/GMT)",
+                "europe": "UTC +1 (Europe Centrale)"
+            },
+            "preferences": {
+                "convertAll": "Convertir tous les soldes vers la devise principale",
+                "langEN": "Anglais (EN-US)",
+                "langES": "Espagnol (ES-ES)",
+                "langFR": "Français (FR-FR)",
+                "langPT": "Portugais (PT-BR)",
+                "language": "Langue",
+                "mainCurrency": "Devise Principale",
+                "region": "Région",
+                "theme": "Thème",
+                "themeDark": "Sombre",
+                "themeLight": "Clair",
+                "timezone": "Fuseau Horaire",
+                "title": "PARAMÈTRES",
+                "utcOffset": "Fuseau Horaire"
+            },
+            "save": "Enregistrer les Modifications",
+            "security": {
+                "changePassword": "Changer le Mot de Passe",
+                "confirmLogout": "Êtes-vous sûr de vouloir vous déconnecter ?",
+                "confirmPassword": "Confirmer le Nouveau Mot de Passe",
+                "confirmPasswordPlaceholder": "Confirmez le nouveau mot de passe",
+                "currentPassword": "Mot de Passe Actuel",
+                "currentPasswordPlaceholder": "Saisissez le mot de passe actuel",
+                "error": {
+                    "minChars": "Le mot de passe doit contenir au moins 6 caractères.",
+                    "mismatch": "Les mots de passe ne correspondent pas."
+                },
+                "loggingOut": "Déconnexion...",
+                "logout": "Se Déconnecter",
+                "newPassword": "Nouveau Mot de Passe",
+                "newPasswordPlaceholder": "Saisissez le nouveau mot de passe",
+                "success": "Mot de passe changé avec succès.",
+                "title": "SÉCURITÉ ET ACCÈS"
+            },
+            "success": "Profil mis à jour avec succès !",
+            "title": "Mon Profil"
+        }
+    }
+}

@@ -1,0 +1,497 @@
+<script lang="ts">
+    import { financialConfigStore } from "$lib/stores/financial-config.svelte";
+  import { accountsStore } from "$lib/stores/accounts.svelte";
+    import * as Dialog from "$lib/components/ui/dialog";
+    import { Button } from "$lib/components/ui/button";
+    import { Input } from "$lib/components/ui/input";
+    import { Label } from "$lib/components/ui/label";
+    import * as Select from "$lib/components/ui/select";
+    import * as Tabs from "$lib/components/ui/tabs";
+    import { appStore } from "$lib/stores/app.svelte";
+    import { toast } from "svelte-sonner";
+    import { t } from "svelte-i18n";
+    import { formatLocalISO, cn } from "$lib/utils";
+    import {
+        ArrowRight,
+        ArrowRightLeft,
+        Wallet,
+        ArrowUpRight,
+        ArrowDownLeft,
+    } from "lucide-svelte";
+    import { SystemCalendar } from "$lib/components/ui/system";
+    import { keyboardForm } from "$lib/actions/keyboard-nav";
+
+    let { open = $bindable(false) } = $props();
+
+    // UI State
+    let activeTab = $state("transaction");
+
+    // Shared Fields
+    let date = $state(new Date().toISOString().split("T")[0]);
+    let description = $state("");
+
+    // Transaction Fields
+    let transactionType = $state("Deposit");
+    let accountId = $state("");
+    let amount = $state("");
+
+    // Transfer Fields
+    let fromAccountId = $state("");
+    let toAccountId = $state("");
+    let transferAmount = $state("");
+    let feePercent = $state("");
+    let destAmount = $state("");
+    let exchangeRate = $state("1.0");
+
+    let accountOptions = $derived(
+        accountsStore.accounts.map((a) => ({
+            value: a.id,
+            label: a.nickname,
+            currency: a.currency,
+        })),
+    );
+
+    let transactionTypes = $derived([
+        { value: "Deposit", label: $t("finance.statement.types.deposit") },
+        { value: "Withdraw", label: $t("finance.statement.types.withdraw") },
+        {
+            value: "Adjustment",
+            label: $t("finance.statement.types.adjustment"),
+        },
+    ]);
+
+    // Derived helpers for Transfer
+    let fromAccount = $derived(
+        accountsStore.accounts.find((a) => a.id === fromAccountId),
+    );
+    let toAccount = $derived(
+        accountsStore.accounts.find((a) => a.id === toAccountId),
+    );
+    let sameCurrency = $derived(
+        fromAccount && toAccount && fromAccount.currency === toAccount.currency,
+    );
+
+    let feeAmount = $derived.by(() => {
+        const s = parseFloat(transferAmount) || 0;
+        const p = parseFloat(feePercent) || 0;
+        return (s * p) / 100;
+    });
+
+    // Transfer Logic
+    function handleTransferSourceChange() {
+        if (!transferAmount) return;
+        const s = parseFloat(transferAmount) || 0;
+        const rate = parseFloat(exchangeRate) || 1;
+        const p = parseFloat(feePercent) || 0;
+        const calculatedFee = (s * p) / 100;
+        const net = Math.max(0, s - calculatedFee);
+
+        if (sameCurrency) {
+            destAmount = net.toFixed(2);
+            exchangeRate = "1.0";
+        } else {
+            destAmount = (net * rate).toFixed(2);
+        }
+    }
+
+    function handleTransferDestChange() {
+        if (!destAmount || sameCurrency) return;
+        const d = parseFloat(destAmount) || 0;
+        const s = parseFloat(transferAmount) || 0;
+        const p = parseFloat(feePercent) || 0;
+        const calculatedFee = (s * p) / 100;
+        const net = Math.max(0, s - calculatedFee);
+
+        if (net > 0) {
+            exchangeRate = (d / net).toFixed(4);
+        }
+    }
+
+    async function save() {
+        if (activeTab === "transfer") {
+            if (
+                !fromAccountId ||
+                !toAccountId ||
+                !transferAmount ||
+                parseFloat(transferAmount) <= 0
+            ) {
+                toast.error(
+                    $t("finance.transactionDialog.errors.requiredFields"),
+                );
+                return;
+            }
+            if (fromAccountId === toAccountId) {
+                toast.error(
+                    $t("finance.transactionDialog.errors.differentAccounts"),
+                );
+                return;
+            }
+
+            const fullIsoDate = formatLocalISO(date);
+
+            const result = await financialConfigStore.transferFunds({
+                fromAccountId,
+                toAccountId,
+                amountParams: {
+                    sourceAmount: parseFloat(transferAmount),
+                    fee: feeAmount,
+                    destAmount: parseFloat(destAmount) || 0,
+                },
+                date: fullIsoDate,
+                description:
+                    description ||
+                    (sameCurrency
+                        ? $t("finance.transactionDialog.defaults.transfer")
+                        : `${$t("finance.transactionDialog.fxRate")}: ${exchangeRate}`),
+            });
+
+            if (result.success) {
+                toast.success($t("finance.transferDialog.success"));
+                open = false;
+                resetForms();
+            } else {
+                toast.error(
+                    result.error ||
+                        $t("finance.transactionDialog.errors.transferError"),
+                );
+            }
+        } else {
+            // Standard Transaction
+            if (!accountId || !amount || parseFloat(amount) <= 0) {
+                toast.error(
+                    $t("finance.transactionDialog.errors.requiredFields"),
+                );
+                return;
+            }
+
+            const value = parseFloat(amount);
+            const finalAmount = transactionType === "Withdraw" ? -value : value;
+            const fullIsoDate = formatLocalISO(date);
+
+            const result = await financialConfigStore.addCashTransaction({
+                account_id: accountId,
+                amount: finalAmount,
+                date: fullIsoDate,
+                type: transactionType as any,
+                category: transactionType === "Adjustment" ? "Adjustment" : undefined,
+                description:
+                    description ||
+                    (transactionType === "Deposit"
+                        ? $t("finance.transactionDialog.defaults.deposit")
+                        : transactionType === "Withdraw"
+                          ? $t("finance.transactionDialog.defaults.withdraw")
+                          : $t(
+                                "finance.transactionDialog.defaults.adjustment",
+                            )),
+            });
+
+            if (result.success) {
+                toast.success($t("common.success"));
+                open = false;
+                resetForms();
+            } else {
+                toast.error(
+                    result.error ||
+                        $t("finance.transactionDialog.errors.saveError"),
+                );
+            }
+        }
+    }
+
+    function resetForms() {
+        amount = "";
+        description = "";
+        transferAmount = "";
+        feePercent = "";
+        destAmount = "";
+        // Keep accounts/types for UX convenience
+    }
+</script>
+
+<Dialog.Root bind:open>
+    <Dialog.Content class="sm:max-w-[600px]">
+        <Dialog.Header>
+            <Dialog.Title
+                >{$t("finance.transactionDialog.newOperation")}</Dialog.Title
+            >
+            <Dialog.Description>
+                {$t("finance.transactionDialog.operationShortDesc")}
+            </Dialog.Description>
+        </Dialog.Header>
+
+        <Tabs.Root bind:value={activeTab} class="w-full">
+            <Tabs.List class="grid w-full grid-cols-2">
+                <Tabs.Trigger value="transaction" class="gap-2">
+                    <Wallet class="w-4 h-4" />
+                    {$t("finance.transactionDialog.tabs.transaction")}
+                </Tabs.Trigger>
+                <Tabs.Trigger value="transfer" class="gap-2">
+                    <ArrowRightLeft class="w-4 h-4" />
+                    {$t("finance.transactionDialog.tabs.transfer")}
+                </Tabs.Trigger>
+            </Tabs.List>
+
+            <!-- AB: TRANSACAO -->
+            <Tabs.Content value="transaction" class="py-4 space-y-4">
+                <div use:keyboardForm class="space-y-4">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-3 space-y-1.5">
+                        <span class="text-[9px] font-black uppercase tracking-widest text-muted-foreground/60 dark:text-muted-foreground/30 px-3">{$t("finance.transactionDialog.type")}</span>
+                        <Select.Root type="single" bind:value={transactionType}>
+                            <Select.Trigger
+                                class="h-9 px-4 bg-muted/5 dark:bg-white/[0.03] border border-black/5 dark:border-white/5 rounded-full hover:border-black/10 dark:hover:border-white/20 transition-all text-[10px] font-black shadow-inner flex items-center justify-between gap-1 w-full text-foreground/80 dark:text-foreground/70 ring-0 focus:ring-0"
+                            >
+                                <span class="truncate uppercase tracking-widest">
+                                    {transactionTypes.find(
+                                        (o) => o.value === transactionType,
+                                    )?.label ?? transactionType}
+                                </span>
+                            </Select.Trigger>
+                            <Select.Content portal={null} class="bg-white dark:bg-[#0c0d10] border-black/10 dark:border-white/5 rounded-2xl p-1 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-200 z-[100]">
+                                {#each transactionTypes as option}
+                                    <Select.Item value={option.value} class="text-[10px] font-black uppercase tracking-widest px-4 py-2.5 rounded-xl cursor-pointer transition-all data-[selected]:bg-primary/10 data-[selected]:text-primary data-[highlighted]:bg-muted/5">
+                                        {option.label}
+                                    </Select.Item>
+                                {/each}
+                            </Select.Content>
+                        </Select.Root>
+                    </div>
+
+                    <div class="col-span-5 space-y-1.5">
+                        <span class="text-[9px] font-black uppercase tracking-widest text-muted-foreground/60 dark:text-muted-foreground/30 px-3">{$t("finance.transactionDialog.account")}</span>
+                        <Select.Root type="single" bind:value={accountId}>
+                            <Select.Trigger
+                                class="h-9 px-4 bg-muted/5 dark:bg-white/[0.03] border border-black/5 dark:border-white/5 rounded-full hover:border-black/10 dark:hover:border-white/20 transition-all text-[10px] font-black shadow-inner flex items-center justify-between gap-1 w-full text-foreground/80 dark:text-foreground/70 ring-0 focus:ring-0"
+                            >
+                                <span class="truncate uppercase tracking-widest">
+                                    {accountOptions.find(
+                                        (o) => o.value === accountId,
+                                    )?.label ?? $t("finance.statement.account")}
+                                </span>
+                            </Select.Trigger>
+                            <Select.Content portal={null} class="bg-white dark:bg-[#0c0d10] border-black/10 dark:border-white/5 rounded-2xl p-1 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-200 z-[100]">
+                                {#each accountOptions as acc}
+                                    <Select.Item value={acc.value} class="text-[10px] font-black uppercase tracking-widest px-4 py-2.5 rounded-xl cursor-pointer transition-all data-[selected]:bg-primary/10 data-[selected]:text-primary data-[highlighted]:bg-muted/5">
+                                        {acc.label}{acc.currency ? ` (${acc.currency})` : ""}
+                                    </Select.Item>
+                                {/each}
+                            </Select.Content>
+                        </Select.Root>
+                    </div>
+
+                    <div class="col-span-4">
+                        <SystemCalendar label={$t("finance.transactionDialog.date")} bind:value={date} />
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-4 space-y-2">
+                        <Label>{$t("finance.transactionDialog.amount")}</Label>
+                        <div class="relative">
+                            <Input
+                                type="number"
+                                step="0.01"
+                                bind:value={amount}
+                                class="pl-8 font-mono font-bold"
+                                placeholder="0.00"
+                            />
+                            <div
+                                class="absolute inset-y-0 left-0 flex items-center pl-2.5 pointer-events-none text-muted-foreground"
+                            >
+                                {#if transactionType === "Withdraw"}
+                                    <ArrowUpRight
+                                        class="w-4 h-4 text-rose-500"
+                                    />
+                                {:else}
+                                    <ArrowDownLeft
+                                        class="w-4 h-4 text-green-500"
+                                    />
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-8 space-y-2">
+                        <Label
+                            >{$t(
+                                "finance.transactionDialog.description",
+                            )}</Label
+                        >
+                        <Input
+                            placeholder={$t(
+                                "finance.transactionDialog.descriptionPlaceholder",
+                            )}
+                            bind:value={description}
+                        />
+                    </div>
+                </div>
+                </div>
+            </Tabs.Content>
+
+            <!-- TAB: TRANSFERENCIA -->
+            <Tabs.Content value="transfer" class="py-4 space-y-4">
+                <div use:keyboardForm class="space-y-4">
+                <div
+                    class="flex items-center gap-4 bg-muted/30 p-3 rounded-lg border"
+                >
+                    <div class="flex-1 space-y-1.5">
+                        <span class="text-[9px] font-black uppercase tracking-widest text-muted-foreground/60 dark:text-muted-foreground/30 px-3">{$t("common.from")}</span>
+                        <Select.Root type="single" bind:value={fromAccountId}>
+                            <Select.Trigger
+                                class="h-9 px-4 bg-muted/5 dark:bg-white/[0.03] border border-black/5 dark:border-white/5 rounded-full hover:border-black/10 dark:hover:border-white/20 transition-all text-[10px] font-black shadow-inner flex items-center justify-between gap-1 w-full text-foreground/80 dark:text-foreground/70 ring-0 focus:ring-0"
+                            >
+                                <span class="truncate uppercase tracking-widest">
+                                    {accountOptions.find(
+                                        (a) => a.value === fromAccountId,
+                                    )?.label ?? $t("common.origin")}
+                                </span>
+                            </Select.Trigger>
+                            <Select.Content portal={null} class="bg-white dark:bg-[#0c0d10] border-black/10 dark:border-white/5 rounded-2xl p-1 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-200 z-[100]">
+                                {#each accountOptions as acc}
+                                    <Select.Item
+                                        value={acc.value}
+                                        disabled={acc.value === toAccountId}
+                                        class="text-[10px] font-black uppercase tracking-widest px-4 py-2.5 rounded-xl cursor-pointer transition-all data-[selected]:bg-primary/10 data-[selected]:text-primary data-[highlighted]:bg-muted/5"
+                                    >
+                                        {acc.label}{acc.currency ? ` (${acc.currency})` : ""}
+                                    </Select.Item>
+                                {/each}
+                            </Select.Content>
+                        </Select.Root>
+                    </div>
+
+                    <ArrowRight class="w-4 h-4 text-muted-foreground mt-5" />
+
+                    <div class="flex-1 space-y-1.5">
+                        <span class="text-[9px] font-black uppercase tracking-widest text-muted-foreground/60 dark:text-muted-foreground/30 px-3">{$t("common.to")}</span>
+                        <Select.Root type="single" bind:value={toAccountId}>
+                            <Select.Trigger
+                                class="h-9 px-4 bg-muted/5 dark:bg-white/[0.03] border border-black/5 dark:border-white/5 rounded-full hover:border-black/10 dark:hover:border-white/20 transition-all text-[10px] font-black shadow-inner flex items-center justify-between gap-1 w-full text-foreground/80 dark:text-foreground/70 ring-0 focus:ring-0"
+                            >
+                                <span class="truncate uppercase tracking-widest">
+                                    {accountOptions.find(
+                                        (a) => a.value === toAccountId,
+                                    )?.label ?? $t("common.destination")}
+                                </span>
+                            </Select.Trigger>
+                            <Select.Content portal={null} class="bg-white dark:bg-[#0c0d10] border-black/10 dark:border-white/5 rounded-2xl p-1 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in-95 duration-200 z-[100]">
+                                {#each accountOptions as acc}
+                                    <Select.Item
+                                        value={acc.value}
+                                        disabled={acc.value === fromAccountId}
+                                        class="text-[10px] font-black uppercase tracking-widest px-4 py-2.5 rounded-xl cursor-pointer transition-all data-[selected]:bg-primary/10 data-[selected]:text-primary data-[highlighted]:bg-muted/5"
+                                    >
+                                        {acc.label}{acc.currency ? ` (${acc.currency})` : ""}
+                                    </Select.Item>
+                                {/each}
+                            </Select.Content>
+                        </Select.Root>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-12 gap-3">
+                    <div class="col-span-3 space-y-1">
+                        <Label class="text-xs"
+                            >{$t(
+                                "finance.transactionDialog.labels.amountWithCurrency",
+                                {
+                                    currency: fromAccount?.currency ?? "",
+                                },
+                            )}</Label
+                        >
+                        <Input
+                            type="number"
+                            step="0.01"
+                            bind:value={transferAmount}
+                            oninput={handleTransferSourceChange}
+                            placeholder="0.00"
+                            class="font-mono font-bold"
+                        />
+                    </div>
+
+                    <div class="col-span-2 space-y-1">
+                        <Label class="text-xs"
+                            >{$t(
+                                "finance.transactionDialog.labels.feePercent",
+                            )}</Label
+                        >
+                        <div class="relative">
+                            <Input
+                                type="number"
+                                step="0.01"
+                                bind:value={feePercent}
+                                oninput={handleTransferSourceChange}
+                                placeholder="0"
+                                class="text-rose-500 pr-0 text-center font-mono font-bold"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="col-span-3 space-y-1">
+                        <Label class="text-xs"
+                            >{$t(
+                                "finance.transactionDialog.labels.entryWithCurrency",
+                                {
+                                    currency: toAccount?.currency ?? "",
+                                },
+                            )}</Label
+                        >
+                        <Input
+                            type="number"
+                            step="0.01"
+                            bind:value={destAmount}
+                            readonly={sameCurrency}
+                            oninput={handleTransferDestChange}
+                            placeholder="0.00"
+                            class={cn(
+                                "font-mono font-bold",
+                                sameCurrency ? "bg-muted" : "text-green-600",
+                            )}
+                        />
+                    </div>
+
+                    <div class="col-span-4">
+                        <SystemCalendar label={$t("common.date")} bind:value={date} />
+                    </div>
+                </div>
+
+                {#if !sameCurrency && fromAccountId && toAccountId}
+                    <div
+                        class="flex items-center gap-2 px-2 py-1 bg-yellow-500/10 border border-yellow-500/20 rounded text-xs text-yellow-600 dark:text-yellow-400"
+                    >
+                        <ArrowRightLeft class="w-3 h-3" />
+                        <span>1 {fromAccount?.currency} = </span>
+                        <Input
+                            class="w-20 h-6 text-xs bg-transparent border-yellow-500/30 p-1 font-mono font-bold"
+                            type="number"
+                            step="0.0001"
+                            bind:value={exchangeRate}
+                            oninput={handleTransferSourceChange}
+                        />
+                        <span>{toAccount?.currency}</span>
+                    </div>
+                {/if}
+
+                <div class="space-y-1">
+                    <Label class="text-xs">{$t("common.details")}</Label>
+                    <Input
+                        class="h-9"
+                        placeholder={$t("common.optional")}
+                        bind:value={description}
+                    />
+                </div>
+                </div>
+            </Tabs.Content>
+        </Tabs.Root>
+
+        <Dialog.Footer>
+            <Button variant="outline" onclick={() => (open = false)}
+                >{$t("common.cancel")}</Button
+            >
+            <Button onclick={save}
+                >{$t("finance.transactionDialog.newOperation")}</Button
+            >
+        </Dialog.Footer>
+    </Dialog.Content>
+</Dialog.Root>
+```

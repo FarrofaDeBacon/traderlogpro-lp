@@ -1,0 +1,43 @@
+{
+    "fees": {
+        "title": "Fees and Costs",
+        "description": "Configure operational costs (Brokerage, Exchange, ISS) per profile.",
+        "new": "New Fee Profile",
+        "edit": "Edit Fee Profile",
+        "empty": "No fee profile found.",
+        "searchPlaceholder": "Search fee profile...",
+        "form": {
+            "name": "Profile Name",
+            "namePlaceholder": "Ex: Broker X - Mini Contracts",
+            "brokerage": "Fixed Brokerage",
+            "b3": "Exchange Fees (%)",
+            "iss": "Service Tax (ISS) (%)",
+            "spread": "Currency Spread (%)",
+            "operationalCosts": "Operational Costs",
+            "modalityConfig": "Configuration per Modality",
+            "fixedFee": "Fixed Fee",
+            "percentageFee": "Percentage Fee (%)",
+            "exchangeFee": "Exchange / B3 Fee (%)",
+            "initializing": "Initializing...",
+            "noModalities": "No modality configured.",
+            "createModalityFirst": "Create First Modality",
+            "account": "Linked Account",
+            "defaultAccount": "Default (No specific account)",
+            "unknownAccount": "Unknown Account",
+            "noBroker": "Broker not provided",
+            "notes": "Notes and Observations",
+            "notesPlaceholder": "Describe specific details of this fee profile...",
+            "createFirst": "Register First Fee Profile",
+            "save": "Save Profile"
+        },
+        "simulator": {
+            "title": "Cost Simulator",
+            "description": "See the impact of fees on a projected volume.",
+            "volume": "Estimated Volume",
+            "fixed": "Fixed Costs",
+            "variable": "Variable Costs",
+            "b3": "Exchange Fees (B3)",
+            "total": "Total Estimated Cost"
+        }
+    }
+}

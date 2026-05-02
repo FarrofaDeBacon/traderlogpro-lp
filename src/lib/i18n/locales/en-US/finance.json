@@ -1,0 +1,193 @@
+{
+    "finance": {
+        "charts": {
+            "evolution": "Evolution",
+            "evolutionSubtitle": "Equity and Deposits Evolution"
+        },
+        "closureWizard": {
+            "description": "Consolidate your trade results into account balances.",
+            "error": "Error",
+            "step1": {
+                "hint": "Usually performed for the previous day (yesterday) or past days.",
+                "label": "Select Date",
+                "noTradesWarning": "No trades found for the selected day. Select another date or register trades."
+            },
+            "step2": {
+                "columns": {
+                    "account": "Account",
+                    "result": "Result",
+                    "select": "Sel.",
+                    "trades": "Trades"
+                },
+                "confirm": "Confirm Postings",
+                "noTrades": "No trades found on this date.",
+                "processing": "Processing..."
+            },
+            "step3": {
+                "finish": "Finish",
+                "successDescription": "The values have been posted to the selected accounts' statement.",
+                "successTitle": "Closure Completed!"
+            },
+            "stepEmotion": {
+                "description": "Evaluate how your psychological control was today.",
+                "intensityIntense": "Extreme",
+                "intensityLabel": "Intensity ({value})",
+                "intensityLight": "Light",
+                "notesLabel": "Day Notes",
+                "notesPlaceholder": "Briefly describe how your day went, discipline, focus...",
+                "stateLabel": "How did you feel today?",
+                "statePlaceholder": "Select an emotion...",
+                "title": "Emotional Check-in"
+            },
+            "success": "Success",
+            "title": "Daily Closure"
+        },
+        "dailyClosure": "Daily Closure",
+        "darfDetails": {
+            "calculationBasis": "Calculation Basis",
+            "calculationInfo": "Calculation Info",
+            "compensatedLosses": "Compensated Losses",
+            "complementaryBadge": "Complementary Guide",
+            "dateNotAvailable": "Date not available",
+            "description": "Full assessment and payment information.",
+            "dueDate": "Due Date",
+            "errorMessage": "There was a problem loading this DARF.",
+            "fine": "Fine",
+            "grossResult": "Gross Result",
+            "interest": "Interest",
+            "loading": "Loading DARF and Assessment...",
+            "operations": "Linked Trades",
+            "paidAt": "Paid On",
+            "period": "Period",
+            "principalValue": "Principal Value",
+            "revenueCode": "Revenue Code",
+            "statusPaid": "Status Paid",
+            "statusPending": "Status Pending",
+            "taxRate": "Tax Rate",
+            "title": "DARF Details",
+            "totalPaid": "Total Paid",
+            "unpayAction": "Undo Payment",
+            "unpayCancel": "Cancel",
+            "unpayConfirm": "Confirm",
+            "unpayTitle": "Undo"
+        },
+        "description": "Centralized cash management, statements, and closures.",
+        "details": {
+            "account": "Account",
+            "columns": {
+                "asset": "Asset",
+                "result": "Result",
+                "side": "Side"
+            },
+            "date": "Date",
+            "noTrades": "No trades linked to this transaction.",
+            "title": "Transaction Details",
+            "totalAmount": "Total Amount"
+        },
+        "newTransaction": "New Deposit/Withdrawal",
+        "quickStats": {
+            "activeAccounts": "Active Accounts",
+            "balanceIn": "Balance in {currency}",
+            "breakdownDesc": "Summary of accounts linked to this currency.",
+            "breakdownTitle": "{currency} Breakdown",
+            "consolidated": "Consolidated",
+            "monthlyResult": "Monthly Result",
+            "monthlyResultDesc": "Performance summary for the month",
+            "totalBalance": "Total Balance (Est.)",
+            "totalEquity": "Total Equity",
+            "viewBreakdown": "View Details"
+        },
+        "statement": {
+            "account": "Account",
+            "allAccounts": "All Accounts",
+            "allCurrencies": "All Currencies",
+            "categories": {
+                "adjustment": "ADJUST.",
+                "tax_payment": "TAX",
+                "tax_refund": "REFUND",
+                "trading": "CLOSURE",
+                "transfer": "TRANSF."
+            },
+            "columns": {
+                "account": "ACCOUNT",
+                "amount": "AMOUNT",
+                "date": "Date",
+                "description": "DESCRIPTION",
+                "type": "TYPE"
+            },
+            "entries": "Postings",
+            "hierarchy": "Hierarchy",
+            "messages": {
+                "deleteError": "Delete Error",
+                "systemLinked": "This transaction was generated by the system and can only be changed in the source module (e.g., IRPF)."
+            },
+            "monthlyResult": "Monthly Result",
+            "noNumber": "No Number",
+            "noTransactions": "No transactions found in the period.",
+            "result": "Result",
+            "searchPlaceholder": "Search in description or value...",
+            "summary": {
+                "netResult": "Net Result",
+                "periodEntries": "Period Postings",
+                "title": "Day Summary",
+                "totalDeposits": "Total In",
+                "totalWithdrawals": "Total Out"
+            },
+            "title": "Transaction Statement",
+            "types": {
+                "adjustment": "Adjustment",
+                "deposit": "Deposit",
+                "result": "RESULT",
+                "transfer": "Transfer",
+                "withdraw": "Withdrawal"
+            }
+        },
+        "title": "Financial Hub",
+        "transactionDialog": {
+            "newOperation": "New Operation",
+            "operationShortDesc": "Record deposits, withdrawals, or manual balance adjustments.",
+            "type": "Type",
+            "account": "Account",
+            "amount": "Amount",
+            "date": "Date",
+            "description": "Description",
+            "descriptionPlaceholder": "Ex: Monthly deposit...",
+            "fxRate": "Exchange Rate",
+            "tabs": {
+                "transaction": "Transaction",
+                "transfer": "Transfer"
+            },
+            "defaults": {
+                "deposit": "Deposit",
+                "withdraw": "Withdrawal",
+                "transfer": "Transfer",
+                "adjustment": "Adjustment"
+            },
+            "labels": {
+                "amountWithCurrency": "Amount ({currency})",
+                "entryWithCurrency": "Entry ({currency})",
+                "feePercent": "Fee (%)"
+            },
+            "errors": {
+                "requiredFields": "Fill in all required fields.",
+                "differentAccounts": "Select different accounts for the transfer.",
+                "saveError": "Error saving transaction.",
+                "transferError": "Error performing transfer."
+            }
+        },
+        "transferDialog": {
+            "title": "Transfer Between Accounts",
+            "description": "Move balance between your accounts with automatic currency conversion.",
+            "amount": "Amount to Transfer",
+            "fee": "Operation Fee (%)",
+            "rate": "Exchange Rate",
+            "finalAmount": "Final Amount Received",
+            "finalAmountHint": "Value after applying exchange rate and fees.",
+            "confirm": "Confirm Transfer",
+            "success": "Transfer performed successfully!",
+            "errorDifferentAccounts": "Select different accounts.",
+            "errorPositiveValue": "Enter a positive value.",
+            "errorSave": "Error saving transfer."
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "indicators": {
+        "add": "Adicionar",
+        "addFirst": "Adicionar o primeiro",
+        "categories": {
+            "Oscillator": "Oscilador",
+            "Other": "Outros",
+            "Trend": "Tendência",
+            "Volume": "Volume"
+        },
+        "category": "Categoria",
+        "defaultColor": "Cor Padrão",
+        "description": "Cadastre seus indicadores técnicos favoritos e configurações padrão.",
+        "edit": "Editar Indicador",
+        "empty": "Nenhum indicador encontrado",
+        "errors": {
+            "inUse": "Não é possível excluir este indicador: ele está sendo utilizado em uma ou mais estratégias."
+        },
+        "modelHint": "Selecione um modelo para preencher automaticamente os campos abaixo.",
+        "name": "Nome do Indicador",
+        "namePlaceholder": "Ex: MMA 20, RSI...",
+        "new": "Novo Indicador",
+        "noParams": "Nenhum parâmetro definido.",
+        "paramName": "Nome",
+        "paramNameLabel": "Nome",
+        "paramNamePlaceholder": "Ex: Período",
+        "paramValue": "Valor",
+        "parameters": "Parâmetros",
+        "params": {
+            "Anchorage": "Ancoragem",
+            "Daily": "Diária",
+            "Deviation": "Desvio",
+            "Fast": "Rápida",
+            "Signal": "Sinal",
+            "Slow": "Lenta"
+        },
+        "plotType": "Tipo de Plotagem",
+        "plotTypes": {
+            "Overlay": "Sobreposto ao Gráfico",
+            "SubWindow": "Janela Separada"
+        },
+        "presets": {
+            "bb": "Bandas de Bollinger",
+            "custom": "Personalizado",
+            "ema": "Média Móvel Exponencial (EMA)",
+            "macd": "MACD",
+            "rsi": "RSI (Índice de Força Relativa)",
+            "sma": "Média Móvel Simples (SMA)",
+            "vol": "Volume Financeiro",
+            "vwap": "VWAP"
+        },
+        "previewColor": "Preview de Cor",
+        "quickModel": "Modelo Rápido",
+        "searchPlaceholder": "Buscar indicador...",
+        "selectModel": "Selecione um modelo...",
+        "title": "Indicadores",
+        "usage": "Descrição de Uso",
+        "usagePlaceholder": "Como você usa este indicador? (Ex: Compro quando cruza pra cima...)",
+        "form": {
+            "cancel": "Cancelar",
+            "createFirst": "Cadastrar Primeiro Indicador",
+            "save": "Salvar"
+        }
+    }
+}

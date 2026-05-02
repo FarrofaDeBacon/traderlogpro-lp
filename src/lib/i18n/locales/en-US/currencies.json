@@ -1,0 +1,34 @@
+{
+    "currencies": {
+        "description": "Register the currencies used in your accounts (BRL, USD, etc).",
+        "edit": "Edit Currency",
+        "empty": "No currency found",
+        "new": "New Currency",
+        "searchPlaceholder": "Search currency...",
+        "title": "Currencies",
+        "labels": {
+            "baseCurrencies": "Base Currencies",
+            "foreignCurrencies": "Foreign Currencies",
+            "exchangeToBase": "Exchange to {base}"
+        },
+        "form": {
+            "code": "Code",
+            "codePlaceholder": "Ex: USD",
+            "name": "Name",
+            "namePlaceholder": "Ex: US Dollar",
+            "save": "Save Currency",
+            "symbol": "Symbol",
+            "symbolPlaceholder": "Ex: $",
+            "isoCode": "Code (ISO)",
+            "description": "Define currencies and conversion rates for the system.",
+            "exchangeRate": "Conversion Rate",
+            "baseProportion": "{base} PROPORTION",
+            "exchangeRateHint": "Define how much 1 unit of this currency is worth in the base currency.",
+            "createFirst": "Register First Currency",
+            "brlProportion": "BRL Proportion"
+        },
+        "errors": {
+            "inUse": "Cannot delete this currency: it is currently used by one or more accounts."
+        }
+    }
+}

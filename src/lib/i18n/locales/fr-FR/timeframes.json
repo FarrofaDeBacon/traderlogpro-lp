@@ -1,0 +1,19 @@
+{
+    "timeframes": {
+        "description": "Configurez les unités de temps opérationnelles.",
+        "displayName": "Nom d'Affichage",
+        "edit": "Modifier le Timeframe",
+        "empty": "Aucun timeframe trouvé",
+        "namePlaceholder": "Ex : 5 Minutes",
+        "new": "Nouvel Intervalle",
+        "searchPlaceholder": "Chercher un timeframe...",
+        "title": "Timeframes",
+        "value": "Valeur / Code",
+        "valuePlaceholder": "Ex : 5m, 1H, 1D",
+        "form": {
+            "cancel": "Annuler",
+            "createFirst": "Enregistrer le Premier Timeframe",
+            "save": "Enregistrer"
+        }
+    }
+}

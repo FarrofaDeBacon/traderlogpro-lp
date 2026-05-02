@@ -1,0 +1,50 @@
+{
+    "sectors": {
+        "title": "Classificação Setorial",
+        "description": "Categorize seus ativos por hierarquia de mercado (Setor Econômico, Subsetor e Segmento).",
+        "new": "Nova Classificação",
+        "edit": "Editar Classificação",
+        "empty": "Nenhuma vertical econômica mapeada.",
+        "searchPlaceholder": "Filtrar por nome...",
+        "segmentsCount": "{count, plural, =0 {Nenhum Segmento} one {1 Segmento} other {# Segmentos}}",
+        "macroSectorDefault": "Geral",
+        "form": {
+            "market": "Mercado",
+            "marketPlaceholder": "Selecione o Mercado (B3, NYSE...)",
+            "level": "Nível de Classificação",
+            "level1": "Setor Econômico",
+            "level1Desc": "Categoria mestre global de mercado",
+            "level2": "Subsetor",
+            "level2Desc": "Vincular grupo a um setor econômico",
+            "level3": "Segmento",
+            "level3Desc": "Classificação granular de ativos",
+            "parentLevel1": "Setor Econômico Relacionado",
+            "parentLevel2": "Subsetor Relacionado",
+            "name": "Nome do Item",
+            "namePlaceholder": "Ex: Financeiro, Bancos, etc...",
+            "macroSector": "Setor Econômico",
+            "macroSectorPlaceholder": "Ex: Consumo Cíclico, Financeiro...",
+            "segment": "Segmento de Atuação",
+            "segmentPlaceholder": "Ex: Bancos, Construção Civil...",
+            "icon": "Ícone Operacional",
+            "color": "Cor de Identificação",
+            "save": "Salvar Dados",
+            "cancel": "Cancelar",
+            "toastSubsectorAdded": "Subsetor adicionado",
+            "newSubsector": "Novo Segmento",
+            "subsectorHint": "Selecione um Subsetor para gerenciar seus Segmentos de atuação.",
+            "createFirst": "Criar minha primeira classificação"
+        },
+        "subsectors": {
+            "title": "Subsetores",
+            "new": "Novo Subsetor",
+            "edit": "Editar Subsetor",
+            "name": "Nome do Subsetor",
+            "namePlaceholder": "Ex: Bancos Médios...",
+            "segment": "Segmento Operacional",
+            "segmentPlaceholder": "Ex: Saneamento...",
+            "save": "Salvar Subsetor",
+            "activeMappings": "Vínculos Ativos"
+        }
+    }
+}

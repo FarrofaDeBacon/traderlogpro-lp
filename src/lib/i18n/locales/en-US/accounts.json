@@ -1,0 +1,42 @@
+{
+    "accounts": {
+        "description": "Manage your brokerage and prop firm accounts.",
+        "edit": "Edit Account",
+        "empty": "No accounts found.",
+        "new": "New Account",
+        "searchPlaceholder": "Search account...",
+        "title": "Trading Accounts",
+        "types": {
+            "Demo": "Simulators / Demo",
+            "Prop": "Prop Firms",
+            "Real": "Real Accounts"
+        },
+        "form": {
+            "addIcon": "Add Icon",
+            "balance": "Initial Balance",
+            "balanceLabel": "Current Balance",
+            "broker": "Broker",
+            "brokerPlaceholder": "Ex: Binance, XP...",
+            "currency": "Currency",
+            "icon": "Icon",
+            "iconHint": "Click to select",
+            "nickname": "Nickname",
+            "nicknamePlaceholder": "Ex: Main Account",
+            "number": "Account Number",
+            "numberPlaceholder": "Ex: 12345-6",
+            "save": "Save Account",
+            "saving": "Saving...",
+            "titleEdit": "Edit Account",
+            "titleNew": "Create Account",
+            "type": "Type",
+            "linkMarket": "LINK TO MARKET",
+            "linkMarketPlaceholder": "Select Main Market",
+            "openingBalance": "Opening / Current Balance",
+            "optional": "Optional",
+            "createFirst": "Register First Account",
+            "unknownAccount": "Unknown Account",
+            "noBroker": "No Broker",
+            "nicknameRequired": "Account nickname is required."
+        }
+    }
+}

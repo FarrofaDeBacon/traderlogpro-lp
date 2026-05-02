@@ -1,0 +1,18 @@
+{
+    "filters": {
+        "date": {
+            "all": "Toute la Période",
+            "custom": "Personnalisé",
+            "last_month": "Mois Dernier",
+            "last_week": "Semaine Dernière",
+            "last_year": "Année Dernière",
+            "select": "Sélectionner la Période",
+            "this_month": "Ce Mois",
+            "this_week": "Cette Semaine",
+            "this_year": "Cette Année",
+            "today": "Aujourd'hui",
+            "yesterday": "Hier",
+            "period": "Période"
+        }
+    }
+}

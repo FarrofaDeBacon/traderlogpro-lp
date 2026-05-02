@@ -1,0 +1,40 @@
+{
+    "assets": {
+        "title": "Actifs",
+        "description": "Enregistrez les actifs que vous tradez (Symbole, Valeur du Point, etc).",
+        "new": "Nouvel Actif",
+        "edit": "Modifier l'Actif",
+        "empty": "Aucun actif trouvé",
+        "searchPlaceholder": "Chercher un actif...",
+        "form": {
+            "symbol": "Ticker / Symbole",
+            "symbolPlaceholder": "Ex : WIN, PETR4...",
+            "name": "Nom de l'Actif",
+            "namePlaceholder": "Ex : Mini Indice, Petrobras...",
+            "pointValue": "Valeur du Point",
+            "contractSize": "Lot Standard",
+            "isRoot": "Définir comme Actif Racine",
+            "rootAsset": "Actif Racine Parent",
+            "type": "Classe",
+            "typePlaceholder": "Sélectionner...",
+            "sector": "Secteur",
+            "sectorPlaceholder": "Sélectionner le Secteur",
+            "subsector": "Sous-secteur",
+            "createFirst": "Enregistrer le Premier Actif",
+            "save": "Enregistrer l'Actif",
+            "cancel": "Annuler",
+            "saveChanges": "Enregistrer"
+        },
+        "buttons": {
+            "syncRTD": "Synchroniser RTD"
+        },
+        "labels": {
+            "root": "Racine",
+            "none": "Aucun"
+        },
+        "bulk": {
+            "actions": "Actions en Masse",
+            "changeType": "Changer le Type d'Actif"
+        }
+    }
+}

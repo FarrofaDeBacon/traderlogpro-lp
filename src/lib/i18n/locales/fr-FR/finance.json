@@ -1,0 +1,193 @@
+{
+    "finance": {
+        "charts": {
+            "evolution": "Évolution",
+            "evolutionSubtitle": "Évolution du Patrimoine et des Apports"
+        },
+        "closureWizard": {
+            "description": "Consolidez le résultat de vos trades dans le solde des comptes.",
+            "error": "Erreur",
+            "step1": {
+                "hint": "Généralement réalisé pour le jour précédent (hier) ou les jours passés.",
+                "label": "Sélectionnez la Date",
+                "noTradesWarning": "Aucun trade trouvé pour le jour sélectionné. Sélectionnez une autre date ou enregistrez des trades."
+            },
+            "step2": {
+                "columns": {
+                    "account": "Compte",
+                    "result": "Résultat",
+                    "select": "Sél.",
+                    "trades": "Trades"
+                },
+                "confirm": "Confirmer les Écritures",
+                "noTrades": "Aucun trade trouvé à cette date.",
+                "processing": "Traitement..."
+            },
+            "step3": {
+                "finish": "Terminer",
+                "successDescription": "Les valeurs ont été enregistrées dans l'extrait des comptes sélectionnés.",
+                "successTitle": "Clôture Terminée !"
+            },
+            "stepEmotion": {
+                "description": "Évaluez votre contrôle psychologique aujourd'hui.",
+                "intensityIntense": "Extrême",
+                "intensityLabel": "Intensité ({value})",
+                "intensityLight": "Légère",
+                "notesLabel": "Notes du Jour",
+                "notesPlaceholder": "Décrivez brièvement comment s'est passée votre journée, discipline, focus...",
+                "stateLabel": "Comment vous êtes-vous senti aujourd'hui ?",
+                "statePlaceholder": "Sélectionnez une émotion...",
+                "title": "Check-in Émotionnel"
+            },
+            "success": "Succès",
+            "title": "Clôture Quotidienne"
+        },
+        "dailyClosure": "Clôture Quotidienne",
+        "darfDetails": {
+            "calculationBasis": "Base de Calcul",
+            "calculationInfo": "Infos de Calcul",
+            "compensatedLosses": "Pertes Compensées",
+            "complementaryBadge": "Guide Complémentaire",
+            "dateNotAvailable": "Date non disponible",
+            "description": "Informations complètes de liquidation et de paiement.",
+            "dueDate": "Date d'Échéance",
+            "errorMessage": "Un problème est survenu lors du chargement de cette DARF.",
+            "fine": "Amende",
+            "grossResult": "Résultat Brut",
+            "interest": "Intérêts",
+            "loading": "Chargement de la DARF et de la Liquidation...",
+            "operations": "Trades Liés",
+            "paidAt": "Payé le",
+            "period": "Période",
+            "principalValue": "Valeur Principale",
+            "revenueCode": "Code de Recette",
+            "statusPaid": "Statut Payé",
+            "statusPending": "Statut En Attente",
+            "taxRate": "Taux",
+            "title": "Détails de la DARF",
+            "totalPaid": "Total Payé",
+            "unpayAction": "Annuler le Paiement",
+            "unpayCancel": "Annuler",
+            "unpayConfirm": "Confirmer",
+            "unpayTitle": "Annuler"
+        },
+        "description": "Gestion centralisée de la trésorerie, extraits et clôtures.",
+        "details": {
+            "account": "Compte",
+            "columns": {
+                "asset": "Actif",
+                "result": "Résultat",
+                "side": "Côté"
+            },
+            "date": "Date",
+            "noTrades": "Aucun trade lié à cette transaction.",
+            "title": "Détails de la Transaction",
+            "totalAmount": "Montant Total"
+        },
+        "newTransaction": "Nouvel Apport/Retrait",
+        "quickStats": {
+            "activeAccounts": "Comptes Actifs",
+            "balanceIn": "Solde en {currency}",
+            "breakdownDesc": "Résumé des comptes liés à cette devise.",
+            "breakdownTitle": "Détail de {currency}",
+            "consolidated": "Consolidé",
+            "monthlyResult": "Résultat du Mois",
+            "monthlyResultDesc": "Résumé de performance pour le mois",
+            "totalBalance": "Solde Total (Est.)",
+            "totalEquity": "Patrimoine Total",
+            "viewBreakdown": "Voir les Détails"
+        },
+        "statement": {
+            "account": "Compte",
+            "allAccounts": "Tous les Comptes",
+            "allCurrencies": "Toutes les Devises",
+            "categories": {
+                "adjustment": "AJUST.",
+                "tax_payment": "IMPÔT",
+                "tax_refund": "REMBOUR.",
+                "trading": "CLÔTURE",
+                "transfer": "TRANSF."
+            },
+            "columns": {
+                "account": "COMPTE",
+                "amount": "VALEUR",
+                "date": "Date",
+                "description": "DESCRIPTION",
+                "type": "TYPE"
+            },
+            "entries": "Écritures",
+            "hierarchy": "Hiérarchie",
+            "messages": {
+                "deleteError": "Erreur de Suppression",
+                "systemLinked": "Cette transaction a été générée par le système et ne peut être modifiée que dans le module d'origine (ex : IRPF)."
+            },
+            "monthlyResult": "Résultat Mensuel",
+            "noNumber": "Sans Numéro",
+            "noTransactions": "Aucune transaction trouvée sur la période.",
+            "result": "Résultat",
+            "searchPlaceholder": "Chercher dans la description ou la valeur...",
+            "summary": {
+                "netResult": "Résultat Net",
+                "periodEntries": "Écritures de la Période",
+                "title": "Résumé du Jour",
+                "totalDeposits": "Total Entrées",
+                "totalWithdrawals": "Total Sorties"
+            },
+            "title": "Extrait des Mouvements",
+            "types": {
+                "adjustment": "Ajustement",
+                "deposit": "Apport",
+                "result": "RÉSULTAT",
+                "transfer": "Transfert",
+                "withdraw": "Retrait"
+            }
+        },
+        "title": "Hub Financier",
+        "transactionDialog": {
+            "newOperation": "Nouvelle Opération",
+            "operationShortDesc": "Enregistrez des apports, retraits ou ajustements manuels de solde.",
+            "type": "Type",
+            "account": "Compte",
+            "amount": "Montant",
+            "date": "Date",
+            "description": "Description",
+            "descriptionPlaceholder": "Ex : Apport mensuel...",
+            "fxRate": "Taux de Change",
+            "tabs": {
+                "transaction": "Transaction",
+                "transfer": "Transfert"
+            },
+            "defaults": {
+                "deposit": "Apport",
+                "withdraw": "Retrait",
+                "transfer": "Transfert",
+                "adjustment": "Ajustement"
+            },
+            "labels": {
+                "amountWithCurrency": "Montant ({currency})",
+                "entryWithCurrency": "Entrée ({currency})",
+                "feePercent": "Frais (%)"
+            },
+            "errors": {
+                "requiredFields": "Veuillez remplir tous les champs obligatoires.",
+                "differentAccounts": "Sélectionnez des comptes différents pour le transfert.",
+                "saveError": "Erreur lors de l'enregistrement de la transaction.",
+                "transferError": "Erreur lors du transfert."
+            }
+        },
+        "transferDialog": {
+            "title": "Transfert entre Comptes",
+            "description": "Déplacez le solde entre vos comptes avec conversion automatique de devise.",
+            "amount": "Montant à Transférer",
+            "fee": "Frais de l'Opération (%)",
+            "rate": "Taux de Change",
+            "finalAmount": "Montant Final Reçu",
+            "finalAmountHint": "Valeur après application du taux de change et des frais.",
+            "confirm": "Confirmer le Transfert",
+            "success": "Transfert effectué avec succès !",
+            "errorDifferentAccounts": "Sélectionnez des comptes différents.",
+            "errorPositiveValue": "Saisissez une valeur positive.",
+            "errorSave": "Erreur lors de l'enregistrement du transfert."
+        }
+    }
+}

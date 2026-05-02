@@ -1,0 +1,50 @@
+{
+    "sectors": {
+        "title": "Sector Classification",
+        "description": "Categorize your assets by market hierarchy (Economic Sector, Subsector, and Segment).",
+        "new": "New Classification",
+        "edit": "Edit Classification",
+        "empty": "No economic vertical mapped.",
+        "searchPlaceholder": "Filter by name...",
+        "segmentsCount": "{count, plural, =0 {No Segments} one {1 Segment} other {# Segments}}",
+        "macroSectorDefault": "General",
+        "form": {
+            "market": "Market",
+            "marketPlaceholder": "Select Market (B3, NYSE...)",
+            "level": "Classification Level",
+            "level1": "Economic Sector",
+            "level1Desc": "Global master market category",
+            "level2": "Subsector",
+            "level2Desc": "Link group to an economic sector",
+            "level3": "Segment",
+            "level3Desc": "Granular asset classification",
+            "parentLevel1": "Related Economic Sector",
+            "parentLevel2": "Related Subsector",
+            "name": "Item Name",
+            "namePlaceholder": "Ex: Financial, Banks, etc...",
+            "macroSector": "Economic Sector",
+            "macroSectorPlaceholder": "Ex: Cyclical Consumption, Financial...",
+            "segment": "Operating Segment",
+            "segmentPlaceholder": "Ex: Banks, Construction...",
+            "icon": "Operational Icon",
+            "color": "Identification Color",
+            "save": "Save Data",
+            "cancel": "Cancel",
+            "toastSubsectorAdded": "Subsector added",
+            "newSubsector": "New Segment",
+            "subsectorHint": "Select a Subsector to manage its operating Segments.",
+            "createFirst": "Create my first classification"
+        },
+        "subsectors": {
+            "title": "Subsectors",
+            "new": "New Subsector",
+            "edit": "Edit Subsector",
+            "name": "Subsector Name",
+            "namePlaceholder": "Ex: Medium Banks...",
+            "segment": "Operational Segment",
+            "segmentPlaceholder": "Ex: Sanitation...",
+            "save": "Save Subsector",
+            "activeMappings": "Active Links"
+        }
+    }
+}

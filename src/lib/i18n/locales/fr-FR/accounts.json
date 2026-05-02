@@ -1,0 +1,42 @@
+{
+    "accounts": {
+        "description": "Gérez vos comptes de courtage et de firmes de trading (Prop Firms).",
+        "edit": "Modifier le Compte",
+        "empty": "Aucun compte trouvé.",
+        "new": "Nouveau Compte",
+        "searchPlaceholder": "Chercher un compte...",
+        "title": "Comptes de Trading",
+        "types": {
+            "Demo": "Simulateurs / Démo",
+            "Prop": "Prop Firms",
+            "Real": "Comptes Réels"
+        },
+        "form": {
+            "addIcon": "Ajouter un Icône",
+            "balance": "Solde Initial",
+            "balanceLabel": "Solde Actuel",
+            "broker": "Courtier (Broker)",
+            "brokerPlaceholder": "Ex : Binance, XP...",
+            "currency": "Devise",
+            "icon": "Icône",
+            "iconHint": "Cliquez pour sélectionner",
+            "nickname": "Surnom (Nickname)",
+            "nicknamePlaceholder": "Ex : Compte Principal",
+            "number": "Numéro de Compte",
+            "numberPlaceholder": "Ex : 12345-6",
+            "save": "Enregistrer le Compte",
+            "saving": "Enregistrement...",
+            "titleEdit": "Modifier le Compte",
+            "titleNew": "Créer un Compte",
+            "type": "Type",
+            "linkMarket": "LIER AU MARCHÉ",
+            "linkMarketPlaceholder": "Sélectionnez le Marché Principal",
+            "openingBalance": "Solde d'Ouverture / Actuel",
+            "optional": "Optionnel",
+            "createFirst": "Enregistrer le Premier Compte",
+            "unknownAccount": "Compte Inconnu",
+            "noBroker": "Sans Courtier",
+            "nicknameRequired": "Le surnom du compte est obligatoire."
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "fees": {
+        "title": "Frais et Coûts",
+        "description": "Configurez les coûts opérationnels (Courtage, Bourse, ISS) par profil.",
+        "new": "Nouveau Profil de Frais",
+        "edit": "Modifier le Profil de Frais",
+        "empty": "Aucun profil de frais trouvé.",
+        "searchPlaceholder": "Chercher un profil de frais...",
+        "form": {
+            "name": "Nom du Profil",
+            "namePlaceholder": "Ex : Courtier X - Mini Contrats",
+            "brokerage": "Courtage Fixe",
+            "b3": "Frais de Bourse (%)",
+            "iss": "Taxe Professionnelle (ISS) (%)",
+            "spread": "Spread de Change (%)",
+            "operationalCosts": "Coûts Opérationnels",
+            "modalityConfig": "Configuration par Modalité",
+            "fixedFee": "Frais Fixe",
+            "percentageFee": "Frais en Pourcentage (%)",
+            "exchangeFee": "Frais de Bourse / B3 (%)",
+            "initializing": "Initialisation...",
+            "noModalities": "Aucune modalité configurée.",
+            "createModalityFirst": "Créer la Première Modalité",
+            "account": "Compte Lié",
+            "defaultAccount": "Par défaut (Pas de compte spécifique)",
+            "unknownAccount": "Compte Inconnu",
+            "noBroker": "Courtier non renseigné",
+            "notes": "Notes et Observations",
+            "notesPlaceholder": "Décrivez les détails spécifiques de ce profil de frais...",
+            "createFirst": "Enregistrer le Premier Profil de Frais",
+            "save": "Enregistrer le Profil"
+        },
+        "simulator": {
+            "title": "Simulateur de Coûts",
+            "description": "Voyez l'impact des frais sur un volume projeté.",
+            "volume": "Volume Estimé",
+            "fixed": "Coûts Fixes",
+            "variable": "Coûts Variables",
+            "b3": "Frais de Bourse (B3)",
+            "total": "Coût Total Estimé"
+        }
+    }
+}
