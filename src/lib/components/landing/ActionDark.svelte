@@ -5,18 +5,21 @@
     const prints = [
         {
             img: "/images/dashboard.png",
-            title: "Visão Geral (Dashboard)",
-            desc: "Monitore o seu patrimônio acumulado e o Win Rate geral do seu operacional em tempo real."
+            title: "Visão Geral (Cockpit)",
+            value: "Mapeamento em tempo real do Win Rate geral, patrimônio acumulado e metas diárias.",
+            benefit: "Consistência e Visão Macro"
         },
         {
             img: "/images/analytics.png",
-            title: "Performance de Resultados",
-            desc: "Analise minuciosamente os seus ganhos, fator de lucro e máximo drawdown em gráficos interativos."
+            title: "Performance & Estatísticas",
+            value: "Análise profunda de métricas de ganho, fator de lucro e máximo drawdown.",
+            benefit: "Otimização Financeira"
         },
         {
             img: "/images/emotional.png",
             title: "Saúde Mental (Psicologia)",
-            desc: "Identifique padrões destrutivos, FOMO ou overtrading para mitigar perdas futuras."
+            value: "Identificação exata de vieses cognitivos como FOMO ou overtrading nas entradas.",
+            benefit: "Domínio Emocional"
         }
     ];
 
@@ -31,18 +34,18 @@
     }
 </script>
 
-<section id="action-dark" class="py-24 px-6 bg-slate-950 border-y border-white/5 relative z-10">
+<section id="action-dark" class="py-24 px-6 bg-slate-900 border-y border-white/5 relative z-10">
     <div class="max-w-6xl mx-auto space-y-16">
         <div class="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-400">Funcionalidades Principais</h2>
-            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-white uppercase">ANÁLISE AVANÇADA (DARK MODE)</h3>
-            <p class="text-slate-400 font-medium">Os módulos fundamentais do sistema sob tema Dark para alta performance.</p>
+            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-400">Análise Premium</h2>
+            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-white uppercase">RECURSOS AVANÇADOS (DARK MODE)</h3>
+            <p class="text-slate-400 font-medium">Observe os módulos fundamentais do TraderLogPro sob o tema escuro profissional.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
             {#each prints as item}
-                <button type="button" class="group bg-slate-900/40 border border-white/5 rounded-[2rem] p-6 space-y-6 hover:bg-slate-800/40 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-500 text-left cursor-pointer w-full" onclick={() => openImage(item.img)}>
-                    <div class="relative bg-slate-950 rounded-2xl overflow-hidden aspect-video border border-white/5 group">
+                <button type="button" class="group bg-slate-950/60 border border-white/5 rounded-[2rem] p-6 space-y-6 hover:bg-slate-800/40 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-500 text-left cursor-pointer w-full" onclick={() => openImage(item.img)}>
+                    <div class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-video border border-white/5 group">
                         <img src={item.img} alt={item.title} class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-all duration-700" />
                         <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <div class="w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -50,9 +53,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="space-y-1">
-                        <h4 class="font-outfit text-lg font-black uppercase tracking-tight text-white group-hover:text-emerald-400 transition-colors">{item.title}</h4>
-                        <p class="text-slate-400 text-sm">{item.desc}</p>
+                    <div class="space-y-2">
+                        <span class="text-[8px] bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-2.5 py-1 rounded-full font-black uppercase tracking-wider">{item.benefit}</span>
+                        <h4 class="font-outfit text-lg font-black uppercase tracking-tight text-white mt-1 group-hover:text-emerald-400 transition-colors">{item.title}</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">{item.value}</p>
                     </div>
                 </button>
             {/each}

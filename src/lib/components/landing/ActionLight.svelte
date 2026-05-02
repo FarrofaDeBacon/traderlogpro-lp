@@ -5,13 +5,15 @@
     const prints = [
         {
             img: "/images/trades.png",
-            title: "Registro & Diário de Trades",
-            desc: "Lista completa de operações com filtragem instantânea e detalhes ricos de cada entrada."
+            title: "Registro de Trades",
+            value: "Lista de operações ricas em detalhes (preços, ativos, pontos de saída) com histórico unificado.",
+            benefit: "Organização Completa"
         },
         {
             img: "/images/strategies.png",
             title: "Análise de Estratégias",
-            desc: "Identifique exatamente quais operacionais e setups trazem maior retorno financeiro."
+            value: "Identificação rápida das melhores táticas e setups operacionais para otimização de lucro.",
+            benefit: "Validação de Estratégia"
         }
     ];
 
@@ -29,9 +31,9 @@
 <section id="action-light" class="py-24 px-6 bg-slate-50 border-y border-slate-200/60 relative z-10">
     <div class="max-w-6xl mx-auto space-y-16">
         <div class="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-600">Gestão & Estratégia</h2>
+            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-600">Gestão Eficiente</h2>
             <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-slate-900 uppercase">CONTROLE DETALHADO (LIGHT MODE)</h3>
-            <p class="text-slate-600 font-medium">Foque no controle de cada trade com fundos claros e visuais impecáveis.</p>
+            <p class="text-slate-600 font-medium">Os módulos de trades e estratégias exibidos em fundo claro para contraste ideal.</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -45,9 +47,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="space-y-1">
-                        <h4 class="font-outfit text-lg font-black uppercase tracking-tight text-slate-900 group-hover:text-emerald-600 transition-colors">{item.title}</h4>
-                        <p class="text-slate-500 text-sm">{item.desc}</p>
+                    <div class="space-y-2">
+                        <span class="text-[8px] bg-emerald-50 border border-emerald-500/20 text-emerald-600 px-2.5 py-1 rounded-full font-black uppercase tracking-wider">{item.benefit}</span>
+                        <h4 class="font-outfit text-lg font-black uppercase tracking-tight text-slate-900 mt-1 group-hover:text-emerald-600 transition-colors">{item.title}</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">{item.value}</p>
                     </div>
                 </button>
             {/each}
