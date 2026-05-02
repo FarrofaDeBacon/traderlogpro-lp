@@ -174,6 +174,122 @@
         </div>
     </section>
 
+    <!-- Screenshot / Dashboard Visual Preview Section -->
+    <section class="py-32 px-6 bg-slate-950/20 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-500">Visual Institutional Terminal</h2>
+                <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight uppercase">O SEU NOVO COCKPIT DE TRADE.</h3>
+                <p class="text-slate-400">Design premium que une alta performance, análise profissional e total controle emocional.</p>
+            </div>
+
+            <!-- CSS & SVG Custom Institutional Mockup -->
+            <div class="relative max-w-5xl mx-auto bg-slate-900/60 backdrop-blur-xl border border-white/5 rounded-[2.5rem] p-6 md:p-8 shadow-2xl space-y-8 group overflow-hidden">
+                <!-- Top Window Header -->
+                <div class="flex items-center justify-between pb-4 border-b border-white/5">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-red-500/30"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/30"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/30"></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-1 bg-slate-950/50 border border-white/5 rounded-full">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span class="text-[8px] font-black uppercase tracking-[0.2em] text-slate-400">TraderLog Pro v2025 – Terminal</span>
+                    </div>
+                    <div></div>
+                </div>
+
+                <!-- Dashboard Content Layout Grid -->
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <!-- Left Stats -->
+                    <div class="space-y-6">
+                        <div class="bg-slate-950/40 border border-white/5 p-6 rounded-[2rem] flex flex-col justify-between h-36">
+                            <span class="text-[9px] font-black uppercase tracking-wider text-slate-500 block">Capital Alocado</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-4xl font-black font-outfit text-white">R$ 50.000</span>
+                                <span class="text-xs font-bold text-slate-500">BRL</span>
+                            </div>
+                            <span class="text-[8px] text-emerald-400 font-black uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full w-max border border-emerald-500/20">Status: Protegido</span>
+                        </div>
+                        <div class="bg-slate-950/40 border border-white/5 p-6 rounded-[2rem] flex flex-col justify-between h-36">
+                            <span class="text-[9px] font-black uppercase tracking-wider text-slate-500 block">Performance Semanal</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-4xl font-black font-outfit text-emerald-400">+R$ 4.250</span>
+                            </div>
+                            <span class="text-[8px] text-emerald-400 font-black uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full w-max border border-emerald-500/20">Dentro do Limite</span>
+                        </div>
+                    </div>
+
+                    <!-- Main Trading Equity Chart -->
+                    <div class="lg:col-span-2 bg-slate-950/40 border border-white/5 p-6 rounded-[2rem] flex flex-col justify-between h-auto min-h-[300px]">
+                        <div class="flex items-center justify-between">
+                            <div class="space-y-1">
+                                <span class="text-[9px] font-black uppercase tracking-wider text-slate-500 block">Evolução de Patrimônio (Equity Curve)</span>
+                                <p class="text-xs text-slate-400 font-bold uppercase">Últimos 30 Dias</p>
+                            </div>
+                            <span class="text-[10px] text-emerald-400 font-black bg-emerald-500/5 px-3 py-1.5 border border-emerald-500/20 rounded-xl tracking-wider">Metas Concluídas</span>
+                        </div>
+                        
+                        <!-- SVG Premium Mockup Chart -->
+                        <div class="flex-1 flex items-center justify-center py-4">
+                            <svg class="w-full h-40 overflow-visible" viewBox="0 0 500 160" fill="none">
+                                <defs>
+                                    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#10b981" stop-opacity="0.3"/>
+                                        <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M 0 140 Q 50 130 100 120 T 200 90 T 300 110 T 400 40 T 500 20" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+                                <path d="M 0 140 Q 50 130 100 120 T 200 90 T 300 110 T 400 40 T 500 20 L 500 160 L 0 160 Z" fill="url(#chartGradient)"/>
+                                <!-- Chart Hover Dot / Tooltip Line -->
+                                <circle cx="400" cy="40" r="6" class="fill-emerald-500 stroke-slate-950 stroke-[3px] shadow-lg shadow-emerald-500"/>
+                                <line x1="400" y1="40" x2="400" y2="160" stroke="#10b981" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+                            </svg>
+                        </div>
+
+                        <!-- Mini footer inside chart card -->
+                        <div class="flex items-center justify-between text-[8px] font-black uppercase tracking-widest text-slate-600">
+                            <span>Início: R$ 45.750</span>
+                            <span class="text-emerald-500">Risco Controlado: +9.29%</span>
+                            <span>Hoje: R$ 50.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Metrics -->
+                <div class="grid md:grid-cols-3 gap-6 pt-2">
+                    <div class="bg-slate-950/20 border border-white/5 p-4 rounded-2xl flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-[8px] uppercase font-black tracking-widest text-slate-500">Win Rate Geral</p>
+                            <p class="text-lg font-black font-outfit text-white">68.4%</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/20 border border-white/5 p-4 rounded-2xl flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-[8px] uppercase font-black tracking-widest text-slate-500">Fator de Lucro</p>
+                            <p class="text-lg font-black font-outfit text-white">2.41</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/20 border border-white/5 p-4 rounded-2xl flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-rose-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-[8px] uppercase font-black tracking-widest text-slate-500">Máx Drawdown</p>
+                            <p class="text-lg font-black font-outfit text-white">3.12%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Growth Plans Section -->
     <section id="growth" class="py-32 px-6 bg-gradient-to-b from-slate-950 to-slate-900/50">
         <div class="max-w-7xl mx-auto space-y-16">
