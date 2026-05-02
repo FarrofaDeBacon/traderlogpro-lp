@@ -3,33 +3,38 @@
         {
             num: "01",
             title: "Registre suas operações",
-            desc: "Adicione seus trades com rapidez, selecionando a estratégia, o tempo gráfico e como estava seu emocional."
+            desc: "Cadastre suas operações com um clique e observe o diário de trading ser populado em tempo real.",
+            screen: "Ver no Módulo Trades"
         },
         {
             num: "02",
             title: "Analise seus resultados",
-            desc: "Acesse o painel analítico para conferir métricas como Win Rate, Fator de Lucro e Máximo Drawdown."
+            desc: "Confira todas as suas métricas e estude a sua evolução patrimonial usando os gráficos nativos de finanças.",
+            screen: "Ver no Módulo Finanças"
         },
         {
             num: "03",
             title: "Evolua com dados reais",
-            desc: "Identifique padrões de sucesso e erros recorrentes para refinar seu operacional e crescer seu capital."
+            desc: "Observe seus padrões mentais mapeados no sistema para dominar o overtrading e manter a disciplina.",
+            screen: "Ver no Módulo Psicologia"
         }
     ];
 </script>
 
-<section id="how-it-works" class="py-24 px-6">
+<section id="how-it-works" class="py-24 px-6 bg-slate-900/30 border-y border-white/5">
     <div class="max-w-6xl mx-auto space-y-16">
         <div class="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-500">Metodologia</h2>
-            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight">COMO FUNCIONA</h3>
+            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-500">Fluxo Real</h2>
+            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-white uppercase">COMO FUNCIONA</h3>
+            <p class="text-slate-400">Processo simples e direto para registrar e evoluir no trading de forma consistente.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {#each steps as step}
-                <div class="p-8 bg-slate-900/40 border border-white/5 rounded-[2.5rem] relative space-y-4">
+                <div class="p-8 bg-slate-900/40 border border-white/5 rounded-[2.5rem] relative space-y-4 hover:border-white/10 transition-colors">
                     <span class="text-4xl font-outfit font-black text-emerald-500/20 absolute top-6 right-8 select-none">{step.num}</span>
-                    <h4 class="font-outfit text-xl font-black uppercase tracking-tight text-white pr-8">{step.title}</h4>
+                    <span class="text-[8px] bg-slate-800/80 border border-white/5 text-slate-400 px-3 py-1 rounded-full font-black uppercase tracking-wider">{step.screen}</span>
+                    <h4 class="font-outfit text-xl font-black uppercase tracking-tight text-white pr-8 pt-2">{step.title}</h4>
                     <p class="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
                 </div>
             {/each}

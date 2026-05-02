@@ -4,6 +4,7 @@
     import Hero from "$lib/components/landing/Hero.svelte";
     import Problem from "$lib/components/landing/Problem.svelte";
     import Solution from "$lib/components/landing/Solution.svelte";
+    import Action from "$lib/components/landing/Action.svelte";
     import Benefits from "$lib/components/landing/Benefits.svelte";
     import HowItWorks from "$lib/components/landing/HowItWorks.svelte";
     import Offer from "$lib/components/landing/Offer.svelte";
@@ -40,6 +41,7 @@
         <Hero {visible} />
         <Problem />
         <Solution />
+        <Action />
         <Benefits />
         <HowItWorks />
         <Offer />
