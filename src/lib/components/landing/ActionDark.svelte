@@ -1,35 +1,12 @@
 <script lang="ts">
     import { fade, scale } from "svelte/transition";
     import { X, ZoomIn } from "lucide-svelte";
-    import { onMount, onDestroy } from "svelte";
 
-    // Slides do carrossel do dashboard
     const dashboardSlides = [
         "/images/dashboard_1.png",
         "/images/dashboard_2.png",
         "/images/dashboard_3.png"
     ];
-
-    let currentSlide = $state(0);
-    let timer: ReturnType<typeof setInterval> | null = null;
-
-    onMount(() => {
-        timer = setInterval(() => {
-            currentSlide = (currentSlide + 1) % dashboardSlides.length;
-        }, 3000);
-    });
-
-    onDestroy(() => {
-        if (timer) clearInterval(timer);
-    });
-
-    function goToSlide(idx: number) {
-        currentSlide = idx;
-        if (timer) { clearInterval(timer); }
-        timer = setInterval(() => {
-            currentSlide = (currentSlide + 1) % dashboardSlides.length;
-        }, 3000);
-    }
 
     const prints = [
         {
@@ -84,25 +61,21 @@
         <div class="grid md:grid-cols-3 gap-8">
             {#each prints as item}
                 {#if item.isCarousel}
-                    <!-- Card do Dashboard com carrossel automático -->
+                    <!-- Card do Dashboard: carrossel puro CSS -->
                     <div class="group bg-slate-950/60 border border-white/5 rounded-[2rem] p-6 space-y-6 hover:bg-slate-800/40 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-500 text-left w-full">
-                        <!-- Área do carrossel -->
-                        <div
-                            class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-video border border-white/5 cursor-pointer"
-                            role="button"
-                            tabindex="0"
-                            onclick={() => selectedImg = dashboardSlides[currentSlide]}
-                            onkeydown={(e) => e.key === 'Enter' && (selectedImg = dashboardSlides[currentSlide])}
+                        <button
+                            type="button"
+                            class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-video border border-white/5 w-full cursor-pointer block"
+                            onclick={() => selectedImg = dashboardSlides[0]}
                         >
+                            <!-- 3 imagens animadas por CSS -->
                             {#each dashboardSlides as slide, idx}
-                                {#if idx === currentSlide}
-                                    <img
-                                        src={slide}
-                                        alt="Dashboard - {idx + 1}"
-                                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
-                                        in:fade={{ duration: 600 }}
-                                    />
-                                {/if}
+                                <img
+                                    src={slide}
+                                    alt="Dashboard {idx + 1}"
+                                    class="carousel-slide absolute inset-0 w-full h-full object-cover"
+                                    style="animation-delay: {idx * 3}s"
+                                />
                             {/each}
 
                             <!-- Zoom overlay -->
@@ -112,23 +85,13 @@
                                 </div>
                             </div>
 
-                            <!-- Dots -->
-                            <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10">
-                                {#each dashboardSlides as _, idx}
-                                    <button
-                                        type="button"
-                                        aria-label="Slide {idx + 1}"
-                                        class="h-1.5 rounded-full transition-all duration-300 {idx === currentSlide ? 'bg-emerald-400 w-5' : 'bg-white/30 hover:bg-white/60 w-1.5'}"
-                                        onclick={(e) => { e.stopPropagation(); goToSlide(idx); }}
-                                    ></button>
-                                {/each}
+                            <!-- Dots fixos indicadores -->
+                            <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10 pointer-events-none">
+                                <span class="carousel-dot dot-1 h-1.5 rounded-full bg-emerald-400"></span>
+                                <span class="carousel-dot dot-2 h-1.5 w-1.5 rounded-full bg-white/40"></span>
+                                <span class="carousel-dot dot-3 h-1.5 w-1.5 rounded-full bg-white/40"></span>
                             </div>
-
-                            <!-- Badge contador -->
-                            <div class="absolute top-2 right-2 bg-slate-950/70 backdrop-blur-sm text-white text-[9px] font-bold px-2 py-0.5 rounded-full pointer-events-none">
-                                {currentSlide + 1}/{dashboardSlides.length}
-                            </div>
-                        </div>
+                        </button>
 
                         <div class="space-y-2">
                             <span class="text-[8px] bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-2.5 py-1 rounded-full font-black uppercase tracking-wider">{item.benefit}</span>
@@ -184,3 +147,34 @@
         </div>
     </div>
 {/if}
+
+<style>
+    /* Carrossel 100% CSS — funciona sem JavaScript */
+    /* Ciclo total: 9s (3 slides × 3s cada) */
+    @keyframes carousel-show {
+        0%        { opacity: 0; }
+        5%        { opacity: 1; }
+        30%       { opacity: 1; }
+        35%, 100% { opacity: 0; }
+    }
+
+    .carousel-slide {
+        opacity: 0;
+        animation: carousel-show 9s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+
+    /* Dots sincronizados com o carrossel */
+    @keyframes dot-active {
+        0%        { width: 1.25rem; background-color: rgb(52 211 153); } /* emerald-400 */
+        35%, 100% { width: 0.375rem; background-color: rgba(255,255,255,0.4); }
+    }
+
+    .carousel-dot {
+        animation: dot-active 9s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+    .dot-1 { animation-delay: 0s; }
+    .dot-2 { animation-delay: 3s; }
+    .dot-3 { animation-delay: 6s; }
+</style>
