@@ -67,9 +67,9 @@
                         {/each}
                     </div>
 
-                    <button type="button" class="w-full py-5 rounded-2xl text-[10px] font-black uppercase tracking-widest text-center transition-all {plan.popular ? 'bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/20 hover:bg-emerald-400' : 'bg-white/5 text-white hover:bg-white/10'} active:scale-95 cursor-pointer select-none">
+                    <a href={plan.link} target="_blank" rel="noopener noreferrer" class="w-full py-5 rounded-2xl text-[10px] font-black uppercase tracking-widest text-center transition-all {plan.popular ? 'bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/20 hover:bg-emerald-400' : 'bg-white/5 text-white hover:bg-white/10'} active:scale-95 cursor-pointer select-none">
                         {plan.cta}
-                    </button>
+                    </a>
                 </div>
             {/each}
         </div>
