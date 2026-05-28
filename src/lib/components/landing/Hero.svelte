@@ -35,7 +35,7 @@
         <div class="lg:col-span-6 relative group">
             <div class="absolute inset-0 bg-emerald-500/15 blur-[100px] rounded-full"></div>
             <div class="relative bg-slate-900 rounded-[2.5rem] border border-white/10 shadow-2xl overflow-hidden aspect-video group">
-                <img src="/images/dashboard.png" alt="TraderLogPro Dashboard" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-all duration-700" />
+                <img src="/images/page_dashboard.png" alt="TraderLogPro Dashboard" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-all duration-700" />
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
             </div>
         </div>

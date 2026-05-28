@@ -4,22 +4,40 @@
 
     const prints = [
         {
-            img: "/images/dashboard.png",
+            img: "/images/page_dashboard.png",
             title: "Visão Geral (Cockpit)",
             value: "Mapeamento em tempo real do Win Rate geral, patrimônio acumulado e metas diárias.",
             benefit: "Consistência e Visão Macro"
         },
         {
-            img: "/images/analytics.png",
-            title: "Performance & Estatísticas",
-            value: "Análise profunda de métricas de ganho, fator de lucro e máximo drawdown.",
-            benefit: "Otimização Financeira"
+            img: "/images/page_psicologia.png",
+            title: "Hub de Psicologia & Emoções",
+            value: "Mapeamento emocional de entradas e saídas com identificação de vieses cognitivos e fúria/ansiedade.",
+            benefit: "Domínio Emocional"
         },
         {
-            img: "/images/emotional.png",
-            title: "Saúde Mental (Psicologia)",
-            value: "Identificação exata de vieses cognitivos como FOMO ou overtrading nas entradas.",
-            benefit: "Domínio Emocional"
+            img: "/images/page_fiscal.png",
+            title: "Apuração de IRPF Automática",
+            value: "Compensação de prejuízos acumulados anteriores, isenção de R$ 20k em ações e relatórios da Receita Federal.",
+            benefit: "Contabilidade & DARF"
+        },
+        {
+            img: "/images/page_finance.png",
+            title: "Gestão Financeira & DARFs",
+            value: "Visualização detalhada de guias DARF pendentes e pagas, saldo de contas de corretoras e conciliação bancária.",
+            benefit: "Saúde Financeira"
+        },
+        {
+            img: "/images/page_trades.png",
+            title: "Livro de Registro de Trades",
+            value: "Histórico completo e detalhado de todas as operações fechadas e integradas via Profit RTD.",
+            benefit: "Livro Diário"
+        },
+        {
+            img: "/images/page_strategies.png",
+            title: "Raio-X de Estratégias",
+            value: "Desempenho analítico e financeiro individualizado por setup ou estratégia operacional.",
+            benefit: "Validação Estatística"
         }
     ];
 
@@ -38,8 +56,8 @@
     <div class="max-w-6xl mx-auto space-y-16">
         <div class="text-center space-y-4 max-w-2xl mx-auto">
             <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-400">Análise Premium</h2>
-            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-white uppercase">RECURSOS AVANÇADOS (DARK MODE)</h3>
-            <p class="text-slate-400 font-medium">Observe os módulos fundamentais do TraderLogPro sob o tema escuro profissional.</p>
+            <h3 class="font-outfit text-4xl md:text-5xl font-black tracking-tight text-white uppercase">MÓDULOS DE EXCELÊNCIA TÉCNICA</h3>
+            <p class="text-slate-400 font-medium">Explore as telas reais e o cockpit do TraderLog Pro populado e integrado.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
