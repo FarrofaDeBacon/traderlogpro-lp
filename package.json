@@ -12,7 +12,8 @@
     "tauri": "tauri",
     "test": "vitest",
     "test:run": "vitest run",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "deploy-site": "npm run build && powershell -Command \"Get-ChildItem 'c:\\PROJETOS\\traderlog-landing' -Exclude .git | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue; Copy-Item -Recurse -Force 'build\\*' 'c:\\PROJETOS\\traderlog-landing\\'; Set-Location 'c:\\PROJETOS\\traderlog-landing'; git add .; git commit -m 'Deploy SvelteKit build to Hostinger'; git push\""
   },
   "license": "MIT",
   "dependencies": {
