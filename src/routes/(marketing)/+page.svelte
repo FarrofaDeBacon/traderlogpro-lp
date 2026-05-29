@@ -42,7 +42,7 @@
         <header class="relative z-50 border-b border-white/5 bg-slate-950/75 backdrop-blur-xl sticky top-0">
             <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
                 <a href="#" class="flex items-center gap-2 group">
-                    <Logo showText={true} width="140px" height="30px" />
+                    <Logo showText={true} width="200px" height="36px" />
                 </a>
                 
                 <nav class="hidden md:flex items-center gap-8">

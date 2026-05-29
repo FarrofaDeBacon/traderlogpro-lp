@@ -5,7 +5,7 @@
 
 <svg 
   xmlns="http://www.w3.org/2000/svg" 
-  viewBox={showText ? "0 0 680 120" : "0 0 120 120"} 
+  viewBox={showText ? "0 0 440 120" : "0 0 120 120"} 
   {width} 
   {height}
   class="transition-colors duration-200"
@@ -42,10 +42,10 @@
 
   <!-- Tipografia Adaptável -->
   {#if showText}
-    <text x="135" y="70" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="800" font-size="44" letter-spacing="0.5">
+    <text x="135" y="72" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="46" letter-spacing="-0.5">
       <tspan class="fill-slate-900 dark:fill-white transition-colors duration-200">Trader</tspan>
       <tspan fill="#10B981">Log</tspan>
-      <tspan class="fill-slate-500 dark:fill-slate-400 transition-colors duration-200" font-weight="400">Pro</tspan>
+      <tspan class="fill-slate-500 dark:fill-slate-400 transition-colors duration-200" font-weight="500">Pro</tspan>
     </text>
   {/if}
 </svg>
