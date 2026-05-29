@@ -247,7 +247,7 @@
             </div>
         </div>
     </div>
-</if>
+{/if}
 
 <style>
     /* Carrossel 100% CSS — funciona sem JavaScript */
