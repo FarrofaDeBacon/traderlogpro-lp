@@ -16,11 +16,20 @@
         "/images/page_psicologia_5.png"
     ];
 
+    const fiscalSlides = [
+        "/images/page_fiscal_1.png",
+        "/images/page_fiscal_2.png",
+        "/images/page_fiscal_3.png",
+        "/images/page_fiscal_4.png",
+        "/images/page_fiscal_5.png",
+        "/images/page_fiscal_6.png"
+    ];
+
     const prints = [
         {
             isCarousel: true,
             slides: dashboardSlides,
-            isDashboard: true,
+            carouselType: "3",
             title: "Visão Geral (Cockpit)",
             value: "Mapeamento em tempo real do Win Rate geral, patrimônio acumulado e metas diárias.",
             benefit: "Consistência e Visão Macro",
@@ -29,17 +38,20 @@
         {
             isCarousel: true,
             slides: psychologySlides,
-            isPsychology: true,
+            carouselType: "5",
             title: "Hub de Psicologia & Emoções",
             value: "Mapeamento emocional de entradas e saídas com identificação de vieses cognitivos e fúria/ansiedade.",
             benefit: "Domínio Emocional",
             lightboxIndex: 3
         },
         {
-            img: "/images/page_fiscal.png",
+            isCarousel: true,
+            slides: fiscalSlides,
+            carouselType: "6",
             title: "Apuração de IRPF Automática",
             value: "Compensação de prejuízos acumulados anteriores, isenção de R$ 20k em ações e relatórios da Receita Federal.",
-            benefit: "Contabilidade & DARF"
+            benefit: "Contabilidade & DARF",
+            lightboxIndex: 8
         },
         {
             img: "/images/page_finance.png",
@@ -71,7 +83,12 @@
         { img: "/images/page_psicologia_3.png", title: "Hub de Psicologia & Emoções - Frequência de Emoções", description: "Gráfico de rosca exibindo a distribuição percentual das emoções relatadas." },
         { img: "/images/page_psicologia_4.png", title: "Hub de Psicologia & Emoções - Impacto Financeiro", description: "Ranking preciso demonstrando o impacto financeiro (PnL) real de cada estado emocional." },
         { img: "/images/page_psicologia_5.png", title: "Hub de Psicologia & Emoções - Curva de Performance", description: "Histórico patrimonial anotado com gatilhos e pontos de controle psicológico." },
-        { img: "/images/page_fiscal.png", title: "Apuração de IRPF Automática", description: "Compensação de prejuízos acumulados anteriores, isenção de R$ 20k em ações e relatórios da Receita Federal." },
+        { img: "/images/page_fiscal_1.png", title: "Apuração de IRPF Automática - Evolução Fiscal", description: "Controle anual consolidado com expectativa de pagamento mensal de impostos sobre operações." },
+        { img: "/images/page_fiscal_2.png", title: "Apuração de IRPF Automática - Gráfico Fiscal", description: "Visualização analítica de imposto devido vs. imposto pago ao longo do ano corrente." },
+        { img: "/images/page_fiscal_3.png", title: "Apuração de IRPF Automática - Histórico Mensal", description: "Histórico de apurações completas organizadas de forma cronológica." },
+        { img: "/images/page_fiscal_4.png", title: "Apuração de IRPF Automática - Gerenciamento de DARFs", description: "Painel completo de controle das guias DARF pendentes, pagas e atrasadas." },
+        { img: "/images/page_fiscal_5.png", title: "Apuração de IRPF Automática - Pagar Guia", description: "Modal rápido e integrado para registro de quitação de guias DARF no sistema." },
+        { img: "/images/page_fiscal_6.png", title: "Apuração de IRPF Automática - Detalhes da DARF", description: "Detalhamento completo de receita (Código 6015), base de cálculo e compensação de prejuízos." },
         { img: "/images/page_finance.png", title: "Gestão Financeira & DARFs", description: "Visualização detalhada de guias DARF pendentes e pagas, saldo de contas de corretoras e conciliação bancária." },
         { img: "/images/page_trades.png", title: "Livro de Registro de Trades", description: "Histórico completo e detalhado de todas as operações fechadas e integradas via Profit RTD." },
         { img: "/images/page_strategies.png", title: "Raio-X de Estratégias", description: "Desempenho analítico e financeiro individualizado por setup ou estratégia operacional." }
@@ -116,7 +133,7 @@
         <div class="grid md:grid-cols-3 gap-8">
             {#each prints as item}
                 {#if item.isCarousel}
-                    <!-- Card de Carrossel: Dashboard (3 slides) ou Psicologia (5 slides) -->
+                    <!-- Card de Carrossel: Dashboard (3 slides), Psicologia (5 slides) ou Fiscal (6 slides) -->
                     <div class="group bg-slate-950/60 border border-white/5 rounded-[2rem] p-6 space-y-6 hover:bg-slate-800/40 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-500 text-left w-full">
                         <button
                             type="button"
@@ -128,7 +145,7 @@
                                 <img
                                     src={slide}
                                     alt="{item.title} {idx + 1}"
-                                    class="{item.isDashboard ? 'carousel-slide' : 'carousel-slide-5'} absolute inset-0 w-full h-full object-cover"
+                                    class="{item.carouselType === '3' ? 'carousel-slide' : item.carouselType === '5' ? 'carousel-slide-5' : 'carousel-slide-6'} absolute inset-0 w-full h-full object-cover"
                                     style="animation-delay: {idx * 3}s"
                                 />
                             {/each}
@@ -143,7 +160,7 @@
                             <!-- Dots fixos indicadores -->
                             <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10 pointer-events-none">
                                 {#each item.slides as _, idx}
-                                    <span class="carousel-dot {item.isDashboard ? 'dot-3' : 'dot-5'} {item.isDashboard ? 'dot-' + (idx + 1) : 'dot5-' + (idx + 1)} h-1.5 rounded-full {idx === 0 ? 'bg-emerald-400' : 'bg-white/40'}"></span>
+                                    <span class="carousel-dot {item.carouselType === '3' ? 'dot-3' : item.carouselType === '5' ? 'dot-5' : 'dot-6'} {item.carouselType === '3' ? 'dot-' + (idx + 1) : item.carouselType === '5' ? 'dot5-' + (idx + 1) : 'dot6-' + (idx + 1)} h-1.5 rounded-full {idx === 0 ? 'bg-emerald-400' : 'bg-white/40'}"></span>
                                 {/each}
                             </div>
                         </button>
@@ -265,7 +282,7 @@
             </div>
         </div>
     </div>
-{/if}
+</if>
 
 <style>
     /* --- Carrossel 3 slides (Cockpit) --- */
@@ -323,4 +340,34 @@
     .dot5-3 { animation-delay: 6s; }
     .dot5-4 { animation-delay: 9s; }
     .dot5-5 { animation-delay: 12s; }
+
+    /* --- Carrossel 6 slides (Fiscal) --- */
+    @keyframes carousel-show-6 {
+        0%        { opacity: 0; }
+        3%        { opacity: 1; }
+        15%       { opacity: 1; }
+        18%, 100% { opacity: 0; }
+    }
+
+    .carousel-slide-6 {
+        opacity: 0;
+        animation: carousel-show-6 18s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+
+    @keyframes dot-active-6 {
+        0%        { width: 1.25rem; background-color: rgb(52 211 153); }
+        18%, 100% { width: 0.375rem; background-color: rgba(255,255,255,0.4); }
+    }
+
+    .dot-6 {
+        animation: dot-active-6 18s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+    .dot6-1 { animation-delay: 0s; }
+    .dot6-2 { animation-delay: 3s; }
+    .dot6-3 { animation-delay: 6s; }
+    .dot6-4 { animation-delay: 9s; }
+    .dot6-5 { animation-delay: 12s; }
+    .dot6-6 { animation-delay: 15s; }
 </style>
