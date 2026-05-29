@@ -42,18 +42,18 @@
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                         <a href={downloadLink} class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-10 py-5 rounded-2xl text-[12px] font-black uppercase tracking-widest transition-all shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-3 active:scale-95 cursor-pointer select-none">
                             <ArrowDown class="w-4 h-4" />
-                            Baixar TraderLogPro para {userOS}
+                            BAIXAR TRADERLOGPRO PARA {userOS}
                         </a>
                     </div>
                     <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider flex items-center justify-center lg:justify-start gap-2">
                         <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        Livre de vírus • Sem necessidade de cartão • Ativação imediata via Hotmart
+                        • LIVRE DE VÍRUS • SEM NECESSIDADE DE CARTÃO • ATIVAÇÃO IMEDIATA VIA HOTMART
                     </p>
                 </div>
 
                 <!-- Native OS downloads alternative links -->
                 <div in:fly={{ y: 20, duration: 800, delay: 850 }} class="pt-6 border-t border-white/5 flex flex-wrap gap-6 items-center justify-center lg:justify-start">
-                    <span class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Instaladores Nativos:</span>
+                    <span class="text-[10px] text-slate-500 font-black uppercase tracking-widest">INSTALADORES NATIVOS:</span>
                     <div class="flex gap-4">
                         <a href="#pricing" class="text-slate-400 hover:text-emerald-400 text-xs font-bold transition-colors">
                             Windows (.exe)

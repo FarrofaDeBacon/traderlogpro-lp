@@ -3,6 +3,7 @@
     import { goto } from "$app/navigation";
     import Logo from "$lib/components/shared/Logo.svelte";
     import Hero from "$lib/components/landing/Hero.svelte";
+    import SmartScreenObjection from "$lib/components/landing/SmartScreenObjection.svelte";
     import Comparison from "$lib/components/landing/Comparison.svelte";
     import Benefits from "$lib/components/landing/Benefits.svelte";
     import ActionDark from "$lib/components/landing/ActionDark.svelte";
@@ -58,6 +59,7 @@
         </header>
 
         <Hero {visible} />
+        <SmartScreenObjection />
         <Comparison />
         <Benefits />
         <ActionDark />

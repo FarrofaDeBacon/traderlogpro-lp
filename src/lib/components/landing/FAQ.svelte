@@ -28,6 +28,10 @@
         {
             q: "Como funciona a garantia de 7 dias?",
             a: "A garantia é incondicional e assegurada integralmente pela Hotmart. Se por qualquer motivo você decidir que o software não blindou sua disciplina operacional, basta solicitar o reembolso na plataforma com um clique para receber 100% do seu dinheiro de volta."
+        },
+        {
+            q: "Apareceu 'Windows Defender protegeu o computador', o que eu faço?",
+            a: "Como o TraderLogPro é um software independente recém-lançado, o Windows Defender (SmartScreen) pode exibir esse aviso preventivo de 'Editor Desconhecido'. O aplicativo é 100% seguro e livre de vírus. Para instalar, basta clicar em 'Mais informações' e em seguida no botão 'Executar assim mesmo'."
         }
     ];
 </script>

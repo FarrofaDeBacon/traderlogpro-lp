@@ -51,19 +51,19 @@
                     <ul class="space-y-6 text-sm text-slate-200 font-medium text-left">
                         <li class="flex items-start gap-3">
                             <span class="text-emerald-400 shrink-0 font-bold">✓</span>
-                            <strong>Privacidade Absoluta</strong>: Seu banco de dados fica 100% gravado localmente e criptografado no seu HD.
+                            <span><strong>Privacidade Absoluta</strong> : Seu banco de dados fica 100% gravado localmente e criptografado no seu HD.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="text-emerald-400 shrink-0 font-bold">✓</span>
-                            <strong>Velocidade Nativa</strong>: Latência zero de processamento e leitura instantânea de logs offline.
+                            <span><strong>Velocidade Nativa</strong> : Latência zero de processamento e leitura instantânea de logs offline.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="text-emerald-400 shrink-0 font-bold">✓</span>
-                            <strong>Sincronização Segura</strong>: Lê os logs locais criados na máquina pelo MT5 sem expor credenciais na rede.
+                            <span><strong>Sincronização Segura</strong> : Lê os logs locais criados na máquina pelo MT5 sem expor credenciais na rede.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="text-emerald-400 shrink-0 font-bold">✓</span>
-                            <strong>Backup Criptografado</strong>: Sistema de backup automático local no seu computador para proteção contra falhas físicas.
+                            <span><strong>Instalação Certificada</strong> : Software compilado de forma independente sob rígidos padrões de segurança e integridade de dados.</span>
                         </li>
                     </ul>
                 </div>
