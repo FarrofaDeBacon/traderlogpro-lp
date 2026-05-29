@@ -19,10 +19,21 @@
     const fiscalSlides = [
         "/images/page_fiscal_1.png",
         "/images/page_fiscal_2.png",
-        "/images/page_fiscal_3.png",
+        "/images/page_fiscal_3.png"
+    ];
+
+    const financeSlides = [
+        "/images/page_finance.png",
         "/images/page_fiscal_4.png",
         "/images/page_fiscal_5.png",
         "/images/page_fiscal_6.png"
+    ];
+
+    const strategiesSlides = [
+        "/images/page_strategies_2.png",
+        "/images/page_strategies_3.png",
+        "/images/page_strategies_4.png",
+        "/images/page_strategies_5.png"
     ];
 
     const prints = [
@@ -47,17 +58,20 @@
         {
             isCarousel: true,
             slides: fiscalSlides,
-            carouselType: "6",
+            carouselType: "3",
             title: "Apuração de IRPF Automática",
             value: "Compensação de prejuízos acumulados anteriores, isenção de R$ 20k em ações e relatórios da Receita Federal.",
             benefit: "Contabilidade & DARF",
             lightboxIndex: 8
         },
         {
-            img: "/images/page_finance.png",
+            isCarousel: true,
+            slides: financeSlides,
+            carouselType: "4",
             title: "Gestão Financeira & DARFs",
             value: "Visualização detalhada de guias DARF pendentes e pagas, saldo de contas de corretoras e conciliação bancária.",
-            benefit: "Saúde Financeira"
+            benefit: "Saúde Financeira",
+            lightboxIndex: 11
         },
         {
             img: "/images/page_trades.png",
@@ -66,10 +80,13 @@
             benefit: "Livro Diário"
         },
         {
-            img: "/images/page_strategies.png",
+            isCarousel: true,
+            slides: strategiesSlides,
+            carouselType: "4",
             title: "Raio-X de Estratégias",
-            value: "Desempenho analítico e financeiro individualizado por setup ou estratégia operacional.",
-            benefit: "Validação Estatística"
+            value: "Desempenho analítico e financeiro individualizado por setup ou estratégia operacional com curvas de capital e drawdown.",
+            benefit: "Validação Estatística",
+            lightboxIndex: 16
         }
     ];
 
@@ -86,12 +103,15 @@
         { img: "/images/page_fiscal_1.png", title: "Apuração de IRPF Automática - Evolução Fiscal", description: "Controle anual consolidado com expectativa de pagamento mensal de impostos sobre operações." },
         { img: "/images/page_fiscal_2.png", title: "Apuração de IRPF Automática - Gráfico Fiscal", description: "Visualização analítica de imposto devido vs. imposto pago ao longo do ano corrente." },
         { img: "/images/page_fiscal_3.png", title: "Apuração de IRPF Automática - Histórico Mensal", description: "Histórico de apurações completas organizadas de forma cronológica." },
-        { img: "/images/page_fiscal_4.png", title: "Apuração de IRPF Automática - Gerenciamento de DARFs", description: "Painel completo de controle das guias DARF pendentes, pagas e atrasadas." },
-        { img: "/images/page_fiscal_5.png", title: "Apuração de IRPF Automática - Pagar Guia", description: "Modal rápido e integrado para registro de quitação de guias DARF no sistema." },
-        { img: "/images/page_fiscal_6.png", title: "Apuração de IRPF Automática - Detalhes da DARF", description: "Detalhamento completo de receita (Código 6015), base de cálculo e compensação de prejuízos." },
-        { img: "/images/page_finance.png", title: "Gestão Financeira & DARFs", description: "Visualização detalhada de guias DARF pendentes e pagas, saldo de contas de corretoras e conciliação bancária." },
+        { img: "/images/page_finance.png", title: "Gestão Financeira & DARFs - Visão Geral", description: "Visualização detalhada do saldo de contas de corretoras e conciliação bancária." },
+        { img: "/images/page_fiscal_4.png", title: "Gestão Financeira & DARFs - Gerenciamento de DARFs", description: "Painel completo de controle das guias DARF pendentes, pagas e atrasadas." },
+        { img: "/images/page_fiscal_5.png", title: "Gestão Financeira & DARFs - Pagar Guia", description: "Modal rápido e integrado para registro de quitação de guias DARF no sistema." },
+        { img: "/images/page_fiscal_6.png", title: "Gestão Financeira & DARFs - Detalhes da DARF", description: "Detalhamento completo de receita (Código 6015), base de cálculo e compensação de prejuízos." },
         { img: "/images/page_trades.png", title: "Livro de Registro de Trades", description: "Histórico completo e detalhado de todas as operações fechadas e integradas via Profit RTD." },
-        { img: "/images/page_strategies.png", title: "Raio-X de Estratégias", description: "Desempenho analítico e financeiro individualizado por setup ou estratégia operacional." }
+        { img: "/images/page_strategies_2.png", title: "Raio-X de Estratégias - Curva de Patrimônio", description: "Evolução do saldo líquido acumulado especificamente para a estratégia selecionada." },
+        { img: "/images/page_strategies_3.png", title: "Raio-X de Estratégias - Curva de Drawdown", description: "Mapeamento rigoroso e drawdown máximo do setup ao longo do tempo." },
+        { img: "/images/page_strategies_4.png", title: "Raio-X de Estratégias - Mapa de Calor (PnL)", description: "Matriz interativa mapeando dias da semana e horários com os melhores e piores retornos." },
+        { img: "/images/page_strategies_5.png", title: "Raio-X de Estratégias - Fatores Operacionais", description: "Métricas consolidadas como média de lucro/prejuízo, payoff e fator de recuperação." }
     ];
 
     let lightboxIndex = $state<number | null>(null);
@@ -145,7 +165,7 @@
                                 <img
                                     src={slide}
                                     alt="{item.title} {idx + 1}"
-                                    class="{item.carouselType === '3' ? 'carousel-slide' : item.carouselType === '5' ? 'carousel-slide-5' : 'carousel-slide-6'} absolute inset-0 w-full h-full object-cover"
+                                    class="{item.carouselType === '3' ? 'carousel-slide' : item.carouselType === '4' ? 'carousel-slide-4' : item.carouselType === '5' ? 'carousel-slide-5' : 'carousel-slide-6'} absolute inset-0 w-full h-full object-cover"
                                     style="animation-delay: {idx * 3}s"
                                 />
                             {/each}
@@ -160,7 +180,7 @@
                             <!-- Dots fixos indicadores -->
                             <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10 pointer-events-none">
                                 {#each item.slides as _, idx}
-                                    <span class="carousel-dot {item.carouselType === '3' ? 'dot-3' : item.carouselType === '5' ? 'dot-5' : 'dot-6'} {item.carouselType === '3' ? 'dot-' + (idx + 1) : item.carouselType === '5' ? 'dot5-' + (idx + 1) : 'dot6-' + (idx + 1)} h-1.5 rounded-full {idx === 0 ? 'bg-emerald-400' : 'bg-white/40'}"></span>
+                                    <span class="carousel-dot {item.carouselType === '3' ? 'dot-3' : item.carouselType === '4' ? 'dot-4' : item.carouselType === '5' ? 'dot-5' : 'dot-6'} {item.carouselType === '3' ? 'dot-' + (idx + 1) : item.carouselType === '4' ? 'dot4-' + (idx + 1) : item.carouselType === '5' ? 'dot5-' + (idx + 1) : 'dot6-' + (idx + 1)} h-1.5 rounded-full {idx === 0 ? 'bg-emerald-400' : 'bg-white/40'}"></span>
                                 {/each}
                             </div>
                         </button>
@@ -311,6 +331,34 @@
     .dot-1 { animation-delay: 0s; }
     .dot-2 { animation-delay: 3s; }
     .dot-3 { animation-delay: 6s; }
+
+    /* --- Carrossel 4 slides (Estratégias) --- */
+    @keyframes carousel-show-4 {
+        0%        { opacity: 0; }
+        5%        { opacity: 1; }
+        22%       { opacity: 1; }
+        27%, 100% { opacity: 0; }
+    }
+
+    .carousel-slide-4 {
+        opacity: 0;
+        animation: carousel-show-4 12s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+
+    @keyframes dot-active-4 {
+        0%        { width: 1.25rem; background-color: rgb(52 211 153); }
+        27%, 100% { width: 0.375rem; background-color: rgba(255,255,255,0.4); }
+    }
+
+    .dot-4 {
+        animation: dot-active-4 12s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+    .dot4-1 { animation-delay: 0s; }
+    .dot4-2 { animation-delay: 3s; }
+    .dot4-3 { animation-delay: 6s; }
+    .dot4-4 { animation-delay: 9s; }
 
     /* --- Carrossel 5 slides (Psicologia) --- */
     @keyframes carousel-show-5 {

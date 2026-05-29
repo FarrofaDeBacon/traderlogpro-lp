@@ -2,10 +2,10 @@
     import { onMount } from "svelte";
     import { goto } from "$app/navigation";
     import Hero from "$lib/components/landing/Hero.svelte";
-    import ActionDark from "$lib/components/landing/ActionDark.svelte";
-    import ActionLight from "$lib/components/landing/ActionLight.svelte";
+    import Comparison from "$lib/components/landing/Comparison.svelte";
     import Benefits from "$lib/components/landing/Benefits.svelte";
-    import HowItWorks from "$lib/components/landing/HowItWorks.svelte";
+    import ActionDark from "$lib/components/landing/ActionDark.svelte";
+    import GithubAudit from "$lib/components/landing/GithubAudit.svelte";
     import Offer from "$lib/components/landing/Offer.svelte";
     import FAQ from "$lib/components/landing/FAQ.svelte";
     import Footer from "$lib/components/landing/Footer.svelte";
@@ -24,24 +24,24 @@
 
 <svelte:head>
     <title>TraderLogPro | O Diário de Trade Definitivo</title>
-    <meta name="description" content="Pare de perder dinheiro por falta de controle nas suas operações. O diário de trade que transforma seus erros em consistência." />
+    <meta name="description" content="A velocidade e privacidade de um software desktop. Sincronize seu MT5 offline e de forma segura. Código aberto no GitHub." />
 </svelte:head>
 
 <div class="relative min-h-screen bg-slate-950 font-inter selection:bg-emerald-500/20 selection:text-emerald-700">
 
-    <!-- Ambient Background Gradients for Hero & ActionDark (Dark theme) -->
+    <!-- Ambient Background Gradients -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
         <div class="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-emerald-500/5 blur-[120px] rounded-full"></div>
-        <div class="absolute top-[30%] -right-[10%] w-[40%] h-[40%] bg-blue-500/5 blur-[120px] rounded-full"></div>
+        <div class="absolute top-[30%] -right-[10%] w-[40%] h-[40%] bg-emerald-500/3 blur-[120px] rounded-full"></div>
     </div>
 
     <!-- Content Wrapper -->
     <div class="relative z-10 flex flex-col min-h-screen">
         <Hero {visible} />
-        <ActionDark />
-        <ActionLight />
+        <Comparison />
         <Benefits />
-        <HowItWorks />
+        <ActionDark />
+        <GithubAudit />
         <Offer />
         <FAQ />
         <Footer />
