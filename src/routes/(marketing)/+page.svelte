@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { goto } from "$app/navigation";
+    import Logo from "$lib/components/shared/Logo.svelte";
     import Hero from "$lib/components/landing/Hero.svelte";
     import Comparison from "$lib/components/landing/Comparison.svelte";
     import Benefits from "$lib/components/landing/Benefits.svelte";
@@ -37,6 +38,27 @@
 
     <!-- Content Wrapper -->
     <div class="relative z-10 flex flex-col min-h-screen">
+        <!-- Header / Navigation -->
+        <header class="relative z-50 border-b border-white/5 bg-slate-950/75 backdrop-blur-xl sticky top-0">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+                <a href="#" class="flex items-center gap-2 group">
+                    <Logo showText={true} width="140px" height="30px" />
+                </a>
+                
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#comparison" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Diferenciais</a>
+                    <a href="#modules" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Módulos</a>
+                    <a href="#github" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Open Source</a>
+                    <a href="#pricing" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Planos</a>
+                    <a href="#faq" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">FAQ</a>
+                </nav>
+
+                <a href="#pricing" class="relative group px-5 py-2.5 rounded-xl bg-emerald-500 text-slate-950 font-outfit text-xs font-black uppercase tracking-widest overflow-hidden transition-all hover:bg-emerald-400 shadow-lg shadow-emerald-500/10">
+                    Obter Licença
+                </a>
+            </div>
+        </header>
+
         <Hero {visible} />
         <Comparison />
         <Benefits />

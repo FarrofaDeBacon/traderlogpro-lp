@@ -29,6 +29,8 @@
     import { t, locale } from "svelte-i18n";
     import { page } from "$app/stores";
     import ModeToggle from "$lib/components/mode-toggle/ModeToggle.svelte";
+    import Logo from "$lib/components/shared/Logo.svelte";
+
 
     // Workspace Items (Principal)
     let workspaceItems = $derived.by(() => {
@@ -123,18 +125,11 @@
     </Sheet.Trigger>
     <Sheet.Content side="left" class="w-[240px] p-0">
         <div class="flex h-full flex-col">
-            <div class="p-6">
-                <h2
-                    class="text-lg font-bold tracking-tight text-primary flex items-center gap-2"
-                >
-                    <img src="/branding/navbar-logo.png" alt="Logo" class="h-6 w-6 object-contain" />
-                    <span
-                        >TraderLog <span
-                            class="text-[9px] font-black uppercase text-muted-foreground/60 px-1 rounded border border-border/30 bg-muted/30 align-top"
-                            >v0.3</span
-                        ></span
-                    >
-                </h2>
+            <div class="px-5 py-4">
+                <div class="flex items-center gap-2">
+                    <Logo showText={true} width="130px" height="28px" />
+                    <span class="text-[8px] font-black uppercase text-muted-foreground/60 px-1 rounded border border-border/30 bg-muted/30 align-top">v0.3</span>
+                </div>
             </div>
             <Separator />
             <ScrollArea class="flex-1 py-4">
@@ -250,17 +245,11 @@
     >
         <a
             href="/"
-            class="flex items-center gap-2 font-semibold overflow-hidden"
+            class="flex items-center gap-2 font-semibold overflow-hidden py-1"
         >
-            <img src="/branding/navbar-logo.png" alt="Logo" class="h-6 w-6 shrink-0 object-contain" />
+            <Logo showText={!sidebarState.isCollapsed} width={sidebarState.isCollapsed ? "24px" : "120px"} height="24px" />
             {#if !sidebarState.isCollapsed}
-                <div class="flex items-center gap-2 overflow-hidden">
-                    <span class="truncate">TraderLog Pro</span>
-                    <span
-                        class="text-[9px] font-black uppercase text-muted-foreground/50 px-1 rounded border border-border/30 bg-muted/30"
-                        >v0.3.0</span
-                    >
-                </div>
+                <span class="text-[8px] font-black uppercase text-muted-foreground/50 px-1 rounded border border-border/30 bg-muted/30 shrink-0">v0.3.0</span>
             {/if}
         </a>
         <div class="flex items-center gap-2">
