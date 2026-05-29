@@ -8,18 +8,32 @@
         "/images/dashboard_3.png"
     ];
 
+    const psychologySlides = [
+        "/images/page_psicologia_1.png",
+        "/images/page_psicologia_2.png",
+        "/images/page_psicologia_3.png",
+        "/images/page_psicologia_4.png",
+        "/images/page_psicologia_5.png"
+    ];
+
     const prints = [
         {
             isCarousel: true,
+            slides: dashboardSlides,
+            isDashboard: true,
             title: "Visão Geral (Cockpit)",
             value: "Mapeamento em tempo real do Win Rate geral, patrimônio acumulado e metas diárias.",
-            benefit: "Consistência e Visão Macro"
+            benefit: "Consistência e Visão Macro",
+            lightboxIndex: 0
         },
         {
-            img: "/images/page_psicologia.png",
+            isCarousel: true,
+            slides: psychologySlides,
+            isPsychology: true,
             title: "Hub de Psicologia & Emoções",
             value: "Mapeamento emocional de entradas e saídas com identificação de vieses cognitivos e fúria/ansiedade.",
-            benefit: "Domínio Emocional"
+            benefit: "Domínio Emocional",
+            lightboxIndex: 3
         },
         {
             img: "/images/page_fiscal.png",
@@ -52,7 +66,11 @@
         { img: "/images/dashboard_1.png", title: "Visão Geral (Cockpit) - Tela 1", description: "Mapeamento em tempo real do Win Rate geral, patrimônio acumulado e metas diárias." },
         { img: "/images/dashboard_2.png", title: "Visão Geral (Cockpit) - Tela 2", description: "Heatmap mensal de resultados operacionais detalhado por dia." },
         { img: "/images/dashboard_3.png", title: "Visão Geral (Cockpit) - Tela 3", description: "Calendário operacional completo com estatísticas consolidadas." },
-        { img: "/images/page_psicologia.png", title: "Hub de Psicologia & Emoções", description: "Mapeamento emocional de entradas e saídas com identificação de vieses cognitivos e fúria/ansiedade." },
+        { img: "/images/page_psicologia_1.png", title: "Hub de Psicologia & Emoções - Dashboard Principal", description: "Overview completo com score psicológico, killer/savior emotions e gráficos de performance." },
+        { img: "/images/page_psicologia_2.png", title: "Hub de Psicologia & Emoções - Mapa Comportamental", description: "Raio-X em radar octogonal mapeando os estados mentais operacionais recorrentes." },
+        { img: "/images/page_psicologia_3.png", title: "Hub de Psicologia & Emoções - Frequência de Emoções", description: "Gráfico de rosca exibindo a distribuição percentual das emoções relatadas." },
+        { img: "/images/page_psicologia_4.png", title: "Hub de Psicologia & Emoções - Impacto Financeiro", description: "Ranking preciso demonstrando o impacto financeiro (PnL) real de cada estado emocional." },
+        { img: "/images/page_psicologia_5.png", title: "Hub de Psicologia & Emoções - Curva de Performance", description: "Histórico patrimonial anotado com gatilhos e pontos de controle psicológico." },
         { img: "/images/page_fiscal.png", title: "Apuração de IRPF Automática", description: "Compensação de prejuízos acumulados anteriores, isenção de R$ 20k em ações e relatórios da Receita Federal." },
         { img: "/images/page_finance.png", title: "Gestão Financeira & DARFs", description: "Visualização detalhada de guias DARF pendentes e pagas, saldo de contas de corretoras e conciliação bancária." },
         { img: "/images/page_trades.png", title: "Livro de Registro de Trades", description: "Histórico completo e detalhado de todas as operações fechadas e integradas via Profit RTD." },
@@ -98,19 +116,19 @@
         <div class="grid md:grid-cols-3 gap-8">
             {#each prints as item}
                 {#if item.isCarousel}
-                    <!-- Card do Dashboard: carrossel puro CSS -->
+                    <!-- Card de Carrossel: Dashboard (3 slides) ou Psicologia (5 slides) -->
                     <div class="group bg-slate-950/60 border border-white/5 rounded-[2rem] p-6 space-y-6 hover:bg-slate-800/40 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/5 transition-all duration-500 text-left w-full">
                         <button
                             type="button"
                             class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-video border border-white/5 w-full cursor-pointer block"
-                            onclick={() => lightboxIndex = 0}
+                            onclick={() => lightboxIndex = item.lightboxIndex}
                         >
-                            <!-- 3 imagens animadas por CSS -->
-                            {#each dashboardSlides as slide, idx}
+                            <!-- Imagens animadas por CSS -->
+                            {#each item.slides as slide, idx}
                                 <img
                                     src={slide}
-                                    alt="Dashboard {idx + 1}"
-                                    class="carousel-slide absolute inset-0 w-full h-full object-cover"
+                                    alt="{item.title} {idx + 1}"
+                                    class="{item.isDashboard ? 'carousel-slide' : 'carousel-slide-5'} absolute inset-0 w-full h-full object-cover"
                                     style="animation-delay: {idx * 3}s"
                                 />
                             {/each}
@@ -124,9 +142,9 @@
 
                             <!-- Dots fixos indicadores -->
                             <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10 pointer-events-none">
-                                <span class="carousel-dot dot-1 h-1.5 rounded-full bg-emerald-400"></span>
-                                <span class="carousel-dot dot-2 h-1.5 w-1.5 rounded-full bg-white/40"></span>
-                                <span class="carousel-dot dot-3 h-1.5 w-1.5 rounded-full bg-white/40"></span>
+                                {#each item.slides as _, idx}
+                                    <span class="carousel-dot {item.isDashboard ? 'dot-3' : 'dot-5'} {item.isDashboard ? 'dot-' + (idx + 1) : 'dot5-' + (idx + 1)} h-1.5 rounded-full {idx === 0 ? 'bg-emerald-400' : 'bg-white/40'}"></span>
+                                {/each}
                             </div>
                         </button>
 
@@ -250,8 +268,7 @@
 {/if}
 
 <style>
-    /* Carrossel 100% CSS — funciona sem JavaScript */
-    /* Ciclo total: 9s (3 slides × 3s cada) */
+    /* --- Carrossel 3 slides (Cockpit) --- */
     @keyframes carousel-show {
         0%        { opacity: 0; }
         5%        { opacity: 1; }
@@ -265,18 +282,45 @@
         animation-fill-mode: both;
     }
 
-    /* Dots sincronizados com o carrossel */
     @keyframes dot-active {
-        0%        { width: 1.25rem; background-color: rgb(52 211 153); } /* emerald-400 */
+        0%        { width: 1.25rem; background-color: rgb(52 211 153); }
         35%, 100% { width: 0.375rem; background-color: rgba(255,255,255,0.4); }
     }
 
-    .carousel-dot {
+    .dot-3 {
         animation: dot-active 9s ease-in-out infinite;
         animation-fill-mode: both;
     }
     .dot-1 { animation-delay: 0s; }
     .dot-2 { animation-delay: 3s; }
     .dot-3 { animation-delay: 6s; }
-</style>
 
+    /* --- Carrossel 5 slides (Psicologia) --- */
+    @keyframes carousel-show-5 {
+        0%        { opacity: 0; }
+        4%        { opacity: 1; }
+        18%       { opacity: 1; }
+        22%, 100% { opacity: 0; }
+    }
+
+    .carousel-slide-5 {
+        opacity: 0;
+        animation: carousel-show-5 15s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+
+    @keyframes dot-active-5 {
+        0%        { width: 1.25rem; background-color: rgb(52 211 153); }
+        22%, 100% { width: 0.375rem; background-color: rgba(255,255,255,0.4); }
+    }
+
+    .dot-5 {
+        animation: dot-active-5 15s ease-in-out infinite;
+        animation-fill-mode: both;
+    }
+    .dot5-1 { animation-delay: 0s; }
+    .dot5-2 { animation-delay: 3s; }
+    .dot5-3 { animation-delay: 6s; }
+    .dot5-4 { animation-delay: 9s; }
+    .dot5-5 { animation-delay: 12s; }
+</style>
