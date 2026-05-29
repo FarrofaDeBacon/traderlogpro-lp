@@ -6,7 +6,6 @@
     import Comparison from "$lib/components/landing/Comparison.svelte";
     import Benefits from "$lib/components/landing/Benefits.svelte";
     import ActionDark from "$lib/components/landing/ActionDark.svelte";
-    import GithubAudit from "$lib/components/landing/GithubAudit.svelte";
     import Offer from "$lib/components/landing/Offer.svelte";
     import FAQ from "$lib/components/landing/FAQ.svelte";
     import Footer from "$lib/components/landing/Footer.svelte";
@@ -25,7 +24,7 @@
 
 <svelte:head>
     <title>TraderLogPro | O Diário de Trade Definitivo</title>
-    <meta name="description" content="A velocidade e privacidade de um software desktop. Sincronize seu MT5 offline e de forma segura. Código aberto no GitHub." />
+    <meta name="description" content="A velocidade e privacidade de um software desktop. Sincronize seu MT5 offline e de forma segura com criptografia local absoluta." />
 </svelte:head>
 
 <div class="relative min-h-screen bg-slate-950 font-inter selection:bg-emerald-500/20 selection:text-emerald-700">
@@ -48,7 +47,6 @@
                 <nav class="hidden md:flex items-center gap-8">
                     <a href="#comparison" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Diferenciais</a>
                     <a href="#modules" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Módulos</a>
-                    <a href="#github" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Open Source</a>
                     <a href="#pricing" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Planos</a>
                     <a href="#faq" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">FAQ</a>
                 </nav>
@@ -63,7 +61,6 @@
         <Comparison />
         <Benefits />
         <ActionDark />
-        <GithubAudit />
         <Offer />
         <FAQ />
         <Footer />

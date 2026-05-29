@@ -53,12 +53,12 @@
 
                 <!-- Native OS downloads alternative links -->
                 <div in:fly={{ y: 20, duration: 800, delay: 850 }} class="pt-6 border-t border-white/5 flex flex-wrap gap-6 items-center justify-center lg:justify-start">
-                    <span class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Links Alternativos:</span>
+                    <span class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Instaladores Nativos:</span>
                     <div class="flex gap-4">
-                        <a href="https://github.com/FarrofaDeBacon/site" class="text-slate-400 hover:text-emerald-400 text-xs font-bold transition-colors">
+                        <a href="#pricing" class="text-slate-400 hover:text-emerald-400 text-xs font-bold transition-colors">
                             Windows (.exe)
                         </a>
-                        <a href="https://github.com/FarrofaDeBacon/site" class="text-slate-400 hover:text-emerald-400 text-xs font-bold transition-colors">
+                        <a href="#pricing" class="text-slate-400 hover:text-emerald-400 text-xs font-bold transition-colors">
                             macOS (.dmg)
                         </a>
                     </div>

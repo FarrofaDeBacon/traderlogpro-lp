@@ -6,7 +6,7 @@
         <div class="text-center space-y-4 max-w-2xl mx-auto">
             <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-400">Contraste de Segurança</h2>
             <h3 class="font-outfit text-4xl font-black tracking-tight text-white uppercase">DESKTOP LOCAL vs. DIÁRIOS EM NUVEM</h3>
-            <p class="text-slate-400 font-medium">Compare a robustez de um sistema local e auditável contra a vulnerabilidade das soluções baseadas em servidores web externos.</p>
+            <p class="text-slate-400 font-medium">Compare a robustez de um sistema local e criptografado contra a vulnerabilidade das soluções baseadas em servidores web externos.</p>
         </div>
 
         <div class="max-w-4xl mx-auto overflow-hidden rounded-[2rem] border border-white/5 bg-slate-900/40 shadow-2xl">
@@ -63,7 +63,7 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="text-emerald-400 shrink-0 font-bold">✓</span>
-                            <strong>Código Auditável</strong>: Código-fonte público no GitHub para confiança técnica máxima de desenvolvedores.
+                            <strong>Backup Criptografado</strong>: Sistema de backup automático local no seu computador para proteção contra falhas físicas.
                         </li>
                     </ul>
                 </div>
