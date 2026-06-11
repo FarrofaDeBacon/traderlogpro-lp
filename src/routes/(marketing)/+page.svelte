@@ -50,6 +50,7 @@
                     <a href="#modules" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Módulos</a>
                     <a href="#pricing" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">Planos</a>
                     <a href="#faq" class="text-xs font-semibold text-slate-400 hover:text-white transition-colors uppercase tracking-wider">FAQ</a>
+                    <a href="/download" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors uppercase tracking-wider">Download</a>
                 </nav>
 
                 <a href="#pricing" class="relative group px-5 py-2.5 rounded-xl bg-emerald-500 text-slate-950 font-outfit text-xs font-black uppercase tracking-widest overflow-hidden transition-all hover:bg-emerald-400 shadow-lg shadow-emerald-500/10">

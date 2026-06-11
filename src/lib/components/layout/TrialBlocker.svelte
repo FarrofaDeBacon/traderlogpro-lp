@@ -15,8 +15,8 @@
     let isActivating = $state(false);
 
     // Links de Checkout (Substitua pelos seus links reais)
-    const CHECKOUT_ANNUAL = "https://pay.hotmart.com/ID_OFERTA_ANUAL";
-    const CHECKOUT_LIFETIME = "https://pay.hotmart.com/ID_OFERTA_VITALICIO";
+    const CHECKOUT_ANNUAL = "https://pay.hotmart.com/J105321674U";
+    const CHECKOUT_LIFETIME = "https://pay.hotmart.com/U105324624J";
 
     function getCheckoutUrl(baseUrl: string) {
         const cleanEmail = email.trim();

@@ -37,8 +37,8 @@
     let isOnlineActivating = $state(false);
 
     // Links de Checkout Reais (Fornecidos pelo usuário)
-    const CHECKOUT_ANNUAL = "https://pay.hotmart.com/J105321674U?bid=1776001106781";
-    const CHECKOUT_LIFETIME = "https://pay.hotmart.com/U105324624J?bid=1776001128443";
+    const CHECKOUT_ANNUAL = "https://pay.hotmart.com/J105321674U";
+    const CHECKOUT_LIFETIME = "https://pay.hotmart.com/U105324624J";
 
     function getCheckoutUrl(baseUrl: string) {
         const cleanEmail = activationEmail.trim();

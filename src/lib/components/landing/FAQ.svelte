@@ -22,8 +22,8 @@
             a: "De forma alguma. Ao contrário de diários web comuns lentos, o TraderLogPro salva 100% dos dados financeiros, de saldo e de estratégias localmente no seu próprio disco rígido de forma criptografada. Privacidade absoluta garantida."
         },
         {
-            q: "Como o aplicativo se integra ao MetaTrader 5?",
-            a: "De forma estritamente local e offline. O software lê diretamente os arquivos de log locais criados pelo MT5 no seu computador em milissegundos. Você não precisa expor senhas, credenciais de corretoras ou qualquer conexão na internet."
+            q: "Como o aplicativo se integra ao Profit e RTD?",
+            a: "De forma estritamente local e offline. O software lê diretamente os dados exportados pelo Profit (Nelogica) via RTD no seu computador em milissegundos. Você não precisa expor senhas, credenciais de corretoras ou qualquer conexão na internet."
         },
         {
             q: "Como funciona a garantia de 7 dias?",

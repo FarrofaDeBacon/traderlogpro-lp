@@ -6,8 +6,8 @@
     
     // Links de Checkout do Hotmart
     const checkoutLinks = {
-        vitalicio: "https://pay.hotmart.com/U105324624J",
-        anual: "https://pay.hotmart.com/U105324624J?off=ANNUAL_OFFER" // Replace with actual annual offer link/parameter if needed
+        vitalicio: "https://go.hotmart.com/U105324624J?dp=1",
+        anual: "https://go.hotmart.com/J105321674U?dp=1"
     };
 </script>
 
@@ -21,35 +21,65 @@
 
         <div class="grid lg:grid-cols-12 gap-8 items-stretch max-w-5xl mx-auto">
             
-            <!-- Value Stack List (Left Side) -->
-            <div class="lg:col-span-7 p-8 md:p-10 rounded-[2.5rem] bg-slate-950/60 border border-white/5 space-y-6 text-left flex flex-col justify-between">
-                <div>
-                    <h4 class="font-outfit text-lg font-black uppercase text-emerald-400 tracking-tight">O Empilhamento da Oferta</h4>
-                    <div class="divide-y divide-white/5 space-y-4">
-                        <div class="flex justify-between items-center text-sm pt-4">
-                            <span class="text-slate-300 font-medium">Licença do Software TraderLogPro Desktop</span>
-                            <span class="text-slate-500 line-through">R$ 497</span>
+            <!-- Hotmart Trust Card (Left Side) -->
+            <div class="lg:col-span-7 p-8 md:p-10 rounded-[2.5rem] bg-slate-950/60 border border-white/5 text-left flex flex-col justify-between gap-8">
+                <div class="space-y-2">
+                    <span class="text-[9px] font-black uppercase tracking-widest text-slate-500">Processado por</span>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/></svg>
                         </div>
-                        <div class="flex justify-between items-center text-sm pt-4">
-                            <span class="text-slate-300 font-medium">Bônus #1: Módulo Mental & Insights de IA Local</span>
-                            <span class="text-emerald-400 font-black">Grátis (R$ 197)</span>
-                        </div>
-                        <div class="flex justify-between items-center text-sm pt-4">
-                            <span class="text-slate-300 font-medium">Bônus #2: Painel do Escudo Dinâmico de Risco</span>
-                            <span class="text-emerald-400 font-black">Grátis (R$ 147)</span>
-                        </div>
-                        <div class="flex justify-between items-center text-sm pt-4">
-                            <span class="text-slate-300 font-medium">Bônus #3: Updates Locais e Suporte Prioritário</span>
-                            <span class="text-emerald-400 font-black">Grátis (R$ 97)</span>
+                        <div>
+                            <p class="font-outfit text-xl font-black text-white tracking-tight">Hotmart S.A.</p>
+                            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Plataforma Oficial de Vendas</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="pt-6 border-t border-white/5 flex justify-between items-center">
-                    <span class="font-outfit text-xs font-black uppercase tracking-widest text-slate-500">Valor Total Consolidado:</span>
-                    <span class="text-xl font-black text-rose-500 line-through">R$ 938,00</span>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Pagamentos -->
+                    <div class="p-4 rounded-2xl bg-slate-900/50 border border-white/5 space-y-2">
+                        <div class="w-8 h-8 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/></svg>
+                        </div>
+                        <p class="text-[10px] font-black uppercase text-white tracking-wide">Formas de Pagamento</p>
+                        <p class="text-[10px] text-slate-400 leading-relaxed">Pix · Cartão de Crédito · Boleto Bancário</p>
+                    </div>
+
+                    <!-- Parcelamento -->
+                    <div class="p-4 rounded-2xl bg-slate-900/50 border border-white/5 space-y-2">
+                        <div class="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+                        </div>
+                        <p class="text-[10px] font-black uppercase text-white tracking-wide">Parcelamento</p>
+                        <p class="text-[10px] text-slate-400 leading-relaxed">Em até 3x no Cartão sem juros adicionais</p>
+                    </div>
+
+                    <!-- Garantia -->
+                    <div class="p-4 rounded-2xl bg-slate-900/50 border border-white/5 space-y-2">
+                        <div class="w-8 h-8 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+                        </div>
+                        <p class="text-[10px] font-black uppercase text-white tracking-wide">Garantia Hotmart</p>
+                        <p class="text-[10px] text-slate-400 leading-relaxed">7 dias de garantia incondicional. Reembolso com 1 clique.</p>
+                    </div>
+
+                    <!-- Ativação Imediata -->
+                    <div class="p-4 rounded-2xl bg-slate-900/50 border border-white/5 space-y-2">
+                        <div class="w-8 h-8 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+                        </div>
+                        <p class="text-[10px] font-black uppercase text-white tracking-wide">Ativação Imediata</p>
+                        <p class="text-[10px] text-slate-400 leading-relaxed">Chave de licença enviada ao seu e-mail em segundos.</p>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-white/5 flex items-center gap-3">
+                    <svg class="w-4 h-4 text-slate-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+                    <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Ambiente SSL criptografado · Dados protegidos pela Hotmart</p>
                 </div>
             </div>
+
 
             <!-- Checkout Box with Plan Selector (Right Side) -->
             <div class="lg:col-span-5 p-8 md:p-10 rounded-[2.5rem] bg-slate-950 border-2 border-emerald-500 relative flex flex-col justify-between gap-8 text-left shadow-2xl shadow-emerald-500/10">
@@ -71,7 +101,7 @@
                                     <span class="text-[10px] font-black uppercase text-white">Licença Vitalícia</span>
                                     <span class="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[8px] font-black uppercase border border-emerald-500/20">Para Sempre</span>
                                 </div>
-                                <div class="text-xs text-emerald-400 font-bold">12x de R$ 49,90 <span class="text-slate-400 text-[9px]">ou R$ 499 à vista</span></div>
+                                <div class="text-xs text-emerald-400 font-bold">3x de R$ 166,34 <span class="text-slate-400 text-[9px]">ou R$ 499 à vista</span></div>
                             </div>
                             <span class="w-3.5 h-3.5 rounded-full border flex items-center justify-center {activePlan === 'vitalicio' ? 'border-emerald-500 bg-emerald-500' : 'border-white/20'}">
                                 {#if activePlan === 'vitalicio'}
@@ -87,7 +117,7 @@
                                     <span class="text-[10px] font-black uppercase text-slate-300">Licença Anual</span>
                                     <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[8px] font-black uppercase">12 Meses</span>
                                 </div>
-                                <div class="text-xs text-slate-400 font-bold">12x de R$ 9,90 <span class="text-[9px]">ou R$ 99 à vista</span></div>
+                                <div class="text-xs text-slate-400 font-bold">3x de R$ 33,33 <span class="text-[9px]">ou R$ 99,99 à vista</span></div>
                             </div>
                             <span class="w-3.5 h-3.5 rounded-full border flex items-center justify-center {activePlan === 'anual' ? 'border-emerald-500 bg-emerald-500' : 'border-white/20'}">
                                 {#if activePlan === 'anual'}

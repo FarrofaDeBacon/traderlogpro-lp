@@ -35,7 +35,7 @@
                 </span>
             </div>
             <div class="p-4 space-y-1 bg-slate-950 leading-relaxed font-mono">
-                <p class="text-slate-500">// Leitura local segura de logs do MetaTrader 5</p>
+                <p class="text-slate-500">// Leitura local segura de dados do ProfitChart</p>
                 <p><span class="text-rose-400">pub async fn</span> <span class="text-blue-400">process_local_logs</span>(path: <span class="text-yellow-400">&amp;str</span>) -&gt; <span class="text-teal-400">Result</span>&lt;<span class="text-yellow-400">()</span>, <span class="text-yellow-400">Error</span>&gt; &#123;</p>
                 <p class="pl-4"><span class="text-rose-400">let</span> <span class="text-purple-400">log_data</span> = fs::<span class="text-blue-400">read_to_string</span>(path)?;</p>
                 <p class="pl-4"><span class="text-rose-400">let</span> <span class="text-purple-400">decrypted</span> = crypto::<span class="text-blue-400">decrypt_local_db</span>(<span class="text-purple-400">log_data</span>)?;</p>

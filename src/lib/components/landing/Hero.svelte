@@ -4,18 +4,21 @@
     import { Sparkles, ArrowDown, Activity, Brain, ShieldAlert } from "lucide-svelte";
 
     let { visible = true } = $props();
-
-    let userOS = $state("Windows");
-    let downloadLink = $state("https://pay.hotmart.com/U105324624J"); // Checkout/Download Link
-
-    // Reconstruct the interactive dashboard mockup inside Svelte 5!
     let activeTab = $state("cockpit");
 
+    const baseCounter = 92;
+    let currentCounter = $state(baseCounter);
+    let counterDisplay = $derived(currentCounter.toLocaleString("pt-BR"));
+
     onMount(() => {
-        const platform = window.navigator.userAgent.toLowerCase();
-        if (platform.includes("mac")) {
-            userOS = "macOS";
-            downloadLink = "https://pay.hotmart.com/U105324624J?off=MAC_DMG";
+        const stored = localStorage.getItem("traderlog_downloads_total");
+        if (stored) {
+            const parsed = parseInt(stored, 10);
+            if (!isNaN(parsed) && parsed >= baseCounter) {
+                currentCounter = parsed;
+            }
+        } else {
+            localStorage.setItem("traderlog_downloads_total", String(baseCounter));
         }
     });
 </script>
@@ -35,33 +38,35 @@
                 </h1>
 
                 <p in:fly={{ y: 20, duration: 800, delay: 400 }} class="text-lg text-slate-300 leading-relaxed font-medium">
-                    Sincronize seu MetaTrader 5 localmente de forma instantânea. Mantenha 100% das suas estratégias e histórico de saldo criptografados no seu próprio computador — sem expor seus dados na nuvem.
+                    Sincronize suas operações do ProfitChart localmente via RTD de forma instantânea. Mantenha 100% das suas estratégias e histórico de saldo criptografados no seu próprio computador — sem expor seus dados na nuvem.
                 </p>
 
                 <div in:fly={{ y: 20, duration: 800, delay: 600 }} class="space-y-4">
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href={downloadLink} class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-10 py-5 rounded-2xl text-[12px] font-black uppercase tracking-widest transition-all shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-3 active:scale-95 cursor-pointer select-none">
+                        <a href="#pricing" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-10 py-5 rounded-2xl text-[12px] font-black uppercase tracking-widest transition-all shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-3 active:scale-95 cursor-pointer select-none">
                             <ArrowDown class="w-4 h-4" />
-                            BAIXAR TRADERLOGPRO PARA {userOS}
+                            GARANTIR LICENÇA TRADERLOGPRO
+                        </a>
+                        <a href="/download" class="w-full sm:w-auto border-2 border-emerald-500/30 hover:border-emerald-500 bg-emerald-500/5 hover:bg-emerald-500/10 text-emerald-400 hover:text-white px-10 py-5 rounded-2xl text-[12px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-3 active:scale-95 cursor-pointer select-none shadow-lg shadow-emerald-500/5 hover:shadow-emerald-500/20">
+                            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                            BAIXAR TESTE GRÁTIS
                         </a>
                     </div>
-                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider flex items-center justify-center lg:justify-start gap-2">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        • LIVRE DE VÍRUS • SEM NECESSIDADE DE CARTÃO • ATIVAÇÃO IMEDIATA VIA HOTMART
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider flex flex-wrap items-center justify-center lg:justify-start gap-x-2 gap-y-1">
+                        <span class="inline-flex items-center gap-1 bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-md border border-emerald-500/10">
+                            <span class="relative flex h-1.5 w-1.5">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                            </span>
+                            <span class="tracking-normal font-black">{counterDisplay}</span> traders testando
+                        </span>
+                        <span class="text-slate-700">•</span>
+                        <span>LIVRE DE VÍRUS</span>
+                        <span class="text-slate-700">•</span>
+                        <span>SEM NECESSIDADE DE CARTÃO</span>
+                        <span class="text-slate-700">•</span>
+                        <span>ATIVAÇÃO IMEDIATA VIA HOTMART</span>
                     </p>
-                </div>
-
-                <!-- Native OS downloads alternative links -->
-                <div in:fly={{ y: 20, duration: 800, delay: 850 }} class="pt-6 border-t border-white/5 flex flex-wrap gap-6 items-center justify-center lg:justify-start">
-                    <span class="text-[10px] text-slate-500 font-black uppercase tracking-widest">INSTALADORES NATIVOS:</span>
-                    <div class="flex gap-4">
-                        <a href="#pricing" class="text-slate-400 hover:text-emerald-400 text-xs font-bold transition-colors">
-                            Windows (.exe)
-                        </a>
-                        <a href="#pricing" class="text-slate-400 hover:text-emerald-400 text-xs font-bold transition-colors">
-                            macOS (.dmg)
-                        </a>
-                    </div>
                 </div>
             {/if}
         </div>
@@ -187,7 +192,7 @@
                     
                     <!-- App Status Footer -->
                     <div class="pt-3 border-t border-white/5 flex justify-between items-center text-[8px] text-slate-500 font-mono">
-                        <span>CONEXÃO COM METATRADER 5: ONLINE</span>
+                        <span>CONEXÃO RTD PROFITCHART: ONLINE</span>
                         <span>BANCO DE DADOS: LOCAL</span>
                     </div>
                 </div>
